@@ -99,8 +99,32 @@
 
       <div class="clear"> </div>
 
-      <div class="main-content-students">
-
+      <div class="main-content-projects">
+        <a name="projectGrid"><div class="categories"></a>
+         <nav id="nav-filter-cat" style="margin-left:13%; margin-right:13%;">
+          <input type="radio" id="all" name="thesis-category" checked/>
+          <label for="all" onclick="loadCategory('all')">All</label>
+          <input type="radio" id="DataArt" name="thesis-category" />
+          <label for="DataArt" onclick="loadCategory('vr')">VR/MR/AR</label>
+          <input type="radio" id="Installation" name="thesis-category"/>
+          <label for="Installation" onclick="loadCategory('installation')">Installation</label>
+          <input type="radio" id="PlayfulExperiences" name="thesis-category"/>
+          <label for="PlayfulExperiences" onclick="loadCategory('game')">Playful Experiences</label>
+          <input type="radio" id="Storytelling/Film" name="thesis-category"/>
+          <label for="Storytelling/Film" onclick="loadCategory('story')" >Storytelling/Film</label>
+          <input type="radio" id="Culture/Issues" name="thesis-category"/>
+          <label for="Culture/Issues" onclick="loadCategory('culture')">Culture/Issues</label>
+          <input type="radio" id="SpeculativeDesign" name="thesis-category"/>
+          <label for="SpeculativeDesign" onclick="loadCategory('speculative')">Speculative/Critical</label>
+          <input type="radio" id="ProductDesign" name="thesis-category"/>
+          <label for="ProductDesign" onclick="loadCategory('product')">Product Design</label>
+          <input type="radio" id="Education" name="thesis-category"/>
+          <label for="Education" onclick="loadCategory('education')">Education</label>
+          <input type="radio" id="Wearable" name="thesis-category"/>
+          <label for="Wearable" onclick="loadCategory('wearable')">Wearable</label>
+          <div class="clear"></div>
+        </nav>
+      </div>
 
       <div class="clear"> </div>
 
@@ -110,17 +134,19 @@
 
             <script id="students-template" type="x-handlebars-template">​
 
-          {{#each this}}
-            <li class="grid-item grid-item--width2 grid-item--height6" data-index="{{id}}">
-            {{#if profile-pic}} 
-            <a href="#" class="student-photo"><img class="myPhoto" src="portraits/{{profile-pic}}" height="130" alt="{{name}}"/></a>
-            {{else}}
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto.png" height="130" alt="{{name}}"/></a>
-            {{/if}}
+            {{#each this}}
+            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" data-index="{{id}}">
+            
+            {{#if project.coverImage}} 
+            <a href="#" class="student-photo"><img class="myPhoto" src="project/{{id}}/{{project.coverImage}}" height="130" alt="{{name}}"/></a>
 
+            {{else}}            
+            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto1.png" height="130" alt="{{name}}"/></a>
+            {{/if}}
+            
             <h6 style="color:#FFFFFF; margin-top:10px; margin-bottom:15px;">
               <a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">
-                <span class="list_student_name">{{name}}</span><br><span class="list_project_name">{{project.title}}</span></a></h6>
+                <span class="list_project_name">{{project.title}}</span><br><span class="list_student_name">{{name}}</span></a></h6>
             </li>
             {{/each}}
 

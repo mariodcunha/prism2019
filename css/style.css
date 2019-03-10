@@ -19,7 +19,7 @@
  body {
    line-height: 1;
    background-color:#DDD;
-   /*background-color:#CB148C;*/
+   /*background-color:#000;*/
  }
  ol, ul {
    list-style: none;
@@ -457,7 +457,7 @@ hr {
     padding-left: 30px;
     text-align:center;
     text-transform: uppercase;
-    color: #CB148C;
+    color: #000;
     font-size:13px;
     font-weight:bold;
     letter-spacing: 0.16em ;
@@ -475,7 +475,7 @@ hr {
   }
 
   #main-menu .nav-bar li:hover a {
-   background:#CB148C;
+   background:#000;
    color: #FFFFFF;
    text-align: center;
    vertical-align: middle;
@@ -510,7 +510,7 @@ hr {
 
   #main-menu2 .nav-bar li:hover a {
    background:#000;
-   color: #CB148C;
+   color: #000;
    text-align: center;
    vertical-align: middle;
    line-height: 30px;
@@ -591,7 +591,7 @@ label {
 }
 input[type="radio"]:checked + label {
   background:#000;
-  color:#CB148C;
+  color:#000;
 }
 input[type="radio"][id="DataArt"]:checked + .DataArt{
   background-color: yellow;
@@ -785,6 +785,19 @@ STUDENTS GRID
 
 }
 
+#rsvp
+{
+  /*padding: 0px 0px 0px 0px;*/
+  /*width: 100%;*/
+  /*bottom: 0;*/
+  position: relative;
+  text-decoration:none;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
 
 #footer-main {
   box-sizing: border-box;
@@ -794,7 +807,9 @@ STUDENTS GRID
     padding: 40px 0;
     font-size: 0.9em;
 }
-#bottom-content{
+
+#bottom-content
+{
   padding: 0px 0px 0px 0px;
   width: 100%;
   bottom: 0;
@@ -810,7 +825,7 @@ STUDENTS GRID
   text-decoration: none;
   font-weight:900 ;
   letter-spacing:0.08em;
-  color: #CB148C;
+  color: #000;
 }
 
 #bottom-content2
@@ -867,11 +882,11 @@ STUDENTS GRID
 }
 
 #footing2:hover a{
-  color:#CB148C ;
+  color:#000 ;
 }
 
 .color:hover {
-  background:#CB148C;
+  background:#000;
   color: #000;
   /*height: 40px ;*/
   text-align: center;
@@ -881,7 +896,7 @@ STUDENTS GRID
 
 .color2:hover {
   background:#000;
-  color: #CB148C;
+  color: #000;
   /*height: 40px ;*/
   text-align: center;
   vertical-align: middle;
@@ -895,7 +910,17 @@ STUDENTS GRID
   clear: both;
 }
 
-#eventLink:hover{
+#eventLink
+{
+  padding: 0;
+  border: solid rgba(255,255,255,.5);
+  height:50px;
+  /*margin-top:60px;*/
+  /*margin-right:15px;*/
+}
+
+#eventLink:hover
+{
   text-align: center;
   /*vertical-align: middle;*/
   /*line-height: 40px;*/
@@ -903,7 +928,7 @@ STUDENTS GRID
     background: -webkit-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);*/
     background: #000;
-    color:#CB148C;
+    color:#000;
 }
 
 /* ---- footer-item ---- */
@@ -1197,14 +1222,14 @@ STUDENTS GRID
 
 #social-links a {
   text-decoration:none ;
-  color: #CB148C;
+  color: #000;
   /*margin-right:10px;
   margin-left:10px;*/
 }
 
 #social-links a:hover{
   color:white ; 
-  background:#CB148C ;
+  background:#000 ;
 }
 
 #website-links{
@@ -1217,14 +1242,14 @@ STUDENTS GRID
 
 #website-links a {
   text-decoration:none ;
-  color: #CB148C;
+  color: #000;
   /*margin-right:10px;
   margin-left:10px;*/
 }
 
 #website-links a:hover{
   color:white ; 
-  background:#CB148C ;
+  background:#000 ;
 }
 
 #project-description{
