@@ -51,7 +51,7 @@
       <ul class="nav-bar">
         <!-- <li class="nav-button-event"><a href="index.html#projectGrid">PROJECTS</a></a></li> -->
         <!-- <li class="nav-button-people"><a href="people.html">PEOPLE</a></li> -->
-        <li id="nav_button_bottom_top nav_corner"><a href="event.html">Events</a></li>
+        <li id="nav_button_bottom_top" ><a href="event.html">Events</a></li>
       </ul>
     </nav>
   </div>
@@ -101,83 +101,51 @@
         </div>
       </div>
 
-      <div class="clear"> </div>
 
-      <div class="main-content">
-        <a name="projectGrid"><div class="categories"></a>
-         <nav id="nav-filter-cat" style="margin-left:13%; margin-right:13%;">
-          <input type="radio" id="all" name="thesis-category" checked/>
-          <label for="all" onclick="loadCategory('all')">All</label>
-          <input type="radio" id="DataArt" name="thesis-category" />
-          <label for="DataArt" onclick="loadCategory('vr')">VR/MR/AR</label>
-          <input type="radio" id="Installation" name="thesis-category"/>
-          <label for="Installation" onclick="loadCategory('installation')">Installation</label>
-          <input type="radio" id="PlayfulExperiences" name="thesis-category"/>
-          <label for="PlayfulExperiences" onclick="loadCategory('game')">Playful Experiences</label>
-          <input type="radio" id="Storytelling/Film" name="thesis-category"/>
-          <label for="Storytelling/Film" onclick="loadCategory('story')" >Storytelling/Film</label>
-          <input type="radio" id="Culture/Issues" name="thesis-category"/>
-          <label for="Culture/Issues" onclick="loadCategory('culture')">Culture/Issues</label>
-          <input type="radio" id="SpeculativeDesign" name="thesis-category"/>
-          <label for="SpeculativeDesign" onclick="loadCategory('speculative')">Speculative/Critical</label>
-          <input type="radio" id="ProductDesign" name="thesis-category"/>
-          <label for="ProductDesign" onclick="loadCategory('product')">Product Design</label>
-          <input type="radio" id="Education" name="thesis-category"/>
-          <label for="Education" onclick="loadCategory('education')">Education</label>
-          <input type="radio" id="Wearable" name="thesis-category"/>
-          <label for="Wearable" onclick="loadCategory('wearable')">Wearable</label>
-          <div class="clear"></div>
-        </nav>
-      </div>
-      <div class="clear"> </div>
 
-        <!-- <div class="fixedlefttitle2">
-          <div class="content">
-            PROJECTS
-          </div>
-        </div> -->
-        <div class="fixedrighttitle">
-          <ul class="students-list grid">
-            <script id="students-template" type="x-handlebars-template">​
-            {{#each this}}
-            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" data-index="{{id}}">
-            {{#if project.coverImage}} 
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/{{id}}/{{project.coverImage}}" height="130" alt="{{name}}"/></a>
-            {{else}}
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto1.png" height="130" alt="{{name}}"/></a>
-            {{/if}}
-            <h6 style="color:#FFFFFF ; margin-top:10px; margin-bottom:15px;"><a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">{{project.title}}</a></h6>
-            </li>
-            {{/each}}
-            
-          </script>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
 
-    <div id="pretty-thin" style="width:75%; margin: 0 auto ; margin-top:30px">&nbsp;</div>
+
+    <div id="pretty_thin"></div>
     <div id="footer-main">
-      <div id="social-bottom" class="footgrid">
-        <div class="center-div">
-          <a href="https://www.instagram.com/mfadt/?hl=en"><img id="social-buttons" src="assets/instaLogo.png" style="width:2%; margin-bottom:30px; margin-left:20px; margin-right:20px;"></a>
-          <a href="https://www.facebook.com/MFADT.Thesis/"><img id="social-buttons" src="assets/fbLogo.png" style="width:2%; margin-bottom:30px;margin-left:20px; margin-right:20px;"></a>
-          <a href="https://twitter.com/mfadt?lang=en"><img id="social-buttons" src="assets/twitterLogo.png" style="width:2%; margin-bottom:30px;margin-left:20px; margin-right:20px;"></a>
-        </div>
-      </div>
-      
+
       <div id="bottom-content2" class="footgrid">
-        <div  class="footer-child foot-item foot-item--width2">
-          <h2 id="footing2" class="color2"><a href="index.html">Thesis Show 2018</a></h2>
-        </div>
         <div  class="footer-child foot-item foot-item--width2">
           <h2 id="footing2" class="color2"><a href="https://www.newschool.edu/parsons/">Parsons School of Design</a></h2>
         </div>
         <div  class="footer-child foot-item foot-item--width2">
           <h2 id="footing2" class="color2"><a href="acknowledgements.html">Acknowledgements</a></h2>
         </div>
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://www.instagram.com/mfadt/?hl=en">
+              <img class="social-buttons" src="assets/instaLogo.png">
+            </a>
+          </span>
+        </div>
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://www.facebook.com/MFADT.Thesis/">
+              <img class="social-buttons" src="assets/fbLogo.png">
+            </a>
+          </span>
+        </div>        
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://twitter.com/mfadt?lang=en">
+              <img class="social-buttons" src="assets/twitterLogo.png">
+            </a>
+          </span>
+        </div>
+
+      <!-- </span> -->
+
       </div>
+
     </div>
+
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -6,10 +6,13 @@
 <html class='no-js' lang='en'>
   <!--<![endif]-->
   <head>
+
+    <link rel="icon" href="logo.png" sizes="32x32" type="image/png">
+
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <title>UNFOLDING - MFADT 2018 THESIS SHOW</title>
+    <title>PRISM - MFADT 2019 THESIS SHOW</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="PARSONS MFA DESIGN AND TECHNOLOGY THESIS SHOW" />
 
@@ -36,53 +39,175 @@
   </head>
   <body>
 
+  <nav id="main-menu2">
+      <a href="index.html">
+        <!-- <div id="cornerLogo"> -->
+        <div id="barLogo">          
+          <!-- <span> -->
+            <!-- <img src="assets/cornerlogo.jpg"> -->
+            <img src="assets/mainlogo.png">
+          <!-- </span> -->
+        </div>
+      </a>
+    </nav>
+
     <nav id="main-menu">
      <ul class="nav-bar">
-       <li class="nav-button-event"><a href="index.html">EVENT</a></li>
+       <li class="nav-button-event"><a href="index.html">EVENTS</a></li>
+       <li class="nav-button-event"><a href="index.html">PROJECTS</a></li>
        <li class="nav-button-people"><a href="people.html">PEOPLE</a></li>
-       <li class="nav-button-about"><a href="index.html">ABOUT</a></li>
+       <!-- <li class="nav-button-about"><a href="index.html">ABOUT</a></li> -->
      </ul>
     </nav>
-    <!-- <div class="sidebar sidebar_proj">PROJECT</div>
-    <div class="sidebar sidebar_event">EVENT</div> -->
 
-    <div class='main-content'>
-      <div id="logo">
-        MFA DT <br>
-        CLASS OF 2018
-      </div>
 
-      <div class="clear"> </div>
-      <ul class="project-list grid">
-        <!-- <script id="project-template" type="x-handlebars-template">​
-          {{#each this}}
-            <li class="grid-item" data-index="{{id}}">
-              <a href="#" class="student-photo"><img src="{{profile-pic}}" height="130" alt="{{name}}"/></a>
-              <h2><a href="#"> {{name}} </a><br/></h2>
-              <h6>{{project.title}}</h6>
-              <ul class="project-description">
-                <li><span>Category: </span>{{project.thesis-category}}</li>
-                <li>{{project.studio-professor-1}}</li>
-                <li>{{project.studio-professor-2}}</li>
 
-              </ul>
-            </li>
-          {{/each}}
-        </script> -->
-      </ul>
 
-      <footer>
-      	<!-- <button>Here is a button</button>
-      	<button class="primary">Here is a button</button>
-      	<button class="disabled">Here is a button</button> -->
-      </footer>
-    </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 
-  	<script src="js/project.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
+
+    <script>
+      function MM_preloadImages() { //v3.0
+        var d=document; 
+        if(d.images){ 
+          if(!d.MM_p) d.MM_p=new Array();
+          var i;
+          var j=d.MM_p.length;
+          var a=MM_preloadImages.arguments; 
+          for(i=0; i<a.length; i++)
+           if (a[i].indexOf("#")!=0) { 
+             d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
+           }
+         }
+       }
+     </script>
+
+
+
+
+
+
+
+
+      <div class="clear"> </div>
+
+      <div class="main-content-projects">
+        <a name="projectGrid"><div class="categories"></a>
+         <nav id="nav-filter-cat" style="margin-left:13%; margin-right:13%;">
+          <input type="radio" id="all" name="thesis-category" checked/>
+          <label for="all" onclick="loadCategory('all')">All</label>
+          <input type="radio" id="DataArt" name="thesis-category" />
+          <label for="DataArt" onclick="loadCategory('vr')">VR/MR/AR</label>
+          <input type="radio" id="Installation" name="thesis-category"/>
+          <label for="Installation" onclick="loadCategory('installation')">Installation</label>
+          <input type="radio" id="PlayfulExperiences" name="thesis-category"/>
+          <label for="PlayfulExperiences" onclick="loadCategory('game')">Playful Experiences</label>
+          <input type="radio" id="Storytelling/Film" name="thesis-category"/>
+          <label for="Storytelling/Film" onclick="loadCategory('story')" >Storytelling/Film</label>
+          <input type="radio" id="Culture/Issues" name="thesis-category"/>
+          <label for="Culture/Issues" onclick="loadCategory('culture')">Culture/Issues</label>
+          <input type="radio" id="SpeculativeDesign" name="thesis-category"/>
+          <label for="SpeculativeDesign" onclick="loadCategory('speculative')">Speculative/Critical</label>
+          <input type="radio" id="ProductDesign" name="thesis-category"/>
+          <label for="ProductDesign" onclick="loadCategory('product')">Product Design</label>
+          <input type="radio" id="Education" name="thesis-category"/>
+          <label for="Education" onclick="loadCategory('education')">Education</label>
+          <input type="radio" id="Wearable" name="thesis-category"/>
+          <label for="Wearable" onclick="loadCategory('wearable')">Wearable</label>
+          <div class="clear"></div>
+        </nav>
+      </div>
+
+      <div class="clear"> </div>
+
+
+        <div class="fixedrighttitle">
+          <ul class="students-list grid">
+
+            <script id="students-template" type="x-handlebars-template">​
+
+            {{#each this}}
+            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" data-index="{{id}}">
+            
+            {{#if project.coverImage}} 
+            <a href="#" class="student-photo"><img class="myPhoto" src="project/{{id}}/{{project.coverImage}}" height="130" alt="{{name}}"/></a>
+
+            {{else}}            
+            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto1.png" height="130" alt="{{name}}"/></a>
+            {{/if}}
+            
+            <h6 style="color:#FFFFFF; margin-top:10px; margin-bottom:15px;">
+              <a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">
+                <span class="list_project_name">{{project.title}}</span><br><span class="list_student_name">{{name}}</span></a></h6>
+            </li>
+            {{/each}}
+
+          </script>
+          
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+
+
+    <div id="pretty_thin"></div>
+    <div id="footer-main">
+
+      <div id="bottom-content2" class="footgrid">
+        <div  class="footer-child foot-item foot-item--width2">
+          <h2 id="footing2" class="color2"><a href="https://www.newschool.edu/parsons/">Parsons School of Design</a></h2>
+        </div>
+        <div  class="footer-child foot-item foot-item--width2">
+          <h2 id="footing2" class="color2"><a href="acknowledgements.html">Acknowledgements</a></h2>
+        </div>
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://www.instagram.com/mfadt/?hl=en">
+              <img class="social-buttons" src="assets/instaLogo.png">
+            </a>
+          </span>
+        </div>
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://www.facebook.com/MFADT.Thesis/">
+              <img class="social-buttons" src="assets/fbLogo.png">
+            </a>
+          </span>
+        </div>        
+
+        <div  class="social_footer">
+          <span id="footing2" class="color2">
+            <a href="https://twitter.com/mfadt?lang=en">
+              <img class="social-buttons" src="assets/twitterLogo.png">
+            </a>
+          </span>
+        </div>
+
+      <!-- </span> -->
+
+      </div>
+
+    </div>
+
+
+  
+
+
+
+
+
+
   </body>
 </html>
