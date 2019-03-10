@@ -183,21 +183,18 @@ hr {
 /*-----------------
   LOGO
   -----------------*/
-  #logo{
+  #cornerLogo
+  {
     float: left;
-    text-align: left;
-    /*left: 100px;*/
-    line-height:30px;
-    letter-spacing: 0.16em;
     z-index: 10;
     position: absolute;
-    margin:2%;
-    font-size:13px;
-    font-weight:bold ;
+    margin: 3vw;
+    width: 30px;
+
   }
 
   @media(max-width:600px) {
-    #logo {opacity:0.0;}
+    #cornerLogo {opacity:0.0;}
 
   }
 
@@ -227,6 +224,25 @@ hr {
     #mainLogo {width:100%; margin:0;}
 
   }
+
+
+  .mainEventTitle
+  {
+    color:#000;
+    font-weight:bold;
+    letter-spacing: 0.08em;
+    float: left;
+  }
+
+  .mainEventDate
+  {
+    color:#000;
+    font-size:13px;
+    letter-spacing: 0.08em;
+    margin-top:6px; 
+    float: left;
+  }
+
 
   #thesisShowTitle
   {
@@ -410,7 +426,7 @@ hr {
   ------------------*/
   #menuBar {z-index:20; width: 100vw; height:60px; position:relative;}
   #main-menu {z-index:20;}
-  #main-menu .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:2%;z-index:20;}
+  #main-menu .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:3%;z-index:20;}
   #main-menu .nav-bar li { display:inline;z-index:20; line-height: 30px;}
 
   #main-menu .nav-bar li a {
@@ -427,8 +443,10 @@ hr {
     /*-webkit-transition: all 0.5s ease;*/
   }
 
-  @media (max-width: 600px){
-    #main-menu .nav-bar li a {
+  @media (max-width: 600px)
+  {
+    #main-menu .nav-bar li a 
+    {
       padding-right:17px;
       padding-left:17px;
     }
@@ -444,7 +462,7 @@ hr {
  #main-menu .nav-bar li a: hover { color:#FFFFFF; }
 
  #main-menu2 {z-index:20;}
-  #main-menu2 .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:2%;z-index:20;}
+  #main-menu2 .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:3%;z-index:20;}
   #main-menu2 .nav-bar li { display:inline;z-index:20; line-height: 30px;}
 
   #main-menu2 .nav-bar li a {
@@ -476,6 +494,42 @@ hr {
    line-height: 30px;
  }
  #main-menu2 .nav-bar li a: hover { color:#FFFFFF; }
+
+
+  .nav_corner a
+  {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;    
+    position: absolute;
+    margin:3%;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing: 0.16em ;    
+  }
+
+ #nav_button_bottom_top
+ {
+    
+    
+ }
+
+ #nav_button_bottom_left a
+ {
+    left: 10px;
+    bottom:10vh;
+ }
+
+ #nav_button_bottom_right a
+ {
+    right: 15px;
+    bottom:10vh;
+ }
+
+
+
+
 
 /*#selection:hover a{
   color:#FFFFFF ;
@@ -597,12 +651,15 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
 /*-----------------
   EVENT
   -----------------*/
-  .events{
+  .events
+  {
     position: absolute;
     margin: auto;
     width: 100%;
-    top: 80%;
-    /* left: 35%; */
+    top: 65%;
+    left: 0vw;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   @media(max-width:600px) {
@@ -614,6 +671,12 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   .event-child{
 
   }
+
+  .grid-item
+  {
+    float: left;
+  }
+
   .sub-events{
   margin-top: 10vh;
 }
