@@ -18,7 +18,7 @@
  }
  body {
    line-height: 1;
-   background-color:#DDD;
+   background-color:#FFF;
    /*background-color:#000;*/
  }
  ol, ul {
@@ -528,7 +528,7 @@ hr {
     text-align:center;
     font-size:13px;
     font-weight:bold;
-    letter-spacing: 0.16em ;    
+    letter-spacing: 0.16em;
   }
 
  #nav_button_bottom_top
@@ -794,9 +794,17 @@ STUDENTS GRID
   text-decoration:none;
   text-align: center;
   vertical-align: middle;
-  margin-top: 5vw;
+  margin-top: 9vw;
   margin-bottom: 5vw;
+  vertical-align: middle;
 }
+
+.rsvp_button
+{
+  vertical-align: middle;
+  padding-top: 3px;
+}
+
 
 
 #footer-main {
@@ -913,22 +921,24 @@ STUDENTS GRID
 #eventLink
 {
   padding: 0;
-  border: solid rgba(255,255,255,.5);
+  border: solid rgba(0,0,0,1);
   height:50px;
-  /*margin-top:60px;*/
-  /*margin-right:15px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-#eventLink:hover
+.eventLink-e:hover
 {
-  text-align: center;
-  /*vertical-align: middle;*/
-  /*line-height: 40px;*/
-    /*background-: -moz-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
-    background: -webkit-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
-    background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);*/
-    background: #000;
-    color:#000;
+  background: #f05538;
+  border: solid #f05538;
+  color:#FFF;
+}
+
+.eventLink-f:hover
+{
+  background: #4267b2;
+  color:#FFF;
+  border: solid #4267b2;
 }
 
 /* ---- footer-item ---- */
