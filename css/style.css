@@ -202,7 +202,7 @@ hr {
   }
 
 /*-----------------
-  graphic image
+  graphic image and titles
   -----------------*/
   #graphicImg {
     position: relative;
@@ -212,19 +212,48 @@ hr {
     z-index:-99;
   }
 
-  #three-D-img {
+  #mainLogo 
+  {
     position: absolute;
     display:inline-block;
-    top:20vh;
+    top:23vh;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
-    width:80%;
+    width:25%;
   }
 
   @media(max-width:600px) {
-    #three-D-img {width:100%; margin:0;}
+    #mainLogo {width:100%; margin:0;}
 
+  }
+
+  #thesisShowTitle
+  {
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: absolute;
+    /*display:inline-block;*/
+    top:19vh;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    /*width:25%;*/
+  }
+
+
+  #mfadtTitle
+  {
+    /*letter-spacing: 9px;*/
+    position: absolute;
+    /*display:inline-block;*/
+    top:13vh;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    /*width:25%;*/
+    font-weight: bolder;
+    font-size: 26px;
   }
 
   #byLine{
