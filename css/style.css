@@ -508,16 +508,17 @@ hr {
     }
   }
 
-  #main-menu2 .nav-bar li:hover a {
+ /* #main-menu2 .nav-bar li:hover a {
    background:#000;
-   color: #000;
+   color: #FFF;
    text-align: center;
    vertical-align: middle;
    line-height: 30px;
  }
+ 
  #main-menu2 .nav-bar li a: hover { color:#FFFFFF; }
 
-
+*/
   .nav_corner a
   {
     text-decoration: none;
@@ -945,7 +946,7 @@ STUDENTS GRID
 .foot-item 
 {
   width: 160px;
-  height: 120px;
+  /*height: 120px;*/
   display:inline-block;
   padding-right: 0px;
   padding-left: 30px ;
