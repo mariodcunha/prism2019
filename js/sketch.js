@@ -161,6 +161,14 @@ function draw()
         drawCuboid(boxSizes[i], boxSpeeds[i], boxPositionsX[i], boxPositionsY[i], boxPositionsZ[i]);
     }
 
+    // drawCuboid(w/4, 0, -300, 95, 50);
+    translate(-400, 50, 100);
+    push();
+    angleMode(DEGREES);
+    rotateY(5);
+    box(w/3, w/20, w/8);
+    pop();
+
     theta = theta + (0.1);
 
 }
@@ -169,6 +177,7 @@ function draw()
 function drawCuboid(boxSize, rotateSpeed, x, y, z)
 {
     let rs = rotateSpeed;
+    angleMode(RADIANS);
     push();
         translate(x, y, z);
         rotateZ(theta * rotateSpeed);
