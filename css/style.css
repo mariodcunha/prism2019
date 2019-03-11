@@ -22,11 +22,14 @@
  footer, header, hgroup, menu, nav, section {
    display: block;
  }
- body {
+
+ body 
+ {
    line-height: 1;
    background-color:#FFF;
    /*background-color:#000;*/
  }
+
  ol, ul {
    list-style: none;
  }
@@ -170,10 +173,12 @@ hr {
     letter-spacing: 0.04em;
 
 }
-.main-content h4 {
+
+.main-content h4 
+{
   font-size: 1.3em;
   line-height: 1.4em;
-  color: #999;
+  /*color: #999;*/
   margin-bottom: 30px;
   color: rgba(231, 11, 128, 0.9);
   font-weight: normal;
@@ -300,9 +305,8 @@ hr {
     font-size: 26px;
   }
 
-  #byLine{
+/*  #byLine{
     position:absolute;
-    /*display:inline-block;*/
     top:55vh;
     color:#000;
     letter-spacing:0.08em;
@@ -311,8 +315,10 @@ hr {
     line-height: 15px;
     text-align:center;
   }
+*/
 
-  #mfadt{
+/*  #mfadt
+  {
     position:absolute;
     top:47vh ;
     margin-left:29%;
@@ -323,7 +329,7 @@ hr {
     text-align:center;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-  }
+  }*/
 
 /*-----------------
 	Load Content (can be used for preloading in the future)

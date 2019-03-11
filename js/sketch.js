@@ -32,7 +32,8 @@ var boxCount=5;
 function preload() 
 {
 //  myFont = loadFont('fonts/NeueDisplay-Random.otf');
-  img = loadImage('images/texture.png');
+  imgB = loadImage('images/textureB.png');
+  imgW = loadImage('images/textureW.png');
 
 }
 
@@ -50,7 +51,7 @@ function setup()
     colorMode(RGB);
 
     bgcolor = bgcolorArray[randomInt(0,2)];
-    bgcolor = 255;
+    // bgcolor = 255; 0 is black background, 2 is white.
 
     if(bgcolor==bgcolorArray[0])
     {
@@ -63,14 +64,14 @@ function setup()
         spectrumTo = color(255, 255, 255, 10);
     }
 
-    checkCssBG();    
+    checkCss();    
 
     for (let i=0; i<=boxCount; i++) 
     {
         boxSizes[i] = randomInt(w/8, w/4);
-        boxSpeeds[i] = noise(randomInt(50))/10;
-        boxPositionsX[i] = randomInt(-w/3,w/3);
-        boxPositionsY[i] = randomInt(-w/3,w/3);
+        boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
+        boxPositionsX[i] = randomInt(-w/4,w/2);
+        boxPositionsY[i] = randomInt(-w/4,w/3);
         boxPositionsZ[i] = randomInt(-w/8,w/8);
     }
 
@@ -78,12 +79,47 @@ function setup()
 }
 
 
-function checkCssBG()
+function checkCss()
 {
-    if(bgcolor==bgcolorArray[0])
-        $('body').css('background','black');
+    if(bgcolor==bgcolorArray[0]) // if BLACK
+    {
+        $('body').css('background-color','rgba(20,20,20,255)');
+        $('.main-content h4').css('color','#999');
+
+        $("#mainLogo").attr("src","assets/mainLogoW.png");
+        $('#mfadtTitle').css('color','#FFF');
+        $('#thesisShowTitle').css('color','#FFF');
+        $('.mainEventTitle').css('color','#FFF');
+        $('.mainEventDate').css('color','#FFF');
+        $("#cornerLogo").attr("src","assets/cornerLogoW.png");
+        
+        // $('#byLine').css('color','#FFF');
+        $('.nav-bar li a').css('color','#FFF');
+        $('.nav_corner a').css('color','#FFF');
+        $('label').css('color','#FFF');
+        $('#bottom-content2 a').css('color','#FFF');
+        
+        $('.social_footer').css('filter', 'invert(100%)');
+        
+    }
     else
-        $('body').css('background','white');
+    {
+        $('body').css('background-color','white');
+        $('.main-content h4').css('color','#DDD');
+
+        $("#mainLogo").attr("src","assets/mainLogoB.png");
+        $('#mfadtTitle').css('color','#000');
+        $('#thesisShowTitle').css('color','#000');
+        $('.mainEventTitle').css('color','#000');
+        $('.mainEventDate').css('color','#000');
+        $("#cornerLogo").attr("src","assets/cornerLogoB.png");
+        
+        $('.nav-bar li a').css('color','#000');
+        $('.nav_corner a').css('color','#000');
+        $('label').css('color','#000');
+        $('#bottom-content2 a').css('color','#000');
+        // $('.social_footer').css('filter', 'invert(100%)');
+    }
 }
 
 
@@ -105,15 +141,15 @@ function draw()
     pointLight(0, 255, 255, locX*2, locY*2, 100);
     pointLight(100, 0, 30, locY/4, locY/4, 100);
 
-
     // let dirX = (mouseX / width - 0.5) * 2;
     // let dirY = (mouseY / height - 0.5) * 2;
     // directionalLight(250, 250, 250, -dirX, -dirY, 0.25);
 
-    texture(img);
-    // drawCuboid(w/8, 0.1, 0, 0, 0);
-    // drawCuboid(w/10, 0.01, 50, 200, 400);
-    // drawCuboid(w/6, 0.05, 200, 150, 300);
+    if(bgcolor==bgcolorArray[0])
+        texture(imgW);
+    else
+        texture(imgB);
+
     for(i=0; i<=boxCount; i++)
     {
         drawCuboid(boxSizes[i], boxSpeeds[i], boxPositionsX[i], boxPositionsY[i], boxPositionsZ[i]);
