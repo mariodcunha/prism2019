@@ -146,9 +146,15 @@ function draw()
     // directionalLight(250, 250, 250, -dirX, -dirY, 0.25);
 
     if(bgcolor==bgcolorArray[0])
+    {
         texture(imgW);
+        ambientLight(200);
+    }
     else
+    {
         texture(imgB);
+        ambientLight(0);
+    }
 
     for(i=0; i<=boxCount; i++)
     {

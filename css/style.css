@@ -28,6 +28,7 @@
    line-height: 1;
    background-color:#FFF;
    /*background-color:#000;*/
+   max-width: 100%;
  }
 
  ol, ul {
@@ -590,6 +591,7 @@ hr {
 input[type="radio"] {
     display:none;
 }
+
 label {
   width:auto;
   float:left;
@@ -636,8 +638,8 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
 
 .grid 
 {
-    margin-right: 5vw;
-    margin-left: 5vw;
+    /*margin-right: 5vw;*/
+    /*margin-left: 5vw;*/
 }
 
 /* clearfix */
@@ -689,11 +691,11 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   {
     position: absolute;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
     top: 65%;
-    left: 0vw;
+    /*left: 0vw;*/
     margin-left: 10%;
-    margin-right: 10%;
+    /*margin-right: 10%;*/
   }
 
   @media(max-width:600px) {
@@ -998,9 +1000,9 @@ STUDENTS GRID
     background: -webkit-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     */
-    background: -moz-linear-gradient(-45deg, #000 0%, #539DFD 18%, #929BEF 56%, #FFF 100%);
-    background: -webkit-linear-gradient(-45deg, #000 0%, #539DFD 18%, #929BEF 56%, #FFF 100%);
-    background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);
+    /*background: -moz-linear-gradient(-45deg, #000 0%, #539DFD 18%, #929BEF 56%, #FFF 100%);*/
+    background: -webkit-linear-gradient(-45deg, #000 0%, #000 18%, #AAA 56%, #FFF 100%);
+    /*background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);*/
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);
 }
 
