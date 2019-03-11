@@ -1,6 +1,12 @@
 /*-----------------
 	RESET EVERYTHING
   ------------------*/
+
+#container
+{
+  position: absolute;
+}
+
   * {
    margin: 0;
    padding: 0;
