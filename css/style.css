@@ -26,8 +26,8 @@
  body 
  {
    line-height: 1;
-   background-color:#FFF;
-   /*background-color:#000;*/
+   /*background-color:#FFF;*/
+   background-color:#000;
    max-width: 100%;
  }
 
@@ -216,12 +216,14 @@ hr {
     display: inline;
   }
 
+/*div styles for top left home icon*/
+/*NOT CURRENTLY ACTIVE - JUAN 3-19*/
   #barLogo
   {
     float: left;
     z-index: 10;
     position: absolute;
-    margin: 3vw;
+    margin: 0;
     width: 90px;
     display: inline;
   }
@@ -461,7 +463,7 @@ hr {
   ------------------*/
   #menuBar {z-index:20; width: 100vw; height:60px; position:relative;}
   #main-menu {z-index:20;}
-  #main-menu .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:3%;z-index:20;}
+  #main-menu .nav-bar { list-style:none; width: auto; position: absolute;right: 0px;margin:3.2%;z-index:20;}
   #main-menu .nav-bar li { display:inline;z-index:20; line-height: 30px;}
 
   #main-menu .nav-bar li a {
@@ -470,7 +472,7 @@ hr {
     padding-left: 30px;
     text-align:center;
     text-transform: uppercase;
-    color: #000;
+    color: #FFF;
     font-size:13px;
     font-weight:bold;
     letter-spacing: 0.16em ;
@@ -490,10 +492,36 @@ hr {
   #main-menu .nav-bar li:hover a {
    background:#000;
    color: #FFFFFF;
-   text-align: center;
-   vertical-align: middle;
+   /*text-align: center;*/
+   /*vertical-align: middle;*/
    line-height: 30px;
  }
+
+@keyframes strike{
+  0%   { width : 0; }
+  100% { width: 100%; }
+}
+.strikeThru {
+  position: relative;
+}
+.strikeThru:hover::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  animation-name: strike;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+
+
+
+
  #main-menu .nav-bar li a: hover { color:#FFFFFF; }
 
  #main-menu2 {z-index:20;}
@@ -598,14 +626,14 @@ label {
   text-align:center;
   /* background:#ffffff; */
   /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
-  color:#000;
+  color:#FFF;
   padding:0.5%;
   margin:0.5%;
   margin-bottom:10px;
   cursor:pointer;
 }
 input[type="radio"]:checked + label {
-  background:#000;
+  background:#FFF;
   color:#000;
 }
 input[type="radio"][id="DataArt"]:checked + .DataArt{
@@ -868,7 +896,7 @@ STUDENTS GRID
   text-decoration: none;
   font-weight:900 ;
   letter-spacing:0.08em;
-  color: #000;
+  color: #FFF;
 }
 
 .social_footer
@@ -905,7 +933,7 @@ STUDENTS GRID
 }
 
 #footing2:hover a{
-  color:#000 ;
+  color:#FFF;
 }
 
 .color:hover {
@@ -920,10 +948,11 @@ STUDENTS GRID
 .color2:hover {
   background:#000;
   color: #000;
+/*  text-decoration: line-through;*/
   /*height: 40px ;*/
-  text-align: center;
-  vertical-align: middle;
-  line-height: 40px;
+  /*text-align: center;*/
+  /*vertical-align: middle;*/
+  /*line-height: 40px;*/
 }
 
 /* clearfix */
