@@ -1,7 +1,7 @@
 # PRISM 2019
 ### Parsons MFA DT - Thesis Website Repository
 
-## TO DO LIST:
+## To Do List:
 
 - [ ] Responsiveness adjustments
 - [x] Hover effects for buttons
