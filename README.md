@@ -5,7 +5,9 @@
 
 - [ ] Responsiveness adjustments
 - [x] Hover effects for buttons
-- **Started by Juan 3-19:** See projects.html and style.css for strikethrough animation.
+```
+• Started by Juan 3-19: See projects.html and style.css for strikethrough animation.
+```
 - [ ] Esp the focus on 4 corner menus
 - [ ] The 4 corners must move into the top navbar
 - [ ] event schedule on the bottom of home page
