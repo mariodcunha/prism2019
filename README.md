@@ -15,9 +15,9 @@
 - [ ] Add 6E 16th St as per wireframe on home page
 - [ ] Change fonts to what Miguel shared
 
-### Notes:
+## Notes:
 
-### Github ReadMe Document:
+#### Github ReadMe Document:
 - [formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
 
 
