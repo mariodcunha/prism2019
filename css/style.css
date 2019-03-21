@@ -2,6 +2,27 @@
 	RESET EVERYTHING
   ------------------*/
 
+@font-face {
+  font-family: SharpGrotesk20;
+  src: url("/fonts/SharpGrotesk20-Book.ttf"), format('truetype');
+  font-weight: book;
+  font-style: book;
+}
+
+@font-face {
+  font-family: SharpGrotesk20;
+  src: url("/fonts/SharpGrotesk20-Medium.ttf"), format('truetype');
+  font-weight: medium;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: SharpGrotesk20;
+  src: url("/fonts/SharpGrotesk20-SemiBold.ttf"), format('truetype');
+  font-weight: semibold;
+  font-style: semibold;
+}
+
 #container
 {
   position: absolute;
@@ -72,10 +93,14 @@ hr {
 }
 
 /*-----------------
-	Basics
+  Basics
   ------------------*/
+
+
+
+
   * {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SharpGrotesk20', sans-serif;
     /* border: 1px solid; */
     /*box-sizing: inherit ;*/
   }
@@ -689,7 +714,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   /* float: left; */
 }
 
-.grid-item--width2 { width: 300px;}
+.grid-item--width2 { width: 250px;}
 .grid-item--width3 { width: 480px; }
 .grid-item--width3-event { width: 440px; margin:0 auto;}
 .grid-item--width4 { width: 640px; }

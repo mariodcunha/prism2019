@@ -11,9 +11,18 @@
 - [ ] Esp the focus on 4 corner menus
 - [ ] The 4 corners must move into the top navbar
 - [ ] event schedule on the bottom of home page
-- [ ] Disable people and projects page for now
+- [x] Disable people and projects page for now
 - [ ] Add 6E 16th St as per wireframe on home page
 - [ ] Change fonts to what Miguel shared
+```
+• Started by Juan 3-20: Updated fonts see styles.css.
+```
+
+## Feedback:
+- Juan 3-20: Hey all! I've started using the ReadMe doc to keep track of all the work. This should minimize meetings and we can dedicate our time to working.
+  - Edit/Modify this document as you think best, and make any updates you think are important.
+  - The link below is documentation on how to use the syntax.
+- Juan 3-20: Website looking great for initial launch. I really like the 3D cubes on homepage, I think we can iterate on it. Would like to add some more color, but we can discuss.
 
 ## Notes:
 
