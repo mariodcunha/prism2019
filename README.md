@@ -23,6 +23,7 @@
 ```
 • Done Juan 3-20: Updated fonts see styles.css.
 ```
+- [ ] **Change social media icons to white**
 
 ## Feedback:
 - Juan 3-20: Hey all! I've started using the ReadMe doc to keep track of all the work. This should minimize meetings and we can dedicate our time to working.
