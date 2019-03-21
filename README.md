@@ -12,10 +12,14 @@
 - [ ] The 4 corners must move into the top navbar
 - [ ] event schedule on the bottom of home page
 - [x] Disable people and projects page for now
-- [ ] Add 6E 16th St as per wireframe on home page
-- [ ] Change fonts to what Miguel shared
 ```
-• Started by Juan 3-20: Updated fonts see styles.css.
+```
+- [ ] Add 6E 16th St as per wireframe on home page
+```
+```
+- [x] Change fonts to what Miguel shared
+```
+• Done Juan 3-20: Updated fonts see styles.css.
 ```
 
 ## Feedback:
