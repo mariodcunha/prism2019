@@ -4,6 +4,7 @@
 ## To Do List:
 
 - [ ] Responsiveness adjustments
+
 - [x] Hover effects for buttons
 ```
 • Started by Juan 3-19: See projects.html and style.css for strikethrough animation.
