@@ -2,28 +2,28 @@
 ### Parsons MFA DT - Thesis Website Repository
 
 ## To Do List:
-**
-- [ ] Responsiveness adjustments
 
-- [x] Hover effects for buttons
+- [ ] **Responsiveness adjustments**
+
+- [x] **Hover effects for buttons**
 ```
 • Started by Juan 3-19: See projects.html and style.css for strikethrough animation.
 ```
-- [ ] Esp the focus on 4 corner menus
+- [ ] **Esp the focus on 4 corner menus**
 
-- [ ] The 4 corners must move into the top navbar
+- [ ] **The 4 corners must move into the top navbar**
 
-- [ ] event schedule on the bottom of home page
+- [ ] **event schedule on the bottom of home page**
 
-- [x] Disable people and projects page for now
+- [x] **Disable people and projects page for now**
 
-- [ ] Add 6E 16th St as per wireframe on home page
+- [ ] **Add 6E 16th St as per wireframe on home page**
 
-- [x] Change fonts to what Miguel shared
+- [x] **Change fonts to what Miguel shared**
 ```
 • Done Juan 3-20: Updated fonts see styles.css.
 ```
-**
+
 ## Feedback:
 - Juan 3-20: Hey all! I've started using the ReadMe doc to keep track of all the work. This should minimize meetings and we can dedicate our time to working.
   - Edit/Modify this document as you think best, and make any updates you think are important.
