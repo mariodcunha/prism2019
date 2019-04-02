@@ -7,24 +7,24 @@
 
 @font-face 
 {
-  font-family: SharpGrotesk15-Book;
-  src: url("fonts/SharpGrotesk15-Book.ttf"), format('truetype');
+  font-family: 'SharpGrotesk15-Book';
+  src: url("SharpGrotesk15-Book.ttf") format('truetype');
 /*  font-weight: book;
   font-style: book;*/
 }
 
 @font-face 
 {
-  font-family: SharpGrotesk15-Medium;
-  src: url("fonts/SharpGrotesk15-Medium.ttf"), format('truetype');
+  font-family: 'SharpGrotesk15-Medium';
+  src: url("SharpGrotesk15-Medium.ttf") format('truetype');
 /*  font-weight: medium;
   font-style: medium;*/
 }
 
 @font-face 
 {
-  font-family: SharpGrotesk15-SemiBold;
-  src: url("fonts/SharpGrotesk15-SemiBold.ttf"), format('truetype');
+  font-family: 'SharpGrotesk15-SemiBold';
+  src: url("SharpGrotesk15-SemiBold.ttf") format('truetype');
 /*  font-weight: semibold;
   font-style: semibold;*/
 }
@@ -33,27 +33,27 @@
 
 @font-face 
 {
-  font-family: SharpGrotesk20-Book;
-  src: url("fonts/SharpGrotesk20-Book.ttf"), format('truetype');
+  font-family: 'SharpGrotesk20-Book';
+  src: url("SharpGrotesk20-Book.ttf") format('truetype');
 /*  font-weight: book;
-  font-style: book;
-*/}
+  font-style: book;*/
+}
 
 @font-face 
 {
-  font-family: SharpGrotesk20-Medium;
-  src: url("SharpGrotesk20-Medium.ttf"), format('truetype');
+  font-family: 'SharpGrotesk20-Medium';
+  src: url("SharpGrotesk20-Medium.ttf") format('truetype');
 /*  font-weight: medium;
-  font-style: medium;
-*/}
+  font-style: medium;*/
+}
 
 @font-face 
 {
-  font-family: SharpGrotesk20-SemiBold;
-  src: url("/fonts/SharpGrotesk20-SemiBold.ttf"), format('truetype');
+  font-family: 'SharpGrotesk20-SemiBold';
+  src: url("SharpGrotesk20-SemiBold.ttf") format('truetype');
 /*  font-weight: semibold;
-  font-style: semibold;
-*/}
+  font-style: semibold;*/
+}
 
 
 
@@ -67,7 +67,7 @@
 
   * 
   {
-   font-family: SharpGrotesk20-Medium;
+   font-family: 'SharpGrotesk20-Medium';
    margin: 0;
    padding: 0;
    border: 0;
@@ -85,6 +85,7 @@
 
  body 
  {
+  font-family: 'SharpGrotesk20-Medium';
    line-height: 1;
    /*background-color:#FFF;*/
    background-color:#000;
@@ -329,18 +330,20 @@ body
 
   .mainEventDate
   {
+    font-family: 'SharpGrotesk20-Book';
     color:#000;
     font-size:13px;
     letter-spacing: 0.08em;
-    margin-top:6px; 
+    margin-top:11px; 
     float: left;
   }
 
 
   #thesisShowTitle
   {
+    font-family: 'SharpGrotesk20-Book';
     text-transform: uppercase;
-    letter-spacing: 9px;
+    letter-spacing: 9.5px;
     position: absolute;
     /*display:inline-block;*/
     top:19vh;
@@ -354,7 +357,7 @@ body
   #mfadtTitle
   {
     
-
+    font-family: 'SharpGrotesk20-Book';
     /*letter-spacing: 9px;*/
     position: absolute;
     /*display:inline-block;*/
@@ -364,7 +367,7 @@ body
     margin-right:10%;
     /*width:25%;*/
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24.5px;
   }
 
 /*  #byLine{
