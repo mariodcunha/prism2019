@@ -4,62 +4,72 @@
   ------------------*/
 
 
-@font-face 
-{
-  font-family: "Nueue-Regular";
-  src: url("fonts/Neue-Regular.otf") format("opentype");
-}
 
 @font-face 
 {
-  font-family: "Nueue-Bold";
-  src: url("fonts/Neue-Bold.otf")  format("opentype");            
-}
-
-@font-face 
-{
-  font-family: "Nueue-Wide";
-  src: url("fonts/NeueDisplay-Wide.otf")  format("opentype");           
-}
-
-@font-face 
-{
-  font-family: "Nueue-Black";
-  src: url("fonts/NeueDisplay-Black.otf")  format("opentype");            
-}
-
-
-/*-----------------
-	RESET EVERYTHING
-  ------------------*/
-
-@font-face {
-  font-family: SharpGrotesk20;
-  src: url("/fonts/SharpGrotesk20-Book.ttf"), format('truetype');
+  font-family: SharpGrotesk15-Book;
+  src: url("fonts/SharpGrotesk15-Book.ttf"), format('truetype');
   font-weight: book;
   font-style: book;
 }
 
-@font-face {
-  font-family: SharpGrotesk20;
-  src: url("/fonts/SharpGrotesk20-Medium.ttf"), format('truetype');
+@font-face 
+{
+  font-family: SharpGrotesk15-Medium;
+  src: url("fonts/SharpGrotesk15-Medium.ttf"), format('truetype');
   font-weight: medium;
   font-style: medium;
 }
 
-@font-face {
-  font-family: SharpGrotesk20;
+@font-face 
+{
+  font-family: SharpGrotesk15-SemiBold;
+  src: url("fonts/SharpGrotesk15-SemiBold.ttf"), format('truetype');
+  font-weight: semibold;
+  font-style: semibold;
+}
+
+
+
+@font-face 
+{
+  font-family: SharpGrotesk20-Book;
+  src: url("fonts/SharpGrotesk20-Book.ttf"), format('truetype');
+  font-weight: book;
+  font-style: book;
+}
+
+@font-face 
+{
+  font-family: SharpGrotesk20-Medium;
+  src: url("fonts/SharpGrotesk20-Medium.ttf"), format('truetype');
+  font-weight: medium;
+  font-style: medium;
+}
+
+@font-face 
+{
+  font-family: SharpGrotesk20-SemiBold;
   src: url("/fonts/SharpGrotesk20-SemiBold.ttf"), format('truetype');
   font-weight: semibold;
   font-style: semibold;
 }
+
+
+
+
+
+
+
 
 #container
 {
   position: absolute;
 }
 
-  * {
+  * 
+  {
+   /*font-family: 'SharpGrotesk20';*/
    margin: 0;
    padding: 0;
    border: 0;
@@ -127,15 +137,8 @@ hr {
   Basics
   ------------------*/
 
-
-
-
-  * {
-    font-family: 'SharpGrotesk20', sans-serif;
-    /* border: 1px solid; */
-    /*box-sizing: inherit ;*/
-  }
-  body{
+body
+  {
     margin: 0;
   }
 .page{
@@ -352,6 +355,8 @@ hr {
 
   #mfadtTitle
   {
+    font-family: "SharpGrotesk20-Medium";
+
     /*letter-spacing: 9px;*/
     position: absolute;
     /*display:inline-block;*/
@@ -411,7 +416,6 @@ hr {
     -ms-user-select:none;
     user-select:none;
     cursor:default;
-    font-family: 'Gotham' ;
     color: #2A3132;
   }
   .blink {
@@ -1106,7 +1110,6 @@ STUDENTS GRID
     font-size: 5em;
     line-height: 1em;
     margin: 0;
-    font-family: "FreeUniversalBold", sans-serif;
     letter-spacing: -3px;
     margin-bottom: 40px;
 }
