@@ -1,3 +1,34 @@
+
+/*-----------------
+  Fonts added by Mario from Miguel - Testing for now
+  ------------------*/
+
+
+@font-face 
+{
+  font-family: "Nueue-Regular";
+  src: url("fonts/Neue-Regular.otf") format("opentype");
+}
+
+@font-face 
+{
+  font-family: "Nueue-Bold";
+  src: url("fonts/Neue-Bold.otf")  format("opentype");            
+}
+
+@font-face 
+{
+  font-family: "Nueue-Wide";
+  src: url("fonts/NeueDisplay-Wide.otf")  format("opentype");           
+}
+
+@font-face 
+{
+  font-family: "Nueue-Black";
+  src: url("fonts/NeueDisplay-Black.otf")  format("opentype");            
+}
+
+
 /*-----------------
 	RESET EVERYTHING
   ------------------*/
@@ -1001,9 +1032,9 @@ STUDENTS GRID
     background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     */
     /*background: -moz-linear-gradient(-45deg, #000 0%, #539DFD 18%, #929BEF 56%, #FFF 100%);*/
-    background: -webkit-linear-gradient(-45deg, #000 0%, #000 18%, #AAA 56%, #FFF 100%);
+    background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     /*background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);*/
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);*/
 }
 
 .page-credits,
