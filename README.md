@@ -34,6 +34,8 @@
   - Edit/Modify this document as you think best, and make any updates you think are important.
   - The link below is documentation on how to use the syntax.
 - Juan 3-20: Website looking great for initial launch. I really like the 3D cubes on homepage, I think we can iterate on it. Would like to add some more color, but we can discuss.
+- Mario 4-2: Yes. I'm open to any iterations to the cubes. Those are just something I threw in for starters. I'm working on making them triangular, and I did it! But, the problem is that when I rotate them, each face rotates, skewing the entire shape to be ugly. The whole shape must rotate from the center as one object, which isnt happening. But open to any other iteration. More color too!
+
 
 ## Notes:
 
