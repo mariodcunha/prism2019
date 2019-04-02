@@ -336,6 +336,8 @@ body
     letter-spacing: 0.08em;
     margin-top:11px; 
     float: left;
+    text-align: left;
+    line-height: 25px;
   }
 
 

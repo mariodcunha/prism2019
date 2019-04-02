@@ -70,9 +70,9 @@ function setup()
     {
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
-        boxPositionsX[i] = randomInt(-w/4,w/2);
-        boxPositionsY[i] = randomInt(-w/4,w/3);
-        boxPositionsZ[i] = randomInt(-w/8,w/8);
+        boxPositionsX[i] = randomInt(-w/8,w/3);
+        boxPositionsY[i] = randomInt(-h/4,h/3);
+        boxPositionsZ[i] = randomInt(0,0);
     }
 
 
@@ -166,7 +166,7 @@ function draw()
     push();
     angleMode(DEGREES);
     rotateY(5);
-    box(w/3, w/20, w/8);
+    // box(w/3, w/20, w/8);
     pop();
 
     theta = theta + (0.1);
