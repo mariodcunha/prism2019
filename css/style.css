@@ -9,24 +9,24 @@
 {
   font-family: SharpGrotesk15-Book;
   src: url("fonts/SharpGrotesk15-Book.ttf"), format('truetype');
-  font-weight: book;
-  font-style: book;
+/*  font-weight: book;
+  font-style: book;*/
 }
 
 @font-face 
 {
   font-family: SharpGrotesk15-Medium;
   src: url("fonts/SharpGrotesk15-Medium.ttf"), format('truetype');
-  font-weight: medium;
-  font-style: medium;
+/*  font-weight: medium;
+  font-style: medium;*/
 }
 
 @font-face 
 {
   font-family: SharpGrotesk15-SemiBold;
   src: url("fonts/SharpGrotesk15-SemiBold.ttf"), format('truetype');
-  font-weight: semibold;
-  font-style: semibold;
+/*  font-weight: semibold;
+  font-style: semibold;*/
 }
 
 
@@ -35,27 +35,25 @@
 {
   font-family: SharpGrotesk20-Book;
   src: url("fonts/SharpGrotesk20-Book.ttf"), format('truetype');
-  font-weight: book;
+/*  font-weight: book;
   font-style: book;
-}
+*/}
 
 @font-face 
 {
   font-family: SharpGrotesk20-Medium;
-  src: url("fonts/SharpGrotesk20-Medium.ttf"), format('truetype');
-  font-weight: medium;
+  src: url("SharpGrotesk20-Medium.ttf"), format('truetype');
+/*  font-weight: medium;
   font-style: medium;
-}
+*/}
 
 @font-face 
 {
   font-family: SharpGrotesk20-SemiBold;
   src: url("/fonts/SharpGrotesk20-SemiBold.ttf"), format('truetype');
-  font-weight: semibold;
+/*  font-weight: semibold;
   font-style: semibold;
-}
-
-
+*/}
 
 
 
@@ -69,7 +67,7 @@
 
   * 
   {
-   /*font-family: 'SharpGrotesk20';*/
+   font-family: SharpGrotesk20-Medium;
    margin: 0;
    padding: 0;
    border: 0;
@@ -355,7 +353,7 @@ body
 
   #mfadtTitle
   {
-    font-family: "SharpGrotesk20-Medium";
+    
 
     /*letter-spacing: 9px;*/
     position: absolute;
