@@ -63,6 +63,7 @@
 #container
 {
   position: absolute;
+  z-index: -999;
 }
 
   * 
@@ -303,17 +304,6 @@ body
     z-index:-99;
   }
 
-  #mainLogo 
-  {
-    position: absolute;
-    display:inline-block;
-    top:23vh;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    width:25%;
-  }
-
   @media(max-width:600px) {
     #mainLogo {width:100%; margin:0;}
 
@@ -341,19 +331,6 @@ body
   }
 
 
-  #thesisShowTitle
-  {
-    font-family: 'SharpGrotesk20-Book';
-    text-transform: uppercase;
-    letter-spacing: 9.5px;
-    position: absolute;
-    /*display:inline-block;*/
-    top:19vh;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    /*width:25%;*/
-  }
 
 
   #mfadtTitle
@@ -371,6 +348,51 @@ body
     font-weight: bold;
     font-size: 24.5px;
   }
+
+
+
+  #thesisShowTitle
+  {
+    font-family: 'SharpGrotesk20-Book';
+    text-transform: uppercase;
+    letter-spacing: 9.5px;
+    position: absolute;
+    /*display:inline-block;*/
+    top:18vh;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    /*width:25%;*/
+  }
+
+
+
+  #mainLogo 
+  {
+    position: absolute;
+    display:inline-block;
+    top:22vh;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    width:25%;
+  }
+
+
+  #location
+  {
+    font-family: 'SharpGrotesk20-Book';
+    /*text-transform: uppercase;*/
+    letter-spacing: 2.5px;
+    position: absolute;
+    /*display:inline-block;*/
+    top:54vh;
+    left:1.5vw;
+    margin-left: 10%;
+    margin-right:10%;
+    /*width:25%;*/
+  }
+
 
 /*  #byLine{
     position:absolute;
@@ -784,7 +806,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
     margin: auto;
     max-width: 100%;
     top: 65%;
-    /*left: 0vw;*/
+    /*left: 33vw;*/
     margin-left: 10%;
     /*margin-right: 10%;*/
   }
@@ -1096,6 +1118,7 @@ STUDENTS GRID
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     /*background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);*/
     /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);*/
+    z-index: 100;
 }
 
 .page-credits,

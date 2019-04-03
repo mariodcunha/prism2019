@@ -71,8 +71,8 @@ function setup()
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
         boxPositionsX[i] = randomInt(-w/8,w/3);
-        boxPositionsY[i] = randomInt(-h/4,h/3);
-        boxPositionsZ[i] = randomInt(0,0);
+        boxPositionsY[i] = randomInt(-h/3,0);
+        boxPositionsZ[i] = randomInt(-w/4,w/4);
     }
 
 
@@ -89,6 +89,7 @@ function checkCss()
         $("#mainLogo").attr("src","assets/mainLogoW.png");
         $('#mfadtTitle').css('color','#FFF');
         $('#thesisShowTitle').css('color','#FFF');
+        $('#location').css('color','#FFF');
         $('.mainEventTitle').css('color','#FFF');
         $('.mainEventDate').css('color','#FFF');
         $("#cornerLogo").attr("src","assets/cornerLogoW.png");
@@ -110,6 +111,7 @@ function checkCss()
         $("#mainLogo").attr("src","assets/mainLogoB.png");
         $('#mfadtTitle').css('color','#000');
         $('#thesisShowTitle').css('color','#000');
+        $('#location').css('color','#000');
         $('.mainEventTitle').css('color','#000');
         $('.mainEventDate').css('color','#000');
         $("#cornerLogo").attr("src","assets/cornerLogoB.png");
