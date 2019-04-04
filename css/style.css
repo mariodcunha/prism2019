@@ -1143,16 +1143,15 @@ STUDENTS GRID
   font-size: 12px;
   font-family: 'SharpGrotesk20-Book';
   text-align: center;
+  padding: 5px;
 }
 
 .foot-item:hover
 {
-    text-shadow: 4px 4px 3px #fff;
+    /*text-shadow: 4px 4px 3px #fff;*/
+    font-size: 13px;
     transition: 0.3s;
 }
-
-
-
 
 
 
@@ -1167,6 +1166,29 @@ STUDENTS GRID
 @media (max-width: 600px){
   .foot-item--width2 { width: 200px; }
 }
+
+.social
+{
+    float: right;
+    padding-bottom: 3vw;
+    width: 50px;
+}
+
+.socialButtons
+{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.socialButtons:hover
+{
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    /*filter: invert(100%);*/
+}
+
 
 /*-- acknowledgements page style --*/
 #acknowledgements-main {

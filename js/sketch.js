@@ -102,7 +102,8 @@ function checkCss()
         $('label').css('color','#FFF');
         $('#bottom-content2 a').css('color','#FFF');
         
-        $('.social_footer').css('filter', 'invert(100%)');
+        $('.socialButtons').css('filter', 'invert(100%)');
+        // $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');
         
     }
     else
@@ -124,7 +125,8 @@ function checkCss()
         $('.nav_corner a').css('color','#000');
         $('label').css('color','#000');
         $('#bottom-content2 a').css('color','#000');
-        // $('.social_footer').css('filter', 'invert(100%)');
+
+        // $('.socialButtons:hover').css('background-color', '#fff');
     }
 }
 
