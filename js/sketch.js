@@ -83,7 +83,7 @@ function checkCss()
 {
     if(bgcolor==bgcolorArray[0]) // if BLACK
     {
-        $('body').css('background-color','rgba(20,20,20,255)');
+        $('body').css('background-color','rgba(22,22,22,255)');
         $('.main-content h4').css('color','#999');
 
         $("#mainLogo").attr("src","assets/mainLogoW.png");

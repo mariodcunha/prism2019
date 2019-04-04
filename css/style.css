@@ -1532,3 +1532,126 @@ iframe{
   /*width:100% ;*/
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
+
+  #mfadtTitle
+  {
+    font-family: 'SharpGrotesk20-Book';
+    /*letter-spacing: 9px;*/
+    position: absolute;
+    /*display:inline-block;*/
+    top:10vw;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    /*width:25%;*/
+    font-weight: bold;
+    font-size: 5.2vw;
+    width:77vw;
+    text-align: left;
+  }
+
+  #mfadtTitle a
+  {
+      color: #fff;
+      text-decoration: none;
+  }
+
+
+
+  #thesisShowTitle
+  {
+    font-family: 'SharpGrotesk20-Book';
+    text-transform: uppercase;
+    letter-spacing: 2.3vw;
+    position: absolute;
+    /*display:inline-block;*/
+    top:17vw;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size: 3vw;
+    width:77vw;
+    text-align: left;
+  }
+
+
+
+  #mainLogo 
+  {
+    position: absolute;
+    display:inline-block;
+    top:22vw;
+    left:0vw;
+    margin-left: 10%;
+    margin-right:10%;
+    width:77vw;
+  }
+
+
+  #location
+  {
+    font-family: 'SharpGrotesk20-Book';
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.7vw;
+    position: absolute;
+    /*display:inline-block;*/
+    top:70vw;
+    left:5vw;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size: 3vw;
+    width:77vw;
+    text-align: left;
+
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
