@@ -1578,7 +1578,7 @@ iframe{
     /*letter-spacing: 9px;*/
     position: absolute;
     /*display:inline-block;*/
-    top:10vw;
+    top:5vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1604,7 +1604,7 @@ iframe{
     letter-spacing: 2.3vw;
     position: absolute;
     /*display:inline-block;*/
-    top:17vw;
+    top:13vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1619,7 +1619,7 @@ iframe{
   {
     position: absolute;
     display:inline-block;
-    top:22vw;
+    top:18vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1634,7 +1634,7 @@ iframe{
     letter-spacing: 0.75vw;
     position: absolute;
     /*display:inline-block;*/
-    top:70vw;
+    top:65vw;
     left:5vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1647,7 +1647,7 @@ iframe{
 
   #grid-item--height-events 
   {
-    top: 85vw;
+    top: 80vw;
   }
 
   .mainEventTitle
