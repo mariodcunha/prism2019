@@ -1631,7 +1631,7 @@ iframe{
   {
     font-family: 'SharpGrotesk20-Book';
     /*text-transform: uppercase;*/
-    letter-spacing: 0.7vw;
+    letter-spacing: 0.75vw;
     position: absolute;
     /*display:inline-block;*/
     top:70vw;
@@ -1645,8 +1645,22 @@ iframe{
   }
 
 
+  #grid-item--height-events 
+  {
+    top: 85vw;
+  }
 
+  .mainEventTitle
+  {
+    font-size: 3.7vw;
+  }
 
+  .mainEventDate
+  {
+    line-height: 1vw;
+    font-size: 3vw;
+    padding-bottom: 2vw;
+  }
 
 
 
