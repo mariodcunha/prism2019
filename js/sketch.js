@@ -17,7 +17,7 @@ var x1, y1, x2, y2, x3, y3;
 
 var theta=0, rotateSpeed=0.1;
 
-var bgcolorArray = [20, 255];
+var bgcolorArray = [22, 255];
 var myFont, shadeOpacity=15;
 
 var boxSizes = [];
@@ -72,7 +72,7 @@ function setup()
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
         boxPositionsX[i] = randomInt(-w/8,w/3);
         boxPositionsY[i] = randomInt(-h/3,0);
-        boxPositionsZ[i] = randomInt(-w/4,w/4);
+        boxPositionsZ[i] = randomInt(-w/4,w/6);
     }
 
 
@@ -87,7 +87,7 @@ function checkCss()
         $('.main-content h4').css('color','#999');
 
         $("#mainLogo").attr("src","assets/mainLogoW.png");
-        $('#mfadtTitle').css('color','#FFF');
+        $('#mfadtTitle a').css('color','#FFF');
         $('#thesisShowTitle').css('color','#FFF');
         $('#location').css('color','#FFF');
         $('.mainEventTitle').css('color','#FFF');
@@ -109,7 +109,7 @@ function checkCss()
         $('.main-content h4').css('color','#DDD');
 
         $("#mainLogo").attr("src","assets/mainLogoB.png");
-        $('#mfadtTitle').css('color','#000');
+        $('#mfadtTitle a').css('color','#000');
         $('#thesisShowTitle').css('color','#000');
         $('#location').css('color','#000');
         $('.mainEventTitle').css('color','#000');

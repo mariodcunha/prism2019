@@ -312,6 +312,7 @@ body
 
   .mainEventTitle
   {
+    font-family: 'SharpGrotesk20-Book';
     color:#000;
     font-weight:bold;
     letter-spacing: 0.08em;
@@ -321,6 +322,7 @@ body
   .mainEventDate
   {
     font-family: 'SharpGrotesk20-Book';
+    font-weight: normal;
     color:#000;
     font-size:13px;
     letter-spacing: 0.08em;
@@ -329,8 +331,6 @@ body
     text-align: left;
     line-height: 25px;
   }
-
-
 
 
   #mfadtTitle
@@ -349,6 +349,34 @@ body
     font-size: 24.5px;
   }
 
+  #mfadtTitle a
+  {
+      color: #fff;
+      text-decoration: none;
+  }
+
+
+
+  #mfadtTitle:after
+  {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    filter: blur(2px); 
+    width: 0;
+  }
+
+  #mfadtTitle:hover:after
+  {
+      width: 100%; 
+      left: 0; 
+  }
+  
 
 
   #thesisShowTitle
@@ -1080,6 +1108,8 @@ STUDENTS GRID
   padding-left: 30px ;
   line-height: 40px;
   /* float: left; */
+  font-size: 12px;
+  font-family: 'SharpGrotesk20-Book';
 }
 
 .foot-item--width2 { width: 200px; }
@@ -1109,7 +1139,7 @@ STUDENTS GRID
     clear: both;
     height: 1px;
     background: #1a006d;
-    width:77%; margin: 0 auto; margin-top:30px;
+    width:80%; margin: 0 auto; margin-top:30px;
     /*background: -moz-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     background: -webkit-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
     background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
