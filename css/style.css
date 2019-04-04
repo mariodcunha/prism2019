@@ -1041,6 +1041,13 @@ STUDENTS GRID
   float: right;
 }
 
+  .footing2
+  {
+    width: 220px;
+    font-family: 'SharpGrotesk20-Book';
+    /*padding-left: 5px;*/
+  }
+
 
 .footing2 a
   {
@@ -1051,7 +1058,7 @@ STUDENTS GRID
 
   .footing2 a:after
   {
-    bottom: 0;
+    /*bottom: 0;
     content: "";
     display: block;
     height: 2px;
@@ -1059,13 +1066,15 @@ STUDENTS GRID
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     filter: blur(1px); 
-    width: 0;
+    width: 0;*/
+        text-shadow: 2px 2px 8px red;
+
   }
 
   .footing2 a:hover:after
   {
       width: 100%; 
-      left: 0; 
+      text-align: center;
   }
 
 
@@ -1077,7 +1086,7 @@ STUDENTS GRID
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
-}*/
+}
 
 
 /*.color2:hover 
@@ -1124,17 +1133,27 @@ STUDENTS GRID
 /* ---- footer-item ---- */
 .foot-item 
 {
-  width: 160px;
+  /*width: 200px;*/
   /*height: 120px;*/
   display:inline-block;
 /*  padding-right: 30px;
   padding-left: 30px ;*/
-  line-height: 40px;
+  line-height: 20px;
   /* float: left; */
   font-size: 12px;
   font-family: 'SharpGrotesk20-Book';
   text-align: center;
 }
+
+.foot-item:hover
+{
+    text-shadow: 4px 4px 3px #fff;
+    transition: 0.3s;
+}
+
+
+
+
 
 
 .foot-item--width2 { width: 200px; }

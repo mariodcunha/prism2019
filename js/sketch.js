@@ -93,6 +93,8 @@ function checkCss()
         $('.mainEventTitle').css('color','#FFF');
         $('.mainEventDate').css('color','#FFF');
         $("#cornerLogo").attr("src","assets/cornerLogoW.png");
+
+        $('.foot-item:hover').css('text-shadow','4px 4px 3px #fff');
         
         // $('#byLine').css('color','#FFF');
         $('.nav-bar li a').css('color','#FFF');
@@ -115,6 +117,8 @@ function checkCss()
         $('.mainEventTitle').css('color','#000');
         $('.mainEventDate').css('color','#000');
         $("#cornerLogo").attr("src","assets/cornerLogoB.png");
+
+        $('.foot-item:hover').css('text-shadow','4px 4px 3px #000');
         
         $('.nav-bar li a').css('color','#000');
         $('.nav_corner a').css('color','#000');
