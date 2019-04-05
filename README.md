@@ -29,6 +29,25 @@
 
 - [ ] **Test website on Opera browser**
 
+- [ ] **Do something about the 2019 year - removed for now**
+
+- [ ] **Change the 'prism' type logo, along with the fixed prism from the poster, id='mainLogo'**
+
+- [ ] **Fix some prisms, boxPositionsX, Y and Z**
+
+- [ ] **Parallax - Miguel**
+
+- [ ] **Anti-Aliasing - Miguel**
+
+- [ ] **About Page - Juan**
+
+- [ ] **Acknowledgements - Juan**
+
+- [ ] **Transparency of Prisms - Mario**
+
+- [ ] **Triangular Prisms - Mario**
+
+
 ## Feedback:
 - Juan 3-20: Hey all! I've started using the ReadMe doc to keep track of all the work. This should minimize meetings and we can dedicate our time to working.
   - Edit/Modify this document as you think best, and make any updates you think are important.
