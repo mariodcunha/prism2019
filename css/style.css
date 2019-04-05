@@ -340,13 +340,15 @@ body
     /*letter-spacing: 9px;*/
     position: absolute;
     /*display:inline-block;*/
-    top:13vh;
+    top:4.5vh;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
     /*width:25%;*/
     font-weight: bold;
     font-size: 24.5px;
+    text-align: left;
+    line-height: 30px;
   }
 
   #mfadtTitle a
@@ -367,7 +369,7 @@ body
     position: absolute;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(2px); 
+    filter: blur(1px); 
     width: 0;
   }
 
@@ -411,7 +413,7 @@ body
   {
     font-family: 'SharpGrotesk20-Book';
     /*text-transform: uppercase;*/
-    letter-spacing: 2.5px;
+    
     position: absolute;
     /*display:inline-block;*/
     top:54vh;
@@ -419,6 +421,34 @@ body
     margin-left: 10%;
     margin-right:10%;
     /*width:25%;*/
+  }
+
+  #location a
+  {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 5.2px;
+  }
+
+  #location:after
+  {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    filter: blur(1px); 
+    width: 0;
+    /*margin-bottom: 5px;*/
+  }
+
+  #location:hover:after
+  {
+      width: 100%; 
+      left: 0; 
   }
 
 
@@ -1043,7 +1073,7 @@ STUDENTS GRID
 
   .footing2
   {
-    width: 220px;
+    width: 150px;
     font-family: 'SharpGrotesk20-Book';
     /*padding-left: 5px;*/
   }
@@ -1058,6 +1088,7 @@ STUDENTS GRID
 
   .footing2 a:after
   {
+    /*text-shadow: 2px 2px 8px red;*/
     /*bottom: 0;
     content: "";
     display: block;
@@ -1067,8 +1098,6 @@ STUDENTS GRID
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     filter: blur(1px); 
     width: 0;*/
-        text-shadow: 2px 2px 8px red;
-
   }
 
   .footing2 a:hover:after
@@ -1133,17 +1162,15 @@ STUDENTS GRID
 /* ---- footer-item ---- */
 .foot-item 
 {
-  /*width: 200px;*/
-  /*height: 120px;*/
   display:inline-block;
-/*  padding-right: 30px;
-  padding-left: 30px ;*/
   line-height: 20px;
   /* float: left; */
   font-size: 12px;
   font-family: 'SharpGrotesk20-Book';
   text-align: center;
   padding: 5px;
+  vertical-align: middle;
+  width: 150px;
 }
 
 .foot-item:hover
@@ -1153,15 +1180,16 @@ STUDENTS GRID
     transition: 0.3s;
 }
 
+/*.foot-item--width2 { width: 200px; }*/
 
-
-.foot-item--width2 { width: 200px; }
-.foot-item--width3 { width: 480px; }
+/*.foot-item--width3 { width: 480px; }
 .foot-item--width4 { width: 640px; }
 
 .foot-item--height2 { height: 240px; }
 .foot-item--height3 { height: 260px; }
 .foot-item--height4 { height: 360px; }
+*/
+
 
 @media (max-width: 600px){
   .foot-item--width2 { width: 200px; }
@@ -1663,7 +1691,11 @@ iframe{
     font-size: 3vw;
     width:77vw;
     text-align: left;
+  }
 
+  #location a
+  {
+    text-decoration: none;
   }
 
 
