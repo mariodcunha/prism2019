@@ -1,6 +1,4 @@
 
-//Dimensions 
-
 var pos_x = window.innerWidth/2, pos_y=window.innerHeight/2;
 var mx, my, w, h;
 
@@ -66,8 +64,6 @@ function setup()
 
     checkCss();    
 
-    // boxCount=5;
-
     for (let i=0; i<=boxCount; i++) 
     {
         boxSizes[i] = randomInt(w/8, w/4);
@@ -77,16 +73,17 @@ function setup()
         boxPositionsZ[i] = randomInt(-w/4,w/16);
     }
 
-    // console.log(boxPositionsX);
-    // console.log(boxPositionsY);
-    // console.log(boxPositionsZ);
+// console.log(boxPositionsX);      
+// console.log(boxPositionsY);      
+// console.log(boxPositionsZ);      
+// boxPositionsX[0]=431; boxPositionsY[0]=-62; boxPositionsZ[0]=-104;       
+// boxPositionsX[1]=75; boxPositionsY[1]=-198; boxPositionsZ[1]=-71;        
+// boxPositionsX[2]=529; boxPositionsY[2]=-66; boxPositionsZ[2]=-232;       
+// boxPositionsX[3]=492; boxPositionsY[3]=152; boxPositionsZ[3]=86;     
+// boxPositionsX[4]=0; boxPositionsY[4]=0; boxPositionsZ[4]=0;      
+// boxPositionsX[5]=0; boxPositionsY[5]=0; boxPositionsZ[5]=0;
 
-    // boxPositionsX[0]=431; boxPositionsY[0]=-62; boxPositionsZ[0]=-104;
-    // boxPositionsX[1]=75; boxPositionsY[1]=-198; boxPositionsZ[1]=-71;
-    // boxPositionsX[2]=529; boxPositionsY[2]=-66; boxPositionsZ[2]=-232;
-    // boxPositionsX[3]=492; boxPositionsY[3]=152; boxPositionsZ[3]=86;
-    // boxPositionsX[4]=0; boxPositionsY[4]=0; boxPositionsZ[4]=0;
-    // boxPositionsX[5]=0; boxPositionsY[5]=0; boxPositionsZ[5]=0;
+
 
 }
 
@@ -95,7 +92,7 @@ function checkCss()
 {
     if(bgcolor==bgcolorArray[0]) // if BLACK
     {
-        $('body').css('background-color','rgba(22,22,22,255)');
+        $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#999');
 
         $("#mainLogo").attr("src","assets/mainLogoW.png");
@@ -116,18 +113,20 @@ function checkCss()
         $('#bottom-content2 a').css('color','#FFF');
         
         $('.socialButtons').css('filter', 'invert(100%)');
-        // $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');
-
+        $('.social_footer').css('filter', 'invert(100%)');
+        $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');    
     }
+
     else
     {
+
         $('body').css('background-color','white');
         $('.main-content h4').css('color','#DDD');
 
         $("#mainLogo").attr("src","assets/mainLogoB.png");
         $('#mfadtTitle a').css('color','#000');
         $('#thesisShowTitle').css('color','#000');
-        $('#location').css('color','#000');
+        $('#location').css('color','#000'); 
         $('#location a').css('color','#000');
         $('.mainEventTitle').css('color','#000');
         $('.mainEventDate').css('color','#000');
@@ -139,12 +138,16 @@ function checkCss()
         $('.nav_corner a').css('color','#000');
         $('label').css('color','#000');
         $('#bottom-content2 a').css('color','#000');
+        // $('.social_footer').css('filter', 'invert(100%)');
 
         $("#parsonsLogo").css('filter', 'invert(100%)');
+        $('.socialButtons:hover').css('background-color', '#fff');
 
-        // $('.socialButtons:hover').css('background-color', '#fff');
     }
 }
+
+
+
 
 
 
@@ -152,8 +155,10 @@ function checkCss()
 function draw() 
 {
 
-if(w>480)
+if(w>480)    
 {
+
+    console.log(w);
 
     background(bgcolor);
 
@@ -193,13 +198,14 @@ if(w>480)
     // push();
     // angleMode(DEGREES);
     // rotateY(5);
-    // // box(w/3, w/20, w/8);
+    // box(w/3, w/20, w/8);
     // pop();
 
     theta = theta + (0.1);
 
- }
 
+
+    }
 }
 
 
