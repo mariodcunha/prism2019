@@ -1628,7 +1628,7 @@ iframe{
     /*letter-spacing: 9px;*/
     position: absolute;
     /*display:inline-block;*/
-    top:5vw;
+    top:0vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1654,7 +1654,7 @@ iframe{
     letter-spacing: 2.3vw;
     position: absolute;
     /*display:inline-block;*/
-    top:13vw;
+    top:25vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1669,7 +1669,7 @@ iframe{
   {
     position: absolute;
     display:inline-block;
-    top:18vw;
+    top:30vw;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
@@ -1681,15 +1681,15 @@ iframe{
   {
     font-family: 'SharpGrotesk20-Book';
     /*text-transform: uppercase;*/
-    letter-spacing: 0.75vw;
+    letter-spacing: 2vw;
     position: absolute;
     /*display:inline-block;*/
-    top:65vw;
-    left:5vw;
+    top:77vw;
+    left:4vw;
     margin-left: 10%;
     margin-right:10%;
     font-size: 3vw;
-    width:77vw;
+    width:90vw;
     text-align: left;
   }
 
@@ -1701,7 +1701,7 @@ iframe{
 
   #grid-item--height-events 
   {
-    top: 80vw;
+    top: 90vw;
   }
 
   .mainEventTitle
@@ -1716,6 +1716,43 @@ iframe{
     padding-bottom: 2vw;
   }
 
+
+  .foot-item 
+  {
+  /*display:inline-block;*/
+  line-height: 20px;
+  /* float: left; */
+  font-size: 12px;
+  font-family: 'SharpGrotesk20-Book';
+  text-align: left;
+  padding: 5px;
+  vertical-align: middle;
+  width: 150px;
+
+}
+
+
+.social
+{
+    /*float: left;*/
+    padding-bottom: 3vw;
+    width: 50px;
+}
+
+.socialButtons
+{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.socialButtons:hover
+{
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    /*filter: invert(100%);*/
+}
 
 
 }

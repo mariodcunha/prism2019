@@ -25,7 +25,7 @@ var boxSpeeds = [];
 var boxPositionsX = [];
 var boxPositionsY = [];
 var boxPositionsZ = [];
-var boxCount=1;
+var boxCount=5;
 
 
 
@@ -42,7 +42,6 @@ function preload()
 function setup() 
 {
     var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-
     canvas.parent('container'); //within the html
 
     w = windowWidth;
@@ -67,7 +66,7 @@ function setup()
 
     checkCss();    
 
-    boxCount=5;
+    // boxCount=5;
 
     for (let i=0; i<=boxCount; i++) 
     {
@@ -153,6 +152,9 @@ function checkCss()
 function draw() 
 {
 
+if(w>480)
+{
+
     background(bgcolor);
 
     let locX = mouseX - width / 2;
@@ -187,14 +189,16 @@ function draw()
     }
 
     // drawCuboid(w/4, 0, -300, 95, 50);
-    translate(-400, 50, 100);
-    push();
-    angleMode(DEGREES);
-    rotateY(5);
-    // box(w/3, w/20, w/8);
-    pop();
+    // translate(-400, 50, 100);
+    // push();
+    // angleMode(DEGREES);
+    // rotateY(5);
+    // // box(w/3, w/20, w/8);
+    // pop();
 
     theta = theta + (0.1);
+
+ }
 
 }
 
