@@ -3,9 +3,9 @@
 
 ## To Do List:
 
-- [ ] **Responsiveness adjustments**
+- [x] **Responsiveness adjustments**
 
-- [x] **Hover effects for buttons**
+- [ ] **Hover effects for buttons - We need a consistent style for Buttons vs External - Miguel/Juan**
 ```
 • Started by Juan 3-19: See projects.html and style.css for strikethrough animation.
 ```
@@ -13,19 +13,19 @@
 
 - [ ] **The 4 corners must move into the top navbar**
 
-- [ ] **event schedule on the bottom of home page**
+- [ ] **event schedule on the bottom of home page - Juan**
 ```
 • Started by Juan 3-21: @Mario, need help creating the scroll down section and the snap behavior. Developing the schedule in events.html.
 ```
 - [x] **Disable people and projects pages for now**
 
-- [ ] **Add 6E 16th St as per wireframe on home page**
+- [x] **Add 6E 16th St as per wireframe on home page**
 
 - [x] **Change fonts to what Miguel shared**
 ```
 • Done Juan 3-21: SharpGrotesk20 now available through styles.css.
 ```
-- [ ] **Change social media icons to white**
+- [x] **Change social media icons to white**
 
 - [ ] **Test website on Opera browser**
 
