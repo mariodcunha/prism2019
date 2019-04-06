@@ -95,7 +95,7 @@ function checkCss()
         $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#999');
 
-        $("#mainLogo").attr("src","assets/mainLogoW.png");
+        $("#mainLogo img").attr("src","assets/mainLogoW.png");
         $('#mfadtTitle a').css('color','#FFF');
         $('#thesisShowTitle').css('color','#FFF');
         $('#location').css('color','#FFF');
@@ -123,7 +123,7 @@ function checkCss()
         $('body').css('background-color','white');
         $('.main-content h4').css('color','#DDD');
 
-        $("#mainLogo").attr("src","assets/mainLogoB.png");
+        $("#mainLogo img").attr("src","assets/mainLogoB.png");
         $('#mfadtTitle a').css('color','#000');
         $('#thesisShowTitle').css('color','#000');
         $('#location').css('color','#000'); 
@@ -157,9 +157,6 @@ function draw()
 
 if(w>480)    
 {
-
-    console.log(w);
-
     background(bgcolor);
 
     let locX = mouseX - width / 2;
