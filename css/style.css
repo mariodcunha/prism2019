@@ -364,17 +364,21 @@ body
 
   #mfadtTitle:after
   {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     filter: blur(1px); 
-    /*width: 0;*/
+    width: 0;
   }
 
   #mfadtTitle:hover:after
   {
-/*      width: 100%; 
+      width: 340px; 
       left: 0; 
-*/  }
+  }
   
 
 
@@ -411,6 +415,7 @@ body
     padding-left: 21px;
     /*width:25%;*/
     /*width:25%;*/
+    width: 350px;
   }
 
   #location a
@@ -426,8 +431,8 @@ body
     content: "";
     display: block;
     height: 2px;
-    left: 50%;
-    position: absolute;
+    /*left: 50%;*/
+    position: relative;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     filter: blur(1px); 
@@ -437,36 +442,11 @@ body
 
   #location:hover:after
   {
-      width: 100%; 
-      left: 0; 
+      width: 335px;
+      /*left: 0; */
   }
 
 
-/*  #byLine{
-    position:absolute;
-    top:55vh;
-    color:#000;
-    letter-spacing:0.08em;
-    margin-left:30%;
-    margin-right:30%;
-    line-height: 15px;
-    text-align:center;
-  }
-*/
-
-/*  #mfadt
-  {
-    position:absolute;
-    top:47vh ;
-    margin-left:29%;
-    margin-right:29%;
-    color:#000;;
-    font-size:20px;
-    font-weight:900 ;
-    text-align:center;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }*/
 
 /*-----------------
 	Load Content (can be used for preloading in the future)
