@@ -850,13 +850,10 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   -----------------*/
   .events
   {
-    position: absolute;
-    margin: auto;
     max-width: 100%;
-    top: 65%;
-    /*left: 33vw;*/
     margin-left: 10%;
-    /*margin-right: 10%;*/
+    position: relative;
+    margin-top: 5vw;
   }
 
   @media(max-width:600px) {
@@ -951,7 +948,7 @@ STUDENTS GRID
 #banner {
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100vw;
-  height: 100vh;
+  /*height: 81vh;*/
   /*border: 15px solid orange ;*/
   position:relative ;
   z-index:10;
@@ -1677,10 +1674,11 @@ iframe{
     top:77vw;
     left:4vw;
     margin-left: 10%;
-    margin-right:10%;
+    /*margin-right:10%;*/
     font-size: 3vw;
     width:90vw;
     text-align: left;
+    padding-left: 0px;
   }
 
   #location a
