@@ -3,7 +3,7 @@
 
 ## To Do List:
 
-- [x] **Responsiveness adjustments**
+- [ ] **Responsiveness adjustments**
 
 - [ ] **Hover effects for buttons - We need a consistent style for Buttons vs External - Miguel/Juan**
 ```
