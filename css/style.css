@@ -853,7 +853,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
     max-width: 100%;
     margin-left: 10%;
     position: relative;
-    margin-top: 5vw;
+    margin-top: 4vw;
   }
 
   @media(max-width:600px) {
@@ -1058,6 +1058,24 @@ STUDENTS GRID
   float: right;
 }
 
+
+
+  #pretty_thin 
+  {
+    clear: both;
+    height: 1px;
+    margin-left: 10%;
+    width:80%; 
+    margin: 0 auto;
+    margin-top: 120px;
+    background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
+    z-index: 100;
+    filter: blur(1px);
+  }
+
+
+
+
   .footing2
   {
     width: 150px;
@@ -1216,22 +1234,7 @@ STUDENTS GRID
 }
 
 /*-- lines for sectioning off --*/
-#pretty_thin {
-    clear: both;
-    height: 1px;
-    background: #1a006d;
-    width:80%; margin: 0 auto; margin-top:30px;
-    /*background: -moz-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
-    background: -webkit-linear-gradient(-45deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
-    background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 34%, #E79FE8 47%, #fcc0b2 56%, #feeb86 100%);
-    */
-    /*background: -moz-linear-gradient(-45deg, #000 0%, #539DFD 18%, #929BEF 56%, #FFF 100%);*/
-    background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
-    /*background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);*/
-    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);*/
-    z-index: 100;
-    filter: blur(1px);
-}
+
 
 .page-credits,
 .page-events,
@@ -1684,6 +1687,40 @@ iframe{
   #location a
   {
     text-decoration: none;
+  }
+
+
+
+  .events
+  {
+    margin-left: 10%;
+    position: relative;
+    margin-top: 0vw;
+  }
+
+
+  #banner 
+  {
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100vw;
+    height: 85vh;
+    /*border: 15px solid orange ;*/
+    position:relative ;
+    z-index:10;
+  }
+
+
+  #pretty_thin 
+  {
+    clear: both;
+    height: 1px;
+    margin-left: 10%;
+    width:80%; 
+    margin-top:0px;
+    margin-bottom:20px;
+    background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
+    z-index: 100;
+    filter: blur(1px);
   }
 
 
