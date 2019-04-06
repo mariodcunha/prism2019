@@ -1742,6 +1742,16 @@ iframe{
   }
 
 
+  #footer-main 
+  {
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 20px;
+    font-size: 0.9em;
+  }
+
+
   .foot-item 
   {
   /*display:inline-block;*/
@@ -1752,7 +1762,7 @@ iframe{
   text-align: left;
   /*padding: 5px;*/
   /*vertical-align: middle;*/
-  /*width: 150px;*/
+  /*width: 200px;*/
   text-align: left;
   float: left;
 
@@ -1761,26 +1771,17 @@ iframe{
 
 .social
 {
+    margin-top: 20px;
+}
+
+#socialmedia
+{
     float: left;
-    /*padding-bottom: 3vw;*/
-    /*width: 50px;*/
-    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+
 }
 
-.socialButtons
-{
-    width: 0px;
-    height: 0px;
-    padding: 0px;
-}
-
-.socialButtons:hover
-{
-    border-radius: 5px;
-    width: 35px;
-    height: 35px;
-    /*filter: invert(100%);*/
-}
 
 
 }
