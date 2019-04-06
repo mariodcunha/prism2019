@@ -10,7 +10,7 @@ var letterSize=50, dir=1;
 var fromColor, toColor;
 var noiseCount=10;
 var mouseClick=0;
-
+ //df
 var x1, y1, x2, y2, x3, y3;
 
 var theta=0, rotateSpeed=0.1;
