@@ -415,7 +415,7 @@ hr {
   #location
   {
     font-family: 'SharpGrotesk20-Book';
-    /*position: relative;*/
+    position: relative;
     /*display:inline-block;*/
     text-align: left;
     margin-left: 10%;
