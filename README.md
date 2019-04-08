@@ -39,9 +39,9 @@
 
 - [ ] **Anti-Aliasing - Miguel**
 
-- [ ] **About Page - Juan**
+- [ ] **About Page - Iris**
 
-- [ ] **Acknowledgements - Juan**
+- [ ] **Acknowledgements - Barsha**
 
 - [ ] **Transparency of Prisms - Mario**
 
