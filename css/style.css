@@ -405,9 +405,10 @@ hr {
     display:inline-block;
     top:22vh;
     left:0vw;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     margin-right:10%;
-    width:25%;
+    width:38%;
+    z-index: 0;
   }
 
 
@@ -423,6 +424,7 @@ hr {
     /*width:25%;*/
     /*width:25%;*/
     width: 350px;
+    z-index: 10;
   }
 
   #location a
