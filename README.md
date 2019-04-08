@@ -31,7 +31,7 @@
 
 - [ ] **Do something about the 2019 year - removed for now**
 
-- [ ] **Change the 'prism' type logo, along with the fixed prism from the poster, id='mainLogo'**
+- [x] **Change the 'prism' type logo, along with the fixed prism from the poster, id='mainLogo'**
 
 - [ ] **Fix some prisms, boxPositionsX, Y and Z**
 
