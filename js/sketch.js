@@ -95,7 +95,7 @@ function checkCss()
         $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#999');
 
-        $("#mainLogo img").attr("src","assets/mainLogoW.png");
+        
         $('#mfadtTitle a').css('color','#FFF');
         $('#thesisShowTitle').css('color','#FFF');
         $('#location').css('color','#FFF');
@@ -123,7 +123,7 @@ function checkCss()
         $('body').css('background-color','white');
         $('.main-content h4').css('color','#DDD');
 
-        $("#mainLogo img").attr("src","assets/mainLogoB.png");
+        $("#mainLogo").css('filter', 'invert(100%)');
         $('#mfadtTitle a').css('color','#000');
         $('#thesisShowTitle').css('color','#000');
         $('#location').css('color','#000'); 
