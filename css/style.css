@@ -918,6 +918,10 @@ EVENT PAGE
     /*padding-right: 20%;*/
 }
 
+.schedule-container a {
+  color: white;
+}
+
 #schedule {
   position: relative;
   color:#fff;
@@ -946,6 +950,7 @@ td .schedTime {
   font-size: 10pt;
   display: block;
   margin-bottom: 10px;
+  line-height: 12pt;
 }
 
 .n-bordered{
