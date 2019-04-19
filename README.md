@@ -17,15 +17,7 @@
 ```
 • Started by Juan 3-21: @Mario, need help creating the scroll down section and the snap behavior. Developing the schedule in events.html.
 ```
-- [x] **Disable people and projects pages for now**
-
-- [x] **Add 6E 16th St as per wireframe on home page**
-
-- [x] **Change fonts to what Miguel shared**
-```
 • Done Juan 3-21: SharpGrotesk20 now available through styles.css.
-```
-- [x] **Change social media icons to white**
 
 - [ ] **Test website on Opera browser**
 
@@ -46,6 +38,12 @@
 - [ ] **Transparency of Prisms - Mario**
 
 - [ ] **Triangular Prisms - Mario**
+
+- [ ] **Project page layout**
+
+- [ ] **People page layout**
+
+- [ ] **JSON connection**
 
 
 ## Feedback:
