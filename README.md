@@ -56,6 +56,8 @@
 
 - Barsha 4-21 : I added individual page and for now put it under projects tab. I changed the css of nav bar for this page because it was conflicting with the divs below. So, the fonts of the menu here is not similar to the index and events page. Also, the margin is slightly different. I tried a lot but could not get it to match but I think we should lower the size of the navbar on all the other pages except index page. Let me know your thoughts.
 
+Should we change the background of all the page to the color on the individual pages instead of black like the events page?
+
 Yet to make it responsive.
 
 I am not sure how to call the grid images in the projects and peoples page since I think in the previous code all the images are called by js.
