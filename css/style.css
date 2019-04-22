@@ -5,7 +5,7 @@
 
 
 
-  @font-face 
+  @font-face
   {
     font-family: 'SharpGrotesk15-Book';
     src: url("SharpGrotesk15-Book.ttf") format('truetype');
@@ -13,7 +13,7 @@
 font-style: book;*/
 }
 
-@font-face 
+@font-face
 {
   font-family: 'SharpGrotesk15-Medium';
   src: url("SharpGrotesk15-Medium.ttf") format('truetype');
@@ -21,7 +21,7 @@ font-style: book;*/
 font-style: medium;*/
 }
 
-@font-face 
+@font-face
 {
   font-family: 'SharpGrotesk15-SemiBold';
   src: url("SharpGrotesk15-SemiBold.ttf") format('truetype');
@@ -31,7 +31,7 @@ font-style: semibold;*/
 
 
 
-@font-face 
+@font-face
 {
   font-family: 'SharpGrotesk20-Book';
   src: url("SharpGrotesk20-Book.ttf") format('truetype');
@@ -39,7 +39,7 @@ font-style: semibold;*/
 font-style: book;*/
 }
 
-@font-face 
+@font-face
 {
   font-family: 'SharpGrotesk20-Medium';
   src: url("SharpGrotesk20-Medium.ttf") format('truetype');
@@ -47,7 +47,7 @@ font-style: book;*/
 font-style: medium;*/
 }
 
-@font-face 
+@font-face
 {
   font-family: 'SharpGrotesk20-SemiBold';
   src: url("SharpGrotesk20-SemiBold.ttf") format('truetype');
@@ -66,7 +66,7 @@ font-style: semibold;*/
   z-index: -999;
 }
 
-* 
+*
 {
  font-family: 'SharpGrotesk20-Medium';
  margin: 0;
@@ -84,7 +84,7 @@ footer, header, hgroup, menu, nav, section {
  display: block;
 }
 
-body 
+body
 {
   font-family: 'SharpGrotesk20-Medium';
   line-height: 1;
@@ -234,7 +234,7 @@ hr {
 
 }
 
-.main-content h4 
+.main-content h4
 {
   font-size: 1.3em;
   line-height: 1.4em;
@@ -326,7 +326,7 @@ hr {
     color:#000;
     font-size:13px;
     letter-spacing: 0.08em;
-    margin-top:11px; 
+    margin-top:11px;
     float: left;
     text-align: left;
     line-height: 25px;
@@ -371,16 +371,16 @@ hr {
     /*    position: absolute;*/
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(1px); 
+    filter: blur(1px);
     width: 0;
   }
 
   #mfadtTitle:hover:after
   {
-    width: 100%; 
-    left: 0; 
+    width: 100%;
+    left: 0;
   }
-  
+
 
 
   #thesisShowTitle
@@ -399,7 +399,7 @@ hr {
 
 
 
-  #mainLogo 
+  #mainLogo
   {
     position: absolute;
     display:inline-block;
@@ -444,7 +444,7 @@ hr {
     position: relative;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(1px); 
+    filter: blur(1px);
     width: 0;
   }
 
@@ -603,6 +603,155 @@ hr {
     -ms-transform: rotate(-90deg);
   }
 
+
+
+
+
+
+  /* Individual Pages*/
+
+  .pages {
+    background-color: rgb(22, 22, 22);
+  }
+
+  .page-container {
+    height: 100vh;
+  }
+
+  #main-nav {
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    top: 0;
+    left: 30px;
+    width: 94%;
+    font-family: SharpGrotesk20-Medium;
+    padding: 50px 30px 30px 30px;
+  }
+
+  #main-nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .main-menu {
+    padding-top: 15px;
+    float: right;
+  }
+
+  .main-menu li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .main-menu li a {
+    padding: 0 20px;
+  }
+
+  .main-logo {
+    float: left;
+  }
+
+  #corner-logo-page {
+    width: 39%;
+  }
+
+  .individual-project {
+    color: #fff;
+    font-family: 'SharpGrotesk20-Book';
+    padding: 20px 10%;
+    width: 85%;
+    display: flex;
+    margin-top: 7%;
+  }
+
+  .individual-intro {
+    padding: 10px 20px 10px 0;
+    width: 20%;
+    border-right: 1px solid #656565;
+  }
+
+  .individual-intro img {
+    max-width: 95%;
+  }
+
+  .individual-intro .student-name {
+    font-size: 1.7em;
+    padding-top: 15px;
+    text-transform: uppercase;
+  }
+
+  .individual-intro .student-title {
+    padding: 10px 0;
+  }
+
+  .individual-intro .student-info {
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    margin-top: 11px;
+    float: left;
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .individual-intro .student-intro {
+    padding: 20px 20px 20px 0;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: 0.08em;
+  }
+
+  .project-intro {
+    width: 69%;
+    padding: 10px 40px 10px 50px;
+  }
+
+  ul .list-title {
+    padding: 30px 0 15px 0;
+  }
+
+  ul .list-down {
+   font-size: 11px;
+   padding-bottom: 7px;
+   letter-spacing: 0.08em;
+  }
+
+  .project-name {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'SharpGrotesk20-Medium'
+
+  }
+
+  .project-category {
+    display: inline-flex;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2d2d2d;
+  }
+
+  .project-category ul {
+    margin-right: 40px;
+  }
+
+  .project-description {
+    font-size: 13px;
+    line-height: 1.4em;
+    letter-spacing: 0.08em;
+  }
+
+  .project-description p {
+    margin: 30px 0;
+    line-height: 1.5;
+  }
+
+
+
+
+
 /*-----------------
 	Main Menu
   ------------------*/
@@ -627,7 +776,7 @@ hr {
 
   @media (max-width: 600px)
   {
-    #main-menu .nav-bar li a 
+    #main-menu .nav-bar li a
     {
       padding-right:17px;
       padding-left:17px;
@@ -661,7 +810,7 @@ hr {
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
 
@@ -701,7 +850,7 @@ hr {
    vertical-align: middle;
    line-height: 30px;
  }
- 
+
  #main-menu2 .nav-bar li a: hover { color:#FFFFFF; }
 
  */
@@ -709,7 +858,7 @@ hr {
  {
   text-decoration: none;
   text-transform: uppercase;
-  color:#000;    
+  color:#000;
   position: absolute;
   margin:3%;
   text-align:center;
@@ -756,7 +905,7 @@ hr {
     position: relative;
     width: 80%;
     height: 100px;
-    margin: auto; 
+    margin: auto;
     margin-left:22%;
     margin-right:22%;
     margin-top:100px;
@@ -809,7 +958,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   -----------------*/
   /* ---- grid ---- */
 
-  .grid 
+  .grid
   {
     /*margin-right: 5vw;*/
     /*margin-left: 5vw;*/
@@ -1007,7 +1156,7 @@ td .schedTime {
         clear: both;
         height: 1px;
         margin-left: 10%;
-        width:80%; 
+        width:80%;
         margin-top:80px;
         margin-bottom: 20px;
         background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
@@ -1236,18 +1385,18 @@ STUDENTS GRID
     left: 50%;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(1px); 
+    filter: blur(1px);
     width: 0;*/
   }
 
   .footing2 a:hover:after
   {
-    width: 100%; 
+    width: 100%;
     text-align: center;
   }
 
 
-/*.color:hover 
+/*.color:hover
 {
   background:#000;
   color: #000;
@@ -1258,7 +1407,7 @@ STUDENTS GRID
 }
 
 
-/*.color2:hover 
+/*.color2:hover
 {
   background:#000;
   color: #000;
@@ -1300,7 +1449,7 @@ STUDENTS GRID
   }
 
   /* ---- footer-item ---- */
-  .foot-item 
+  .foot-item
   {
     display:inline-block;
     line-height: 20px;
@@ -1505,7 +1654,7 @@ STUDENTS GRID
     #single-project {
       display: block;
     }
-    #single-project, #main-content 
+    #single-project, #main-content
     {
       width: 100%;
       display: block;
@@ -1633,7 +1782,7 @@ STUDENTS GRID
 }
 
 #social-links a:hover{
-  color:white ; 
+  color:white ;
   background:#000 ;
 }
 
@@ -1653,7 +1802,7 @@ STUDENTS GRID
 }
 
 #website-links a:hover{
-  color:white ; 
+  color:white ;
   background:#000 ;
 }
 
@@ -1808,7 +1957,7 @@ iframe{
 
 
 
-  #mainLogo 
+  #mainLogo
   {
     position: absolute;
     display:inline-block;
@@ -1843,7 +1992,7 @@ iframe{
   }
 
 
-  #grid-item--height-events 
+  #grid-item--height-events
   {
     top: 90vw;
   }
@@ -1861,7 +2010,7 @@ iframe{
   }
 
 
-  .foot-item 
+  .foot-item
   {
     /*display:inline-block;*/
     line-height: 20px;
@@ -1952,7 +2101,7 @@ iframe{
 
 
 
-  #mainLogo 
+  #mainLogo
   {
     position: absolute;
     display:inline-block;
@@ -1996,7 +2145,7 @@ iframe{
     top: 65%;
     /* left: 33vw; */
     margin-left: 10%;
-    /* margin-right: 10%; */ 
+    /* margin-right: 10%; */
   }
 
 
@@ -2009,12 +2158,12 @@ iframe{
     z-index:10;
   }
 
-  #pretty_thin 
+  #pretty_thin
   {
     clear: both;
     height: 1px;
     margin-left: 10%;
-    width:80%; 
+    width:80%;
     margin-top:0px;
     margin-bottom:20px;
     background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
@@ -2023,7 +2172,7 @@ iframe{
   }
 
 
-  #grid-item--height-events 
+  #grid-item--height-events
   {
     top: 90vw;
   }
@@ -2041,7 +2190,7 @@ iframe{
   }
 
 
-  #footer-main 
+  #footer-main
   {
     box-sizing: border-box;
     margin: 0px auto;
@@ -2051,7 +2200,7 @@ iframe{
   }
 
 
-  .foot-item 
+  .foot-item
   {
     /*display:inline-block;*/
     line-height: 20px;
