@@ -30,8 +30,9 @@ var boxCount=5;
 function preload() 
 {
 //  myFont = loadFont('fonts/NeueDisplay-Random.otf');
-  imgB = loadImage('images/textureB.png');
-  imgW = loadImage('images/textureW.png');
+  imgB = loadImage('assets/texture2.png');
+  imgW = loadImage('assets/texture2.png');
+  // svg = loadImage('assets/texture1.svg');
 
 }
 
@@ -176,12 +177,12 @@ if(w>480)
 
     if(bgcolor==bgcolorArray[0])
     {
-        texture(imgW);
+        texture(imgB);
         ambientLight(200);
     }
     else
     {
-        texture(imgB);
+        texture(imgW);
         ambientLight(0);
     }
 
@@ -223,7 +224,7 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
 
 function triangleDraw(x1, y1, z1, x2, y2, z2, x3, y3, z3)
 {
-    texture(img);
+    texture(svg);
      beginShape();
         vertex(x1, y1, z1,0,0);
         vertex(x2, y2, z2,0,1);
