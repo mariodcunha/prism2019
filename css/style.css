@@ -5,8 +5,8 @@
 
 
 
-  @font-face
-  {
+@font-face
+{
     font-family: 'SharpGrotesk15-Book';
     src: url("SharpGrotesk15-Book.ttf") format('truetype');
 /*  font-weight: book;
@@ -341,7 +341,7 @@ hr {
     /*position: absolute;*/
     /*display:inline-block;*/
     padding-top: 4vh;
-    width:12vw;
+    width:15vw;
     top:4.5vh;
     left:0vw;
     margin-left: 10%;
