@@ -341,14 +341,12 @@ hr {
     /*position: absolute;*/
     /*display:inline-block;*/
     padding-top: 4vh;
-    width:15vw;
-    top:4.5vh;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
     /*width:25%;*/
     font-weight: bold;
-    font-size: 24.5px;
+    font-size: 23px;
     text-align: left;
     line-height: 30px;
   }
@@ -371,7 +369,7 @@ hr {
     /*    position: absolute;*/
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(1px);
+    /*filter: blur(1px);*/
     width: 0;
   }
 
@@ -387,51 +385,55 @@ hr {
   {
     font-family: 'SharpGrotesk20-Book';
     text-transform: uppercase;
-    letter-spacing: 9.5px;
-    position: absolute;
+    letter-spacing: 0.6vw;
+    font-size: 1.1vw;
+    /*position: absolute;*/
     /*display:inline-block;*/
     top:18vh;
     left:0vw;
     margin-left: 10%;
-    margin-right:10%;
-    /*width:25%;*/
+    /*margin-right:10%;*/
+    width:40%;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
 
 
   #mainLogo
   {
-    position: absolute;
+    /*position: absolute;*/
     display:inline-block;
     top:22vh;
     left:0vw;
-    /*margin-left: 10%;*/
-    margin-right:10%;
-    width:37%;
+    margin-left: -62%;
+    /*margin-right:10%;*/
+    width:40%;
+    /*text-align: left;*/
     z-index: 0;
   }
 
 
   #location
   {
+    position: absolute;
     font-family: 'SharpGrotesk20-Book';
-    position: relative;
-    /*display:inline-block;*/
     text-align: left;
     margin-left: 10%;
-    padding-left: 21px;
-    padding-top: 38vh;
+    top:52vh;
+    left:1.5vw;
     /*width:25%;*/
-    /*width:25%;*/
-    width: 350px;
     z-index: 10;
+
   }
 
   #location a
   {
     text-decoration: none;
     color: #fff;
-    letter-spacing: 5.2px;
+    font-size: 1.1vw;
+    letter-spacing: 0.31vw;
   }
 
   #location:after
@@ -444,7 +446,7 @@ hr {
     position: relative;
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    filter: blur(1px);
+    /*filter: blur(1px);*/
     width: 0;
   }
 
@@ -1161,7 +1163,7 @@ td .schedTime {
         margin-bottom: 20px;
         background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
         z-index: 100;
-        filter: blur(1px);
+        /*filter: blur(1px);*/
       }
 
       #footer-events {
@@ -1533,7 +1535,7 @@ STUDENTS GRID
     /*background: linear-gradient(135deg, #484C91 0%, #539DFD 18%, #929BEF 56%, #E79FE8 100%);*/
     /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=1);*/
     z-index: 100;
-    filter: blur(1px);
+    /*filter: blur(1px);*/
   }
 
   .page-credits,
@@ -1984,6 +1986,7 @@ iframe{
     font-size: 3vw;
     width:90vw;
     text-align: left;
+
   }
 
   #location a
@@ -2168,7 +2171,7 @@ iframe{
     margin-bottom:20px;
     background: linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     z-index: 100;
-    filter: blur(1px);
+    /*filter: blur(1px);*/
   }
 
 
