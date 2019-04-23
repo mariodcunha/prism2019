@@ -330,6 +330,7 @@ hr {
     float: left;
     text-align: left;
     line-height: 25px;
+    width: 20vw;
   }
 
 
@@ -337,18 +338,15 @@ hr {
   {
 
     font-family: 'SharpGrotesk20-Book';
-    /*letter-spacing: 9px;*/
-    /*position: absolute;*/
-    /*display:inline-block;*/
     padding-top: 4vh;
     left:0vw;
     margin-left: 10%;
     margin-right:10%;
-    /*width:25%;*/
     font-weight: bold;
     font-size: 23px;
     text-align: left;
     line-height: 30px;
+    width: 13%;
   }
 
   #mfadtTitle a
@@ -366,7 +364,6 @@ hr {
     display: block;
     height: 2px;
     left: 50%;
-    /*    position: absolute;*/
     background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     /*filter: blur(1px);*/
@@ -793,6 +790,13 @@ hr {
    line-height: 30px;
  }
 
+ .buttonHighlight:hover:
+ {
+    color: #000;
+    background: #fff;
+ }
+
+
  @keyframes strike{
   0%   { width : 0; }
   100% { width: 100%; }
@@ -869,8 +873,26 @@ hr {
   letter-spacing: 0.16em;
 }
 
+
+
+#nav_button_bottom_top_rsvp a
+{
+  /*border: solid #fff 2px;*/
+  padding: 13px;
+  cursor: pointer;
+}
+
+
+#nav_button_bottom_top_rsvp a.buttonHighlight:hover
+{
+  /*color: #000;*/
+  /*background: #fff;*/
+  cursor: pointer;
+}
+
 #nav_button_bottom_top
 {
+  color: #fff;
 }
 
 #nav_button_bottom_left a
@@ -1262,25 +1284,6 @@ STUDENTS GRID
 
 }
 
-#rsvp
-{
-  /*padding: 0px 0px 0px 0px;*/
-  /*width: 100%;*/
-  /*bottom: 0;*/
-  position: relative;
-  text-decoration:none;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 9vw;
-  margin-bottom: 5vw;
-  vertical-align: middle;
-}
-
-.rsvp_button
-{
-  vertical-align: middle;
-  padding-top: 3px;
-}
 
 
 
