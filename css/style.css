@@ -1879,206 +1879,136 @@ iframe{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+.hideOnMobile
 {
-
-  #mfadtTitle
-  {
-    font-family: 'SharpGrotesk20-Book';
-    /*letter-spacing: 9px;*/
-    position: absolute;
-    /*display:inline-block;*/
-    padding-top: 0;
-    top:0vw;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    /*width:25%;*/
-    font-weight: bold;
-    font-size: 5.2vw;
-    width:77vw;
-    text-align: left;
-  }
-
-  #mfadtTitle a
-  {
-    color: #fff;
-    text-decoration: none;
-  }
-
-
-
-  #thesisShowTitle
-  {
-    font-family: 'SharpGrotesk20-Book';
-    text-transform: uppercase;
-    letter-spacing: 2.3vw;
-    position: absolute;
-
-    /*display:inline-block;*/
-    top:25vw;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    font-size: 3vw;
-    width:77vw;
-    text-align: left;
-  }
-
-
-
-  #mainLogo
-  {
-    position: absolute;
-    display:inline-block;
-    top:30vw;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    width:77vw;
-  }
-
-
-  #location
-  {
-    font-family: 'SharpGrotesk20-Book';
-    /*text-transform: uppercase;*/
-    letter-spacing: 2vw;
-    position: absolute;
-    padding-top: 0;
-    /*display:inline-block;*/
-    top:77vw;
-    left:4vw;
-    margin-left: 10%;
-    margin-right:10%;
-    font-size: 3vw;
-    width:90vw;
-    text-align: left;
-
-  }
-
-  #location a
-  {
-    text-decoration: none;
-  }
-
-
-  #grid-item--height-events
-  {
-    top: 90vw;
-  }
-
-  .mainEventTitle
-  {
-    font-size: 3.7vw;
-  }
-
-  .mainEventDate
-  {
-    line-height: 1vw;
-    font-size: 3vw;
-    padding-bottom: 2vw;
-  }
-
-
-  .foot-item
-  {
-    /*display:inline-block;*/
-    line-height: 20px;
-    /* float: left; */
-    font-size: 12px;
-    font-family: 'SharpGrotesk20-Book';
-    text-align: left;
-    padding: 5px;
-    vertical-align: middle;
-    width: 150px;
-
-  }
-
-
-  .social
-  {
-    /*float: left;*/
-    padding-bottom: 3vw;
-    width: 50px;
-  }
-
-  .socialButtons
-  {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-  }
-
-  .socialButtons:hover
-  {
-    border-radius: 5px;
-    width: 35px;
-    height: 35px;
-    /*filter: invert(100%);*/
-  }
-
-
+  display: none;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
 
+  .showOnMobile
+  {
+    display: inline;
+  }
+
+
+  a
+  {
+    text-decoration: none;
+  }
+
+
+
   #mfadtTitle
   {
     font-family: 'SharpGrotesk20-Book';
-    /*letter-spacing: 9px;*/
-    position: absolute;
-    /*display:inline-block;*/
-    top:0vw;
+    top:-10vh;
     left:0vw;
     margin-left: 10%;
-    margin-right:10%;
-    /*width:25%;*/
     font-weight: bold;
     font-size: 5.2vw;
-    width:77vw;
+    width:30vw;
     text-align: left;
   }
 
@@ -2094,13 +2024,10 @@ iframe{
   {
     font-family: 'SharpGrotesk20-Book';
     text-transform: uppercase;
-    letter-spacing: 2.3vw;
-    position: absolute;
-    /*display:inline-block;*/
-    top:25vw;
+    letter-spacing: 1.7vw;
+    top:20vw;
     left:0vw;
     margin-left: 10%;
-    margin-right:10%;
     font-size: 3vw;
     width:77vw;
     text-align: left;
@@ -2110,51 +2037,59 @@ iframe{
 
   #mainLogo
   {
-    position: absolute;
     display:inline-block;
     top:30vw;
-    left:0vw;
-    margin-left: 10%;
-    margin-right:10%;
-    width:77vw;
+    width: 110%;
+    margin-left: -30%;
+    max-width: 110%;
   }
 
 
   #location
   {
-    font-family: 'SharpGrotesk20-Book';
-    /*text-transform: uppercase;*/
-    letter-spacing: 2vw;
     position: absolute;
-    /*display:inline-block;*/
+    font-family: 'SharpGrotesk20-Book';
+    letter-spacing: 2vw;
+    margin-left: 10%;
+    /*width:77vw;*/
     top:77vw;
     left:4vw;
-    margin-left: 10%;
-    /*margin-right:10%;*/
-    font-size: 3vw;
-    width:90vw;
-    text-align: left;
-    padding-left: 0px;
   }
+
 
   #location a
   {
     text-decoration: none;
+    text-align: left;
+    font-size: 4vw;
   }
 
-
-
-  .events
+  #mobile_rsvp
   {
-    position: absolute;
-    margin: auto;
-    max-width: 100%;
-    top: 65%;
-    /* left: 33vw; */
+    font-family: 'SharpGrotesk20-Book';
+    top:90vh;
+    left:4vw;
     margin-left: 10%;
-    /* margin-right: 10%; */
+    margin-top: 7px; 
+    font-size: 3vw;
+    float: left;
+    padding: 13px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: solid 2px #fff;
+    color: #fff;
   }
 
+  #mobile_rsvp a
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #grid-item--height-events
+  {
+    margin-top: 20%;
+  }
 
   #banner {
     top: 0; right: 0; bottom: 0; left: 0;
@@ -2194,6 +2129,7 @@ iframe{
     line-height: 1vw;
     font-size: 3vw;
     padding-bottom: 2vw;
+    width: 100%;
   }
 
 
@@ -2240,5 +2176,12 @@ iframe{
 
 
 
+
+
+
 }
 
+
+
+
+  
