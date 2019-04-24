@@ -1098,19 +1098,21 @@ EVENT PAGE
 
 /*------Events Page Table-------*/
 
-
 .event-heading{
   width: 100%;
 
 }
 
-.event-heading-inner{
+.event-heading-inner
+{
   width: 30%;
   margin-left: 43%;
-    padding-top: 5vh;
-    padding-bottom: 0.5vh;
+  padding-top: 5vh;
+  padding-bottom: 0.5vh;
   color: #fff;
   font-size: 20pt;
+  font-family: 'SharpGrotesk20-Book';
+  text-transform: uppercase;
 }
 
 .schedule-container {
@@ -1908,6 +1910,7 @@ iframe{
 
 
 
+/* EVENTS PAGE */
 
 
 
@@ -2233,11 +2236,14 @@ iframe{
   }
 
 
+#event_schedule_mobile
+{
+  display: inline;
+}
 
 
 
 }
-
 
 
 

@@ -42,14 +42,14 @@
     <script src="addons/p5.dom.min.js" type="text/javascript"></script>
     <!-- <script src="addons/p5.sound.min.js" type="text/javascript"></script> -->
 
-  <!-- <script type="text/javascript" src="js/sketch.js"></script> -->
+  <script type="text/javascript" src="js/sketch.js"></script>
 
 
 </head>
 
 
 
-<body>
+<body onload="pageSet();">
   <!-- <div id="container"></div> -->
   <div id="menuBar">
     <nav id="main-menu2">
@@ -66,7 +66,8 @@
   </div>
       <!-- <img id = "graphicImg" src="assets/sample.png" > -->
 
-<div id="event-main-content">
+<!-- <div id="event-main-content" class="hideOnMobile showOnDesktop"> -->
+  <div id="event-main-content" >
         <div id="event-heading"><div class="event-heading-inner"><h1>Event Schedule</h1></div></div>
         <div class="schedule-container">
          <table id="schedule" class="n-bordered">
@@ -112,18 +113,44 @@
             </tr>
           </table>
         </div>
-      </div>
+  </div>
 
 
+<!-- 
+  <div id="event_schedule_mobile" class="hideOnDesktop showOnMobile">
 
+      <div class="events grid">
 
+            <div class="event-child grid-item grid-item--width2">
+              <div class="mainEventTitle">Gallery Exhibition</div><br>
+              <div class="mainEventDate">May 14 - May 17</div>
+            </div>
 
-    <div id="pretty_thin-events"></div>
+            <div class="event-child grid-item grid-item--width2">
+              <div class="mainEventTitle">Interactive Showcase</div><br>
+              <div class="mainEventDate">May 14</div>
+            </div>
+
+            <div class="event-child grid-item grid-item--width2">
+              <div class="mainEventTitle">Live Performance</div><br>
+              <div class="mainEventDate">May 14</div>
+            </div>
+
+            <div class="event-child grid-item grid-item--width2">
+              <div class="mainEventTitle">Symposium</div><br>
+              <div class="mainEventDate">May 16</div><br>
+    </div>
+  </div>
+</div>
+ -->
+
+ 
+    <div id="pretty_thin"></div>
     <div id="footer-main">
 
       <div id="bottom-content2" class="footgrid">
         <div  class="footer-child foot-item foot-item--width2">
-          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonsLogo.png"></a>
+          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonslogoW.png"></a>
           <!-- <h2 class="footing2">Parsons School of Design</h2> -->
         </div>
 
@@ -135,43 +162,32 @@
           <h2><a href="#">Acknowledgements</a></h2>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
-          <a href="https://www.instagram.com/mfadt" target="_blank"><img class="socialButtons" src="assets/instaLogo.png" style="filter: invert(100%)"></a>
+  
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
+          <a href="https://www.instagram.com/mfadt" target="_blank"><img class="socialButtons" src="assets/instaLogo.png"></a>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
-          <a href="https://www.facebook.com/MFADT.Thesis/" target="_blank"><img class="socialButtons" src="assets/fbLogo.png" style="filter: invert(100%)"></a>
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
+          <a href="https://www.facebook.com/MFADT.Thesis/" target="_blank"><img class="socialButtons" src="assets/fbLogo.png"></a>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
-          <a href="https://twitter.com/mfadt?lang=en" target="_blank"><img class="socialButtons" src="assets/twitterLogo.png" style="filter: invert(100%)"></a>
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
+          <a href="https://twitter.com/mfadt?lang=en" target="_blank">
+            <img class="socialButtons" src="assets/twitterLogo.png">
+          </a>
         </div>
 
-<!--         <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://www.instagram.com/mfadt/?hl=en">
-              
-            </a>
-          </span>
+        <div class="hideOnDesktop showOnMobile footer-child foot-item foot-item--width2 social_mobile">
+          <a href="https://www.instagram.com/mfadt" target="_blank">
+            <img class="socialButtons_mobile" src="assets/instaLogo.png">
+          </a>
+          <a href="https://www.facebook.com/MFADT.Thesis/" target="_blank">
+            <img class="socialButtons_mobile" src="assets/fbLogo.png">
+          </a>
+          <a href="https://twitter.com/mfadt?lang=en" target="_blank">
+            <img class="socialButtons_mobile" src="assets/twitterLogo.png">
+          </a>
         </div>
-
-        <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://www.facebook.com/MFADT.Thesis/">
-              <img class="social-buttons" src="assets/fbLogo.png">
-            </a>
-          </span>
-        </div>        
-
-        <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://twitter.com/mfadt?lang=en">
-              <img class="social-buttons" src="assets/twitterLogo.png">
-            </a>
-          </span>
-        </div> -->
-
-      <!-- </span> -->
 
       </div>
 

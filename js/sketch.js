@@ -25,6 +25,7 @@ var boxPositionsY = [];
 var boxPositionsZ = [];
 var boxCount=5;
 
+var page=0;
 
 
 function preload() 
@@ -40,6 +41,7 @@ function preload()
 
 function setup() 
 {
+    console.log(bgcolor);
     var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
     canvas.parent('container'); //within the html
 
@@ -63,7 +65,8 @@ function setup()
         spectrumTo = color(255, 255, 255, 10);
     }
 
-    checkCss();    
+    checkCss();
+
 
     for (let i=0; i<=boxCount; i++) 
     {
@@ -173,8 +176,19 @@ function checkCss()
 
 
 
+function pageSet()
+{
+    console.log(bgcolor);
+    page=1;
+}
 
 
+function indexPage()
+{
+
+    page=0;
+    setup();
+}
 
 
 
@@ -183,7 +197,8 @@ function checkCss()
 function draw() 
 {
 
-if(w>480)    
+
+if(w>480 && page==0)    
 {
     background(bgcolor);
 
