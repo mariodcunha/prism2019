@@ -317,6 +317,7 @@ hr {
     font-weight:bold;
     letter-spacing: 0.08em;
     float: left;
+    font-size: 15px;
   }
 
   .mainEventDate
@@ -326,7 +327,7 @@ hr {
     color:#000;
     font-size:13px;
     letter-spacing: 0.08em;
-    margin-top:11px;
+    margin-top:5px;
     float: left;
     text-align: left;
     line-height: 25px;
@@ -1019,7 +1020,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   .grid-item--height5 { min-height: 500px; }
   .grid-item--height6 { min-height: 200px; }
   .grid-item--height7 { min-height: 75px; }
-  /*#grid-item--height-events {top: 80% ;}*/
+  #grid-item--height-events {top: 70% ;}
 
   @media (max-width: 600px){
     .grid-item--width2, .grid-item--width3, .grid-item--width4, .grid-item--width5  { width: 300px; }
