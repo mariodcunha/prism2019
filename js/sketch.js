@@ -126,6 +126,7 @@ function checkCss()
         
         $("#parsonsLogo").attr("src","assets/parsonslogoW.png");
         $('.socialButtons').css('filter', 'invert(100%)');
+        $('.socialButtons_mobile').css('filter', 'invert(100%)');
         $('.social_footer').css('filter', 'invert(100%)');
         $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');    
 
@@ -163,6 +164,8 @@ function checkCss()
         // $('.social_footer').css('filter', 'invert(100%)');
 
         $("#parsonsLogo").attr("src","assets/parsonslogoB.png");
+        $('.socialButtons_mobile').css('filter', 'invert(0%)');
+        $('.socialButtons').css('filter', 'invert(0%)');
         $('.socialButtons:hover').css('background-color', '#fff');
 
     }

@@ -58,15 +58,26 @@ font-style: semibold;*/
 
 
 
-.hideOnMobile
-{
-  display: none;
-}
+  .showOnMobile
+  {
+    display: none;
+  }
 
-.showOnDesktop
-{
-  display: inline;
-}
+  .hideOnDesktop, .hideOnDesktop a
+  {
+    display: none;
+  }
+
+  .hideOnMobile
+  {
+    display: inline;
+  }
+
+  .showOnDesktop
+  {
+    display: inline;
+  }
+
 
 
 #mobile_rsvp
@@ -2004,6 +2015,16 @@ iframe{
 
   .hideOnDesktop, .hideOnDesktop a
   {
+    display: inline;
+  }
+
+  .hideOnMobile
+  {
+    display: none;
+  }
+
+  .showOnDesktop
+  {
     display: none;
   }
 
@@ -2186,11 +2207,6 @@ iframe{
     /*margin-top: 20px;*/
   }
 
-  .socialButtons
-  {
-
-  }
-
   #socialmedia
   {
     float: left;
@@ -2199,6 +2215,22 @@ iframe{
 
   }
 
+  .social_mobile
+  {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*text-align: center;*/
+    width: 100%
+  }
+
+  .socialButtons_mobile
+  {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-left: 10px;
+      position: relative; 
+  }
 
 
 
