@@ -2019,6 +2019,10 @@ iframe{
     display: inline;
   }
 
+  #nav_button_bottom_top_rsvp a
+  {
+      display: none;
+  }
 
 
 
@@ -2189,7 +2193,7 @@ iframe{
 
   .socialButtons
   {
-
+      
   }
 
   #socialmedia
