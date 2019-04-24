@@ -2014,11 +2014,6 @@ iframe{
   }
 
 
-  #mobile_rsvp
-  {
-    display: inline;
-  }
-
   #nav_button_bottom_top_rsvp a
   {
       display: none;
@@ -2091,6 +2086,7 @@ iframe{
 
   #mobile_rsvp
   {
+    display: inline;
     font-family: 'SharpGrotesk20-Book';
     top:90vh;
     left:4vw;
@@ -2098,17 +2094,17 @@ iframe{
     margin-top: 10px; 
     font-size: 3vw;
     float: right;
-    padding: 13px;
+    padding: 15px;
     padding-left: 10%;
     padding-right: 10%;
     border: solid 2px #fff;
-    color: #fff;
+    color: red;
   }
 
   #mobile_rsvp a
   {
     text-decoration: none;
-    color: #fff;
+    color: blue;
   }
 
   #grid-item--height-events
@@ -2193,7 +2189,7 @@ iframe{
 
   .socialButtons
   {
-      
+
   }
 
   #socialmedia

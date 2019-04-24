@@ -120,6 +120,12 @@ function checkCss()
         $('#nav_button_bottom_top a').css('color','#FFF');
         $('#nav_button_bottom_top_rsvp a').css('color','#FFF');
         $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
+
+        $('#mobile_rsvp a').css('color','#FFF');
+        // $('#nav_button_bottom_top_rsvp a').css('color','#FFF');
+        // $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
+
+
         
         $("#parsonsLogo").attr("src","assets/parsonslogoW.png");
         $('.socialButtons').css('filter', 'invert(100%)');
