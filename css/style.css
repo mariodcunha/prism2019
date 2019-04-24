@@ -2072,7 +2072,7 @@ iframe{
     font-family: 'SharpGrotesk20-Book';
     letter-spacing: 2vw;
     margin-left: 10%;
-    top:77vw;
+    top:79vw;
     left:4vw;
   }
 
@@ -2087,24 +2087,23 @@ iframe{
   #mobile_rsvp
   {
     display: inline;
-    font-family: 'SharpGrotesk20-Book';
+    font-family: 'SharpGrotesk20-Medium';
     top:90vh;
     left:4vw;
     margin-right: 18%;
     margin-top: 10px; 
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 3vw;
     float: right;
-    padding: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
     border: solid 2px #fff;
-    color: red;
   }
 
   #mobile_rsvp a
   {
-    text-decoration: none;
-    color: blue;
+    display: inline;
   }
 
   #grid-item--height-events
