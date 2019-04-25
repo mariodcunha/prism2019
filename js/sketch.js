@@ -55,7 +55,7 @@ function setup()
 
     bgcolor = bgcolorArray[randomInt(0,2)];
     // bgcolor = 255; 
-    bgcolor = 22; 
+    // bgcolor = 22; 
     // 0 is black background, 2 is white.
 
     if(bgcolor==bgcolorArray[0])
@@ -106,6 +106,10 @@ function checkCss()
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#fff');
+        $('.row h3').css('color','#fff');
+        $('[class*="col-"] h4').css('color','#eee');
+        $('[class*="col-"] ul li ').css('color','#fff');
+        
 
         $('#mainLogo').attr("src","assets/mainLogo_new_W.png");
 
@@ -160,6 +164,10 @@ function checkCss()
 
         $('body').css('background-color','white');
         $('.main-content h4').css('color','#DDD');
+        $('.row h3').css('color','#777');
+        $('[class*="col-"] h4').css('color','#444');
+        $('[class*="col-"] ul li').css('color','#555');
+        
 
         $('#mainLogo').attr("src","assets/mainLogo_new_B.png");
         
