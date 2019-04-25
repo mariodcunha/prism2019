@@ -1282,6 +1282,12 @@ td .schedLoc a:hover
 .event-titles a
 {
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    text-align: left;
+
 }
 
 .event-titles a:hover
