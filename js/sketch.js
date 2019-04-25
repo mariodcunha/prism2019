@@ -31,8 +31,10 @@ var page=0;
 function preload() 
 {
 //  myFont = loadFont('fonts/NeueDisplay-Random.otf');
-  imgB = loadImage('assets/textureB.png');
-  imgW = loadImage('assets/textureW.png');
+  imgB = loadImage('assets/textureW.png');
+  imgW = loadImage('assets/textureB.png');
+  // img = loadImage('assets/textureB1.png');
+  prism = loadModel('assets/prism.obj');
   // svg = loadImage('assets/texture1.svg');
 
 }
@@ -41,7 +43,7 @@ function preload()
 
 function setup() 
 {
-    console.log(bgcolor);
+    
     var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
     canvas.parent('container'); //within the html
 
@@ -76,8 +78,9 @@ function setup()
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
         boxPositionsX[i] = randomInt(-w/4,w/2);
         boxPositionsY[i] = randomInt(-h/2,h/4);
-        boxPositionsZ[i] = randomInt(-w/4,w/16);
+        boxPositionsZ[i] = randomInt(-w/4,w/2);
     }
+
 
 // console.log(boxPositionsX);      
 // console.log(boxPositionsY);      
@@ -235,28 +238,22 @@ if(w>480 && page==0)
     let locX = mouseX - width / 2;
     let locY = mouseY - height / 2;
 
-    pointLight(255, 0, 0, locX, locY, 100);
-    pointLight(0, 255, 0, locX, locX, 100);
-    pointLight(0, 0, 255, locY, locX, 100);
-    pointLight(255, 255, 0, locY, locY, 100);
-    pointLight(255, 0, 255, locX/2, locY/2, 100);
-    pointLight(0, 255, 255, locX*2, locY*2, 100);
-    pointLight(100, 0, 30, locY/4, locY/4, 100);
+    let pointLightOpacity;
+
+    pointLightOpacity = 100;
+
+    pointLight(255, 0, 0, locX, locY, pointLightOpacity);
+    pointLight(0, 255, 0, locX, locX, pointLightOpacity);
+    pointLight(0, 0, 255, locY, locX, pointLightOpacity);
+    pointLight(255, 255, 0, locY, locY, pointLightOpacity);
+    pointLight(255, 0, 255, locX/2, locY/2, pointLightOpacity);
+    pointLight(0, 255, 255, locX*2, locY*2, pointLightOpacity);
+    pointLight(100, 0, 30, locY/4, locY/4, pointLightOpacity);
 
     // let dirX = (mouseX / width - 0.5) * 2;
     // let dirY = (mouseY / height - 0.5) * 2;
     // directionalLight(250, 250, 250, -dirX, -dirY, 0.25);
 
-    if(bgcolor==bgcolorArray[0])
-    {
-        texture(imgB);
-        ambientLight(200);
-    }
-    else
-    {
-        texture(imgW);
-        ambientLight(0);
-    }
 
     for(i=0; i<=boxCount; i++)
     {
@@ -273,22 +270,44 @@ if(w>480 && page==0)
 
     theta = theta + (0.1);
 
-
-
     }
 }
 
 
 function drawCuboid(boxSize, rotateSpeed, x, y, z)
 {
+
     let rs = rotateSpeed;
     angleMode(RADIANS);
+
+
+    gl = this._renderer.GL;
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.disable(gl.DEPTH_TEST);
+    
+    
+    fill(0,0,0,0);
+    if(bgcolor==bgcolorArray[0])
+    {
+        ambientLight(200);
+        texture(imgB);
+    }
+    else
+    {
+        ambientLight(0);
+        texture(imgW);
+    }
+    // specularMaterial(255,255,255,100);
+    // ambientMaterial(255,0,0,100);
+
     push();
         translate(x, y, z);
-        rotateZ(theta * rotateSpeed);
-        rotateX(theta * rotateSpeed);
-        rotateY(theta * rotateSpeed);
+        rotateZ(theta * rotateSpeed*2);
+        rotateX(theta * rotateSpeed*2);
+        rotateY(theta * rotateSpeed*2);
         box(boxSize, boxSize/2, boxSize/4);
+        // model(prism);
     pop(); 
 }
 
@@ -296,7 +315,7 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
 
 function triangleDraw(x1, y1, z1, x2, y2, z2, x3, y3, z3)
 {
-    texture(svg);
+    // texture(svg);
      beginShape();
         vertex(x1, y1, z1,0,0);
         vertex(x2, y2, z2,0,1);
