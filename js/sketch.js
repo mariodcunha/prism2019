@@ -52,7 +52,8 @@ function setup()
     colorMode(RGB);
 
     bgcolor = bgcolorArray[randomInt(0,2)];
-    // bgcolor = 255; 0 is black background, 2 is white.
+    // bgcolor = 255; 
+    // 0 is black background, 2 is white.
 
     if(bgcolor==bgcolorArray[0])
     {
@@ -131,8 +132,15 @@ function checkCss()
         $('.socialButtons').css('filter', 'invert(100%)');
         $('.socialButtons_mobile').css('filter', 'invert(100%)');
         $('.social_footer').css('filter', 'invert(100%)');
-        $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');    
+        $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');
 
+        $('.event-heading-inner').css('color','#fff');
+        $('#schedule').css('color','#fff');
+        $('.schedTime').css('color','#fff');
+        $('.schedTime a').css('color','#fff');
+        
+        $('#schedule table, th, td').css('border','solid 1px #555');
+        $('#schedule').css('border','solid 2px rgb(22, 22, 22)');
 
     }
 
@@ -170,6 +178,14 @@ function checkCss()
         $('.socialButtons_mobile').css('filter', 'invert(0%)');
         $('.socialButtons').css('filter', 'invert(0%)');
         $('.socialButtons:hover').css('background-color', '#fff');
+
+        $('.event-heading-inner').css('color','#000');
+        $('#schedule').css('color','#000');
+        $('.schedTime').css('color','#000');
+        $('.schedTime a').css('color','#000');
+        
+        $('#schedule table, th, td').css('border','solid 1px #555');
+        $('#schedule').css('border','solid 2px #fff');
 
     }
 }

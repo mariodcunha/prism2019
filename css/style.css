@@ -826,23 +826,29 @@ hr {
  }
 
 
- @keyframes strike{
+@keyframes strike
+{
   0%   { width : 0; }
   100% { width: 100%; }
 }
-.strikeThru {
+
+.strikeThru 
+{
   position: relative;
 }
-.strikeThru:hover::after {
+
+
+.strikeThru:hover::after 
+{
   content: ' ';
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 1px;
-  background: white;
+  background: #000;
   animation-name: strike;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -912,11 +918,15 @@ hr {
 }
 
 
+
 #nav_button_bottom_top_rsvp a.buttonHighlight:hover
 {
-  /*color: #000;*/
-  /*background: #fff;*/
   cursor: pointer;
+}
+
+.strikeThru:hover
+{
+  font-size: 50px;
 }
 
 #nav_button_bottom_top
@@ -1064,13 +1074,11 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   -----------------*/
   .events
   {
-    position: absolute;
     margin: auto;
     max-width: 100%;
     top: 65%;
-    /*left: 33vw;*/
     margin-left: 10%;
-    /*margin-right: 10%;*/
+    margin-bottom: 10%;
   }
 
   @media(max-width:600px) {
@@ -1110,10 +1118,18 @@ EVENT PAGE
   padding-top: 5vh;
   padding-bottom: 0.5vh;
   color: #fff;
-  font-size: 20pt;
-  font-family: 'SharpGrotesk20-Book';
-  text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
+.event-heading-inner h1
+{
+  /*font-family: 'SharpGrotesk20-Book';*/
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+}
+
 
 .schedule-container {
   /*position: absolute;*/
@@ -1131,11 +1147,12 @@ EVENT PAGE
   color:#fff;
   height:38vw;
   width:80vw;
-  /*border: 1px solid white;*/
+  margin-bottom: 50px;
 }
 
-#schedule table, th, td {
-  border: 1px solid #595959;
+#schedule table, th, td 
+{
+  /*border: 1px solid #595959;*/
   text-align: center;
   vertical-align: middle;
   table-layout: fixed;
@@ -2241,10 +2258,53 @@ iframe{
   display: inline;
 }
 
+.eventDate_events
+{
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-bottom: solid 1px #000;
+}
+
+.mainEventTitle_events
+{
+  text-transform: uppercase;
+  font-family: 'SharpGrotesk20-Book';
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  float: left;
+  font-size: 15px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.mainEventTime_events
+{
+  font-family: 'SharpGrotesk20-Book';
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  float: left;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.mainEventLoc_events
+{
+  font-family: 'SharpGrotesk20-Book';
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 13px;
+}
 
 
 }
-
 
 
   
