@@ -53,6 +53,7 @@ function setup()
 
     bgcolor = bgcolorArray[randomInt(0,2)];
     // bgcolor = 255; 
+    // bgcolor = 22; 
     // 0 is black background, 2 is white.
 
     if(bgcolor==bgcolorArray[0])
@@ -138,9 +139,16 @@ function checkCss()
         $('#schedule').css('color','#fff');
         $('.schedTime').css('color','#fff');
         $('.schedTime a').css('color','#fff');
+        $('.schedLoc').css('color','#fff');
+        $('.schedLoc a').css('color','#fff');
+
         
         $('#schedule table, th, td').css('border','solid 1px #555');
         $('#schedule').css('border','solid 2px rgb(22, 22, 22)');
+
+        $('.mobile_events').css('color','#fff');
+        $('.eventDate_events').css('border-bottom','solid 1px #fff');
+        
 
     }
 
@@ -183,9 +191,15 @@ function checkCss()
         $('#schedule').css('color','#000');
         $('.schedTime').css('color','#000');
         $('.schedTime a').css('color','#000');
+        $('.schedLoc').css('color','#000');
+        $('.schedLoc a').css('color','#000');
         
-        $('#schedule table, th, td').css('border','solid 1px #555');
+        $('#schedule table, th, td').css('border','solid 1px #ccc');
         $('#schedule').css('border','solid 2px #fff');
+
+        $('.mobile_events').css('color','#000');
+        $('.eventDate_events').css('border-bottom','solid 1px #000');
+         
 
     }
 }

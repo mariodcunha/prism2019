@@ -346,6 +346,8 @@ hr {
     letter-spacing: 0.08em;
     float: left;
     font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
   }
 
   .mainEventDate
@@ -360,7 +362,17 @@ hr {
     text-align: left;
     line-height: 25px;
     width: 20vw;
+    transition: 0.5s;
   }
+
+  .mainEventTitle:hover, .mainEventDate:hover
+  {
+      text-shadow: 5px 5px 3px;
+      cursor: pointer;
+
+  }
+
+
 
 
   #mfadtTitle
@@ -846,7 +858,7 @@ hr {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #000;
+  background: ;
   animation-name: strike;
   animation-duration: 0.3s;
   animation-timing-function: linear;
@@ -915,6 +927,7 @@ hr {
   /*border: solid #fff 2px;*/
   padding: 13px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 
@@ -922,17 +935,23 @@ hr {
 #nav_button_bottom_top_rsvp a.buttonHighlight:hover
 {
   cursor: pointer;
+  /*transition: 0.5s;*/
+  text-shadow: 5px 5px 3px;
 }
 
-.strikeThru:hover
-{
-  font-size: 50px;
-}
 
 #nav_button_bottom_top
 {
   color: #fff;
+  transition: 0.5s;
 }
+
+#nav_button_bottom_top:hover
+{
+  text-shadow: 5px 5px 3px;
+  cursor: pointer;
+}
+
 
 #nav_button_bottom_left a
 {
@@ -1087,9 +1106,12 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
 /*  @media(max-width:800px) {
     .events {top:65%;}
     }*/
-    .event-child{
-
+    
+    .event-child .grid-item:hover
+    { 
+        cursor: pointer;
     }
+
 
     .grid-item
     {
@@ -1123,7 +1145,7 @@ EVENT PAGE
 
 .event-heading-inner h1
 {
-  /*font-family: 'SharpGrotesk20-Book';*/
+  font-family: 'SharpGrotesk15-Medium';
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 2px;
@@ -1150,6 +1172,23 @@ EVENT PAGE
   margin-bottom: 50px;
 }
 
+#schedule th 
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.table_event_column
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-right: 15px;
+
+}
+
 #schedule table, th, td 
 {
   /*border: 1px solid #595959;*/
@@ -1159,19 +1198,75 @@ EVENT PAGE
     width: 300px;
 }
 
-#schedule th, td {
+#schedule th, td 
+{
   height: auto;
+  padding: 20px;
 }
 
-td .schedTime {
-  font-size: 9pt;
+td .schedTime 
+{
+  font-size: 13px;
+  font-family: 'SharpGrotesk20-Book';
+  text-align: left;
+  margin-top: 10px;
 }
 
-.event-titles{
-  font-size: 10pt;
-  display: block;
-  margin-bottom: 10px;
-  line-height: 12pt;
+
+
+td .schedTime a
+{
+  font-size: 13px;
+  font-family: 'SharpGrotesk20-Book';
+  text-decoration: none;
+  color: #ddd;
+}
+
+td .schedTime a:hover
+{
+  cursor: pointer;
+}
+
+
+
+td .schedLoc 
+{
+  font-size: 11px;
+  font-family: 'SharpGrotesk20-Book';
+  text-align: left;
+  margin-top: 10px;
+  line-height: 15px;
+}
+
+td .schedLoc a
+{
+  text-decoration: none;
+}
+
+.finalrow
+{
+  padding-left: 20px;
+  text-align: left;
+  line-height: 17px;
+
+}
+
+
+.event-titles_first
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-right: 15px;
+}
+
+.event-titles
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    text-align: left;
 }
 
 .n-bordered{
@@ -2072,6 +2167,7 @@ iframe{
     font-size: 5.2vw;
     width:30vw;
     text-align: left;
+    padding: 0;
   }
 
   #mfadtTitle a
@@ -2132,13 +2228,14 @@ iframe{
     top:90vh;
     left:4vw;
     margin-right: 18%;
-    margin-top: 10px; 
+    margin-top: 20px; 
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
     font-size: 3vw;
-    float: right;
+    float: left;
+    margin-left: 10%;
     border: solid 2px #fff;
   }
 
@@ -2302,6 +2399,32 @@ iframe{
   margin-bottom: 20px;
   line-height: 13px;
 }
+
+
+.events
+  {
+    margin-left: 8%;
+  }
+
+  #mfadtTitle_events
+  {
+    margin-left: 10%;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: 'SharpGrotesk15-Medium';
+    text-transform: uppercase;
+  }
+
+
+  #main-menu2 .nav-bar 
+  {
+      padding: 10px;
+  }
+
+  #menuBar 
+  {
+    margin-bottom: 20px;
+  }
 
 
 }
