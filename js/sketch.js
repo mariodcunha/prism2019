@@ -76,9 +76,9 @@ function setup()
     {
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
-        boxPositionsX[i] = randomInt(-w/4,w/2);
+        boxPositionsX[i] = randomInt(-w/16,w/2);
         boxPositionsY[i] = randomInt(-h/2,h/4);
-        boxPositionsZ[i] = randomInt(-w/4,w/2);
+        boxPositionsZ[i] = randomInt(0,w/8);
     }
 
 
@@ -240,7 +240,7 @@ if(w>480 && page==0)
 
     let pointLightOpacity;
 
-    pointLightOpacity = 100;
+    pointLightOpacity = 200;
 
     pointLight(255, 0, 0, locX, locY, pointLightOpacity);
     pointLight(0, 255, 0, locX, locX, pointLightOpacity);
@@ -250,9 +250,9 @@ if(w>480 && page==0)
     pointLight(0, 255, 255, locX*2, locY*2, pointLightOpacity);
     pointLight(100, 0, 30, locY/4, locY/4, pointLightOpacity);
 
-    // let dirX = (mouseX / width - 0.5) * 2;
-    // let dirY = (mouseY / height - 0.5) * 2;
-    // directionalLight(250, 250, 250, -dirX, -dirY, 0.25);
+    let dirX = (mouseX / width - 0.5) * 2;
+    let dirY = (mouseY / height - 0.5) * 2;
+    directionalLight(250, 250, 250, -dirX, -dirY, 0.25);
 
 
     for(i=0; i<=boxCount; i++)
@@ -277,7 +277,7 @@ if(w>480 && page==0)
 function drawCuboid(boxSize, rotateSpeed, x, y, z)
 {
 
-    let rs = rotateSpeed;
+    let rs = rotateSpeed*2;
     angleMode(RADIANS);
 
 
@@ -303,9 +303,9 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
 
     push();
         translate(x, y, z);
-        rotateZ(theta * rotateSpeed*2);
-        rotateX(theta * rotateSpeed*2);
-        rotateY(theta * rotateSpeed*2);
+        rotateZ(theta * rs);
+        rotateX(theta * rs);
+        rotateY(theta * rs);
         box(boxSize, boxSize/2, boxSize/4);
         // model(prism);
     pop(); 
