@@ -55,7 +55,7 @@ function setup()
 
     bgcolor = bgcolorArray[randomInt(0,2)];
     // bgcolor = 255; 
-    // bgcolor = 22; 
+    bgcolor = 22; 
     // 0 is black background, 2 is white.
 
     if(bgcolor==bgcolorArray[0])
@@ -105,7 +105,7 @@ function checkCss()
     if(bgcolor==bgcolorArray[0]) // if BLACK
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
-        $('.main-content h4').css('color','#999');
+        $('.main-content h4').css('color','#fff');
 
         $('#mainLogo').attr("src","assets/mainLogo_new_W.png");
 
