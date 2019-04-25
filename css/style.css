@@ -1225,6 +1225,7 @@ td .schedTime a
 td .schedTime a:hover
 {
   cursor: pointer;
+  text-shadow: 2px 2px 3px;
 }
 
 
@@ -1242,6 +1243,15 @@ td .schedLoc a
 {
   text-decoration: none;
 }
+
+td .schedLoc a:hover
+{
+  cursor: pointer;
+  /*text-decoration: underline;*/
+  text-shadow: 2px 2px 3px;
+
+}
+
 
 .finalrow
 {
@@ -1268,6 +1278,18 @@ td .schedLoc a
     padding-right: 15px;
     text-align: left;
 }
+
+
+.event-titles a
+{
+    text-decoration: none;
+}
+
+.event-titles a:hover
+{
+    text-shadow: 4px 4px 3px;
+}
+
 
 .n-bordered{
   border-collapse: collapse;

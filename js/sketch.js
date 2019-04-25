@@ -151,7 +151,7 @@ function checkCss()
 
         $('.mobile_events').css('color','#fff');
         $('.eventDate_events').css('border-bottom','solid 1px #fff');
-        
+        $('.event-titles a').css('color','#fff');        
 
     }
 
@@ -202,6 +202,7 @@ function checkCss()
 
         $('.mobile_events').css('color','#000');
         $('.eventDate_events').css('border-bottom','solid 1px #000');
+        $('.event-titles a').css('color','#000');
          
 
     }
