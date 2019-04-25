@@ -1229,7 +1229,6 @@ td .schedTime a:hover
 }
 
 
-
 td .schedLoc 
 {
   font-size: 11px;
@@ -1248,7 +1247,7 @@ td .schedLoc a:hover
 {
   cursor: pointer;
   /*text-decoration: underline;*/
-  text-shadow: 2px 2px 3px;
+  text-shadow: 2px 2px 7px;
 
 }
 
