@@ -17,22 +17,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="MFA Design and Technology, Annual Thesis Show, Parsons School of Design" />
 
-  <meta property="og:url" content="">
-  <meta property="fb:app_id" content=""/>
-  <meta property="og:type" content="">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:type" content="">
+  <meta property="og:url" content="http://mfadt.parsons.edu/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thesis Show 2019 - Parsons MFA Design and Technology">
+  <meta property="og:description" content="Parsons MFA Design and Technology Thesis show 2019 website.">
+  <meta property="og:image" content="http://mfadt.parsons.edu/assets/thesisshowcard.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <meta name="twitter:card" content="">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:creator" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thesis Show 2019 - Parsons MFA Design and Technology">
+  <meta name="twitter:description" content="Parsons MFA Design and Technology Thesis show 2019 website.">
+  <meta name="twitter:image" content="http://mfadt.parsons.edu/assets/thesisshowcard.png">
 
   <link id="cssFile" href='css/style.css' media='all' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,900i" rel="stylesheet">
@@ -52,35 +49,38 @@
 
 
 
-<body>
+<body onload="checkCss();">
   <div id="container"></div>
   <div id="menuBar">
     <nav id="main-menu2">
       <a href="index.html"><img id="cornerLogo" src="assets/cornerlogoW.png"></a>
         <!-- CLASS OF 2019 -->
       <ul class="nav-bar">
-        <!-- <li class="nav-button-event"><a href="index.html#projectGrid">PROJECTS</a></a></li> -->
-        <!-- <li class="nav-button-people"><a href="people.html">PEOPLE</a></li> -->
 
         <!-- Events Button -->
        <span data-tilt>
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Events</a></li>
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">Projects</a></li>
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">People</a></li>
+          <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Schedule</a></li>
+          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">Projects</a></li> -->
+          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">People</a></li> -->
+          <li id="nav_button_bottom_top_rsvp"><a class="buttonHighlight hideOnMobile showOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727">RSVP</a></li>
        </span>
       </ul>
     </nav>
   </div>
-      <!-- <img id = "graphicImg" src="assets/sample.png" > -->
+  <!-- <img id = "graphicImg" src="assets/sample.png" > -->
+
 
       <div class='main-content'>
         <!-- <img id="gif" src="assets/sample.png"> -->
         <div id="banner">
           <div id="mfadtTitle"><a href="https://www.newschool.edu/parsons/mfa-design-technology/">MFA<br>Design &<br>Technology</a></div>
           <div id="thesisShowTitle">Annual Thesis Show</div>
-          <img id="mainLogo" src="assets/mainLogo_new_W.png">
+          <img id="mainLogo" onclick="setup();" src="assets/mainLogo_new_W.png">
           <div id="location"><a href="https://goo.gl/maps/6Ydn3UcKpTz">6 E 16th St, New York City</a></div>
 
+          <div id="mobile_rsvp">
+            <a class="buttonHighlight showOnMobile hideOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727"><p>RSVP</p></a>
+          </div>
 
           <!-- about -->
           <!-- UNFOLDING will showcase nearly 100 projects by emerging artists, designers, coders, makers, hackers, educators, and thinkers. The exhibition will feature live project demos, performances, and a symposium.</div></div> -->
@@ -89,36 +89,36 @@
           <div id="grid-item--height-events" class="events grid">
 
             <div class="event-child grid-item grid-item--width2">
-              <div class="mainEventTitle">Gallery Exhibition</div><br>
-              <div class="mainEventDate">May 14 - May 17</div>
+              <a href="/events.html">
+                <div class="mainEventTitle">Gallery Exhibition</div><br>
+                <div class="mainEventDate">May 14 - May 17</div>
+              </a>
             </div>
 
             <div class="event-child grid-item grid-item--width2">
-              <div class="mainEventTitle">Interactive Showcase</div><br>
-              <div class="mainEventDate">May 14</div>
+              <a href="/events.html">
+                <div class="mainEventTitle">Interactive Showcase</div><br>
+                <div class="mainEventDate">May 14</div>
+              </a>
             </div>
 
             <div class="event-child grid-item grid-item--width2">
-              <div class="mainEventTitle">Live Performance</div><br>
-              <div class="mainEventDate">May 14</div>
+              <a href="/events.html">
+                <div class="mainEventTitle">Live Performance</div><br>
+                <div class="mainEventDate">May 14</div>
+              </a>  
             </div>
 
             <div class="event-child grid-item grid-item--width2">
-              <div class="mainEventTitle">Symposium</div><br>
-              <div class="mainEventDate">May 16</div><br>
+              <a href="/events.html">
+                <div class="mainEventTitle">Symposium</div><br>
+                <div class="mainEventDate">May 16</div><br>
+              </a>
             </div>
+        
+        </div>
 
-
-<!--             <div class="event-child grid-item grid-item--width2">
-              <div class="mainEventTitle">Performance</div><br>
-              <div class="mainEventDate">May 16</div><br>
-            </div>
- -->
-          </div>
-
-          <!-- <div id="nav_button_bottom_left" class="nav_corner"><a href="projects.html">Projects</a></div> -->
-          <!-- <div id="nav_button_bottom_right" class="nav_corner"><a href="people.html">People</a></div> -->
-
+          
         </div>
       </div>
 
@@ -131,7 +131,7 @@
 
       <div id="bottom-content2" class="footgrid">
         <div  class="footer-child foot-item foot-item--width2">
-          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonsLogo.png"></a>
+          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonslogo.png"></a>
           <!-- <h2 class="footing2">Parsons School of Design</h2> -->
         </div>
 
@@ -140,20 +140,37 @@
         </div>
 
         <div class="footer-child foot-item foot-item--width2">
-          <h2><a href="#">Acknowledgements</a></h2>
+          <h2><a href="acknowledgements.html">Acknowledgements</a></h2>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
+  
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
           <a href="https://www.instagram.com/mfadt" target="_blank"><img class="socialButtons" src="assets/instaLogo.png"></a>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
-          <a href="https://www.facebook.com/groups/mfadt/" target="_blank"><img class="socialButtons" src="assets/fbLogo.png"></a>
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
+          <a href="https://www.facebook.com/MFADT.Thesis/" target="_blank"><img class="socialButtons" src="assets/fbLogo.png"></a>
         </div>
 
-        <div  class="footer-child foot-item foot-item--width2 social">
-          <a href="https://twitter.com/mfadt?lang=en" target="_blank"><img class="socialButtons" src="assets/twitterLogo.png"></a>
+        <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
+          <a href="https://twitter.com/mfadt?lang=en" target="_blank">
+            <img class="socialButtons" src="assets/twitterLogo.png">
+          </a>
         </div>
+
+        <div class="hideOnDesktop showOnMobile footer-child foot-item foot-item--width2 social_mobile">
+          <a href="https://www.instagram.com/mfadt" target="_blank">
+            <img class="socialButtons_mobile" src="assets/instaLogo.png">
+          </a>
+          <a href="https://www.facebook.com/MFADT.Thesis/" target="_blank">
+            <img class="socialButtons_mobile" src="assets/fbLogo.png">
+          </a>
+          <a href="https://twitter.com/mfadt?lang=en" target="_blank">
+            <img class="socialButtons_mobile" src="assets/twitterLogo.png">
+          </a>
+        </div>
+
+
 
 <!--         <div  class="social_footer">
           <span id="footing2" class="color2">
@@ -193,6 +210,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 
     <script src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/sketch2.js"></script> -->
     <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
 
     <script>
