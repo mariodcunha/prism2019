@@ -2466,6 +2466,26 @@ div.row h3
     margin-bottom: 20px;
   }
 
+  .event-heading-inner
+  {
+    margin-left: 10%;
+  }
+
+  .event-heading-inner h1
+  {
+      font-size: 25px;
+  }
+
+  #acknowledgements-main
+  {
+    padding: 0;
+  }
+
+  .specialThanks_mobile ul li
+  {
+    margin-bottom: 12px;
+  }
+
 
 }
 
