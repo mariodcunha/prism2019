@@ -299,7 +299,7 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
     fill(0,0,0,0);
     if(bgcolor==bgcolorArray[0])
     {
-        ambientLight(200);
+        ambientLight(255);
         texture(imgB);
     }
     else
