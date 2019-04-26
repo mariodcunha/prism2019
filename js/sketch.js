@@ -33,9 +33,7 @@ function preload()
 //  myFont = loadFont('fonts/NeueDisplay-Random.otf');
   imgB = loadImage('assets/textureW.png');
   imgW = loadImage('assets/textureB.png');
-  // img = loadImage('assets/textureB1.png');
   prism = loadModel('assets/prism.obj');
-  // svg = loadImage('assets/texture1.svg');
 
 }
 
