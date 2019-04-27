@@ -372,11 +372,11 @@ function mouseMoved(event)
 
 function mouseClicked()
 {
-    fill(255,0,0);
-    mouseSaveX = mouseX;
-    mouseSaveY = mouseY;
+    // fill(255,0,0);
+    // mouseSaveX = mouseX;
+    // mouseSaveY = mouseY;
 
-    draw();
+    setup();
 }
 
 
