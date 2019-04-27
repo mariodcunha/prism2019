@@ -110,8 +110,8 @@ function checkCss()
         $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#fff');
         $('.row h3').css('color','#fff');
-        $('[class*="col-"] h4').css('color','#eee');
-        $('[class*="col-"] ul li ').css('color','#fff');
+        $('[class*="col-"] h4').css('color','#ddd');
+        $('[class*="col-"] ul li ').css('color','#888');
         
 
         $('#mainLogo').attr("src","assets/mainLogo_new_W.png");
