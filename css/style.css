@@ -652,6 +652,7 @@ hr {
 
   .pages {
     background-color: rgb(22, 22, 22);
+    overflow-x: hidden;
   }
 
   .page-container {
@@ -701,7 +702,7 @@ hr {
     color: #fff;
     font-family: 'SharpGrotesk20-Book';
     padding: 20px 10%;
-    width: 85%;
+    width: 83%;
     display: flex;
     margin-top: 7%;
   }
@@ -788,6 +789,64 @@ hr {
     line-height: 1.5;
   }
 
+  .categories {
+    display: none;
+  }
+
+   @media (max-width: 750px) {
+    .individual-project {
+        display: inline-block;
+        width: initial;
+    }
+    .individual-intro {
+        width: 100%;
+        border-right: none;
+    }
+
+    .individual-intro img {
+        max-width: 100%;
+    }
+
+    .thesis-studio-one{
+      margin-right: 30px;
+    }
+
+    .project-intro {
+      width: 100%;
+      padding: 25px 0 10px 0;
+    }
+
+    .categories {
+      display: block;
+    }
+
+    .categories .individual-intro ul {
+      display: block;
+    }
+
+    .individual-intro ul {
+      display: none;
+    }
+
+    .project-category {
+      display: none;
+    }
+
+    .categories .project-category{
+      border: none;
+      display: inline-block;
+    }
+
+    .individual-intro .student-intro {
+      border-bottom: 1px solid #2d2d2d;
+      padding-bottom: 50px;
+    }
+
+
+    /*Footer*/
+
+   }
+
 
 
 /*-----------------
@@ -842,13 +901,13 @@ hr {
   100% { width: 100%; }
 }
 
-.strikeThru 
+.strikeThru
 {
   position: relative;
 }
 
 
-.strikeThru:hover::after 
+.strikeThru:hover::after
 {
   content: ' ';
   position: absolute;
@@ -1106,9 +1165,9 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
 /*  @media(max-width:800px) {
     .events {top:65%;}
     }*/
-    
+
     .event-child .grid-item:hover
-    { 
+    {
         cursor: pointer;
     }
 
@@ -1172,7 +1231,7 @@ EVENT PAGE
   margin-bottom: 50px;
 }
 
-#schedule th 
+#schedule th
 {
     text-transform: uppercase;
     font-size: 14px;
@@ -1189,7 +1248,7 @@ EVENT PAGE
 
 }
 
-#schedule table, th, td 
+#schedule table, th, td
 {
   /*border: 1px solid #595959;*/
   text-align: center;
@@ -1198,13 +1257,13 @@ EVENT PAGE
     width: 300px;
 }
 
-#schedule th, td 
+#schedule th, td
 {
   height: auto;
   padding: 20px;
 }
 
-td .schedTime 
+td .schedTime
 {
   font-size: 13px;
   font-family: 'SharpGrotesk20-Book';
@@ -1229,7 +1288,7 @@ td .schedTime a:hover
 }
 
 
-td .schedLoc 
+td .schedLoc
 {
   font-size: 11px;
   font-family: 'SharpGrotesk20-Book';
@@ -1644,6 +1703,14 @@ STUDENTS GRID
     transition: 0.3s;
   }
 
+  .page-foot-social-desktop {
+    display: block;
+  }
+
+  .page-foot-social-mobile {
+    display: none;
+  }
+
   /*.foot-item--width2 { width: 200px; }*/
 
 /*.foot-item--width3 { width: 480px; }
@@ -1656,7 +1723,43 @@ STUDENTS GRID
 
 
 @media (max-width: 600px){
-  .foot-item--width2 { width: 200px; }
+  .foot-item--width2 { width: 150px; }
+}
+
+/*@media (max-width: 700px){
+  .page-foot-social-desktop {
+    display: block;
+  }
+
+  .page-foot-social-mobile {
+    display: none;
+  }
+}*/
+
+
+@media (max-width: 850px){
+   .pages .foot-item--width2 {
+    width: 100px;
+   }
+
+  .page-foot-social-desktop {
+    display: none;
+  }
+
+  .page-foot-social-mobile {
+    display: flex;
+    height: 50px;
+    padding: 10px 35%;
+  }
+
+  .page-foot-social-mobile .social {
+    width: 50px;
+  }
+
+  #bottom-content2 {
+    text-align: center;
+  }
+
 }
 
 .social
@@ -1766,7 +1869,7 @@ STUDENTS GRID
     text-align: left;
   }
 
-  [class*="col-"] h4 
+  [class*="col-"] h4
   {
     margin: 30px 0 0 0;
     text-transform: uppercase;
@@ -1783,7 +1886,7 @@ STUDENTS GRID
     padding: 0;
   }
 
-  [class*="col-"] ul li 
+  [class*="col-"] ul li
   {
     display: block;
     color: #fff;
@@ -2268,7 +2371,7 @@ div.row h3
     top:90vh;
     left:4vw;
     margin-right: 18%;
-    margin-top: 20px; 
+    margin-top: 20px;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 70px;
@@ -2386,7 +2489,7 @@ div.row h3
       height: 30px;
       margin-right: 10px;
       margin-left: 10px;
-      position: relative; 
+      position: relative;
   }
 
 
@@ -2456,12 +2559,12 @@ div.row h3
   }
 
 
-  #main-menu2 .nav-bar 
+  #main-menu2 .nav-bar
   {
       padding: 10px;
   }
 
-  #menuBar 
+  #menuBar
   {
     margin-bottom: 20px;
   }
@@ -2497,4 +2600,4 @@ div.row h3
 }
 
 
-  
+
