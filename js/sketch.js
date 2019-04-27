@@ -25,7 +25,10 @@ var boxPositionsY = [];
 var boxPositionsZ = [];
 var boxCount=5;
 
-var page=0;
+var page=0, dir;
+var factor=1;
+var eventChanges;
+
 
 
 function preload() 
@@ -59,12 +62,14 @@ function setup()
     if(bgcolor==bgcolorArray[0])
     {
         spectrumFrom = color(255, 255, 255, 20);
-        spectrumTo = color(50, 50, 50, 10);        
+        spectrumTo = color(50, 50, 50, 10);   
+        dir = -1;
     }
     else
     {
         spectrumFrom = color(50, 50, 50, 50);
         spectrumTo = color(255, 255, 255, 10);
+        dir = 1;
     }
 
     checkCss();
@@ -100,7 +105,7 @@ function setup()
 
 function checkCss()
 {
-    if(bgcolor==bgcolorArray[0]) // if BLACK
+    if(bgcolor<=bgcolorArray[0]) // if BLACK
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
         $('.main-content h4').css('color','#fff');
@@ -119,7 +124,7 @@ function checkCss()
         $('.mainEventDate').css('color','#FFF');
         $("#cornerLogo").attr("src","assets/cornerLogoW.png");
 
-        $('.foot-item:hover').css('text-shadow','4px 4px 3px #fff');
+        // $('.foot-item:hover').css('text-shadow','4px 4px 3px #fff');
 
         // $('#byLine').css('color','#FFF');
         // $('.nav-bar li a').css('color','#FFF');
@@ -128,6 +133,7 @@ function checkCss()
         $('#bottom-content2 a').css('color','#FFF');
 
         $('#nav_button_bottom_top a').css('color','#FFF');
+        $('#nav_button_bottom_top_rsvp a').css('background','rgba(0,0,0,0.6)');
         $('#nav_button_bottom_top_rsvp a').css('color','#FFF');
         $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
 
@@ -155,6 +161,8 @@ function checkCss()
         $('.eventDate_events').css('border-bottom','solid 1px #fff');
         $('.event-titles a').css('color','#fff');        
 
+        $('label').css('color','#ccc');
+        $('h6.nameTags a').css('color','#eee');
     }
 
     else
@@ -177,9 +185,10 @@ function checkCss()
         $('.mainEventDate').css('color','#000');
         $("#cornerLogo").attr("src","assets/cornerLogoB.png");
 
-        $('.foot-item:hover').css('text-shadow','4px 4px 3px #000');
+        // $('.foot-item:hover').css('text-shadow','4px 4px 3px #000');
 
         $('#nav_button_bottom_top a').css('color','#000');
+        $('#nav_button_bottom_top_rsvp a').css('background','rgba(255,255,255,0.6)');
         $('#nav_button_bottom_top_rsvp a').css('color','#000');
         $('#nav_button_bottom_top_rsvp a').css('border','solid #000 2px');
         $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('background','#000');
@@ -209,7 +218,9 @@ function checkCss()
         $('.mobile_events').css('color','#000');
         $('.eventDate_events').css('border-bottom','solid 1px #000');
         $('.event-titles a').css('color','#000');
-         
+
+        $('label').css('color','#444');
+        $('h6.nameTags a').css('color','#222');             
 
     }
 }
@@ -237,17 +248,21 @@ function indexPage()
 function draw() 
 {
 
-
 if(w>480 && page==0)    
 {
     background(bgcolor);
 
-    let locX = mouseX - width / 2;
-    let locY = mouseY - height / 2;
+    let locX = mouseX - width / 2 + noise(randomInt(-200,200))*100;
+    let locY = mouseY - height / 2 + noise(randomInt(-200,200)*100);
+
+    let lightSpread=noise(randomInt(-500,500)*1000);
+
+    locX = locX + lightSpread;
+    locY = locY + lightSpread;
 
     let pointLightOpacity;
 
-    pointLightOpacity = 200;
+    pointLightOpacity = 255;
 
     pointLight(255, 0, 0, locX, locY, pointLightOpacity);
     pointLight(0, 255, 0, locX, locX, pointLightOpacity);
@@ -297,12 +312,12 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
     fill(0,0,0,0);
     if(bgcolor==bgcolorArray[0])
     {
-        ambientLight(255);
+        ambientLight(30);
         texture(imgB);
     }
     else
     {
-        ambientLight(0);
+        ambientLight(0,0,0);
         texture(imgW);
     }
     // specularMaterial(255,255,255,100);
@@ -348,7 +363,7 @@ function shapeDraw(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4)
 function mouseMoved(event) 
 {
     // draw();
-    var eventChanges = event.movementX/2+event.movementY/2;
+    eventChanges = event.movementX/2+event.movementY/2;
     // change = eventChanges/2;
     // md += eventChanges/2;
     theta = theta + 0.1 + noise(eventChanges)/7;

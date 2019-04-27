@@ -212,12 +212,12 @@ hr {
 
  .main-content-projects
  {
-  margin-top: 13vw;
+  margin-top: 5%;
 }
 
 .main-content-students
 {
-  margin-top: 14vw;
+  margin-top: 5%;
 }
 
 .sub-content{
@@ -994,22 +994,24 @@ hr {
     display:none;
   }
 
-  label {
-    width:auto;
-    float:left;
-    text-align:center;
-    /* background:#ffffff; */
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
-    color:#FFF;
-    padding:0.5%;
-    margin:0.5%;
-    margin-bottom:10px;
+  label 
+  {
+    /*width:auto;*/
+    /*text-align:center;*/
+    /*margin:0.5%;*/
+    margin-bottom:30px;
     cursor:pointer;
+    font-family: SharpGrotesk20-Medium;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 40px;
   }
-  input[type="radio"]:checked + label {
-    background:#FFF;
-    color:#000;
+
+  input[type="radio"]:checked + label 
+  {
+    border: 2px solid;
   }
+  
   input[type="radio"][id="DataArt"]:checked + .DataArt{
     background-color: yellow;
   }
@@ -1040,8 +1042,8 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
 
   .grid
   {
-    /*margin-right: 5vw;*/
-    /*margin-left: 5vw;*/
+    margin-right: 11%;
+    margin-left: 11%;
   }
 
   /* clearfix */
@@ -1407,10 +1409,12 @@ PROJECT HEADER
 .content{
   position: relative;
 }
-.fixedrighttitle{
+.fixedrighttitle
+{
   position: relative;
   float: right;
   width: 100%;
+  margin-top: 20px;
 }
 
 
@@ -1426,9 +1430,7 @@ STUDENTS GRID
 
 .list_project_name
 {
-  /*text-transform: uppercase;*/
-  /*letter-spacing: 3px;*/
-  font-size; 45px;
+  font-family: 'SharpGrotesk20-Book';
 }
 
 
