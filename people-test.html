@@ -13,7 +13,7 @@
   <meta http-equiv="Cache-control" content="no-cache">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-  <title>PRISM - MFADT 2019 THESIS SHOW</title>
+  <title>People - PRISM - MFADT 2019 THESIS SHOW</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="MFA Design and Technology, Annual Thesis Show, Parsons School of Design" />
 
@@ -34,7 +34,7 @@
   <link id="cssFile" href='css/style.css' media='all' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,900i" rel="stylesheet">
   <!-- <link rel="stylesheet" href="styles/css/main.css"> -->
-  <script type="text/javascript" src="js/lucien.js"></script>
+<!--   <script type="text/javascript" src="js/lucien.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" type="text/javascript"></script>
  -->
@@ -49,89 +49,106 @@
 
 
 
-<body onload="checkCss();">
+<body onload="pageSet();">
   <div id="container"></div>
   <div id="menuBar">
     <nav id="main-menu2">
-      <a href="index.html"><img id="cornerLogo" src="assets/cornerlogoW.png"></a>
+      <a href="index.html"><img id="cornerLogo" src="/assets/cornerLogoW.png"></a>
         <!-- CLASS OF 2019 -->
       <ul class="nav-bar">
+        <!-- <li class="nav-button-event"><a href="index.html#projectGrid">PROJECTS</a></a></li> -->
+        <!-- <li class="nav-button-people"><a href="people.html">PEOPLE</a></li> -->
 
         <!-- Events Button -->
+
        <span data-tilt>
           <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Schedule</a></li>
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="projects.html">Projects</a></li>          
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="people.html">People</a></li>
-          <li id="nav_button_bottom_top_rsvp"><a class="buttonHighlight hideOnMobile showOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727">RSVP</a></li>
+          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">Projects</a></li> -->
+          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">People</a></li> -->
+          <li id="nav_button_bottom_top" ><a class="strikeThru" href="index.html">Home</a></li>
        </span>
+
       </ul>
     </nav>
   </div>
-  <!-- <img id = "graphicImg" src="assets/sample.png" > -->
+      <!-- <img id = "graphicImg" src="assets/sample.png" > -->
 
 
-      <div class='main-content'>
-        <!-- <img id="gif" src="assets/sample.png"> -->
-        <div id="banner">
-          <div id="mfadtTitle"><a href="https://www.newschool.edu/parsons/mfa-design-technology/">MFA<br>Design &<br>Technology</a></div>
-          <div id="thesisShowTitle">Annual Thesis Show</div>
-          <img id="mainLogo" onclick="setup();" src="assets/mainLogo_new_W.png">
-          <div id="location"><a href="https://goo.gl/maps/6Ydn3UcKpTz">6 E 16th St, New York City</a></div>
 
-          <div id="mobile_rsvp">
-            <a class="buttonHighlight showOnMobile hideOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727"><p>RSVP</p></a>
-          </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
+<!--     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script> -->
 
-          <!-- about -->
-          <!-- UNFOLDING will showcase nearly 100 projects by emerging artists, designers, coders, makers, hackers, educators, and thinkers. The exhibition will feature live project demos, performances, and a symposium.</div></div> -->
+<!--     <script src="js/script.js"></script> -->
+    <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
+
+<!-- 
+    <script>
+      function MM_preloadImages() { //v3.0
+        var d=document; 
+        if(d.images){ 
+          if(!d.MM_p) d.MM_p=new Array();
+          var i;
+          var j=d.MM_p.length;
+          var a=MM_preloadImages.arguments; 
+          for(i=0; i<a.length; i++)
+           if (a[i].indexOf("#")!=0) { 
+             d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
+           }
+         }
+       }
+     </script>
+ -->
 
 
-          <div id="grid-item--height-events" class="events grid">
+      <div class="clear"> </div>
 
-            <div class="event-child grid-item grid-item--width2">
-              <a href="/events.html">
-                <div class="mainEventTitle">Gallery Exhibition</div><br>
-                <div class="mainEventDate">May 14 - May 17</div>
-              </a>
-            </div>
+      <div class="event-heading-inner"><h1>People</h1></div>
 
-            <div class="event-child grid-item grid-item--width2">
-              <a href="/events.html">
-                <div class="mainEventTitle">Interactive Showcase</div><br>
-                <div class="mainEventDate">May 14</div>
-              </a>
-            </div>
+      <div class="main-content-students">
 
-            <div class="event-child grid-item grid-item--width2">
-              <a href="/events.html">
-                <div class="mainEventTitle">Live Performance</div><br>
-                <div class="mainEventDate">May 14</div>
-              </a>  
-            </div>
 
-            <div class="event-child grid-item grid-item--width2">
-              <a href="/events.html">
-                <div class="mainEventTitle">Symposium</div><br>
-                <div class="mainEventDate">May 16</div><br>
-              </a>
-            </div>
-        
-        </div>
+      <div class="clear"> </div>
 
+
+        <div class="fixedrighttitle">
+          <ul class="students-list grid">
+          <script id="students-template" type="x-handlebars-template">​
+
+          {{#each this}}
+            <li class="grid-item grid-item--width2 grid-item--height6" data-index="{{id}}">
+            {{#if profile-pic}} 
+            <a href="#" class="student-photo"><img class="myPhoto" src="portraits/{{profile-pic}}" height="130" alt="{{name}}"/></a>
+            {{else}}
+            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto.png" height="130" alt="{{name}}"/></a>
+            {{/if}}
+
+            <h6 class="nameTags" style="color:#FFFFFF; margin-top:10px; margin-bottom:15px;">
+              <a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">
+                <span class="list_student_name">{{name}}</span><br><span class="list_project_name">{{project.title}}</span></a></h6>
+            </li>
+            {{/each}}
+
+          </script>
           
-        </div>
+        </ul>
       </div>
+      <div class="clear"></div>
+    </div>
 
 
 
 
+  
 
+ 
     <div id="pretty_thin"></div>
     <div id="footer-main">
 
       <div id="bottom-content2" class="footgrid">
         <div  class="footer-child foot-item foot-item--width2">
-          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonslogo.png"></a>
+          <a href="https://www.newschool.edu/parsons/"><img id="parsonsLogo" src="assets/parsonslogoW.png"></a>
           <!-- <h2 class="footing2">Parsons School of Design</h2> -->
         </div>
 
@@ -140,7 +157,7 @@
         </div>
 
         <div class="footer-child foot-item foot-item--width2">
-          <h2><a href="acknowledgements.html">Acknowledgements</a></h2>
+          <h2><a href="#">Acknowledgements</a></h2>
         </div>
 
   
@@ -170,65 +187,18 @@
           </a>
         </div>
 
-
-
-<!--         <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://www.instagram.com/mfadt/?hl=en">
-
-            </a>
-          </span>
-        </div>
-
-        <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://www.facebook.com/MFADT.Thesis/">
-              <img class="social-buttons" src="assets/fbLogo.png">
-            </a>
-          </span>
-        </div>
-
-        <div  class="social_footer">
-          <span id="footing2" class="color2">
-            <a href="https://twitter.com/mfadt?lang=en">
-              <img class="social-buttons" src="assets/twitterLogo.png">
-            </a>
-          </span>
-        </div> -->
-
-      <!-- </span> -->
-
       </div>
 
     </div>
 
-
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!--     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-
     <script src="js/script.js"></script>
-    <!-- <script type="text/javascript" src="js/sketch2.js"></script> -->
     <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
-
-    <script>
-      function MM_preloadImages() { //v3.0
-        var d=document;
-        if(d.images){
-          if(!d.MM_p) d.MM_p=new Array();
-          var i;
-          var j=d.MM_p.length;
-          var a=MM_preloadImages.arguments;
-          for(i=0; i<a.length; i++)
-           if (a[i].indexOf("#")!=0) {
-             d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
-           }
-         }
-       }
-     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
    </body>
