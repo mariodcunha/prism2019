@@ -28,6 +28,7 @@ var boxCount=5;
 var page=0, dir;
 var factor=1;
 var eventChanges;
+var padding=100;
 
 
 
@@ -79,9 +80,12 @@ function setup()
     {
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
-        boxPositionsX[i] = randomInt(-w/16,w/2);
-        boxPositionsY[i] = randomInt(-h/2,h/4);
-        boxPositionsZ[i] = randomInt(0,w/8);
+        
+        boxPositionsX[i] = randomInt(-w/6,w);
+        
+        boxPositionsY[i] = randomInt(-h,h);
+        
+        boxPositionsZ[i] = randomInt(-w/2,-w/4);
     }
 
 
@@ -112,7 +116,6 @@ function checkCss()
         $('.row h3').css('color','#fff');
         $('[class*="col-"] h4').css('color','#ddd');
         $('[class*="col-"] ul li ').css('color','#888');
-        
 
         $('#mainLogo').attr("src","assets/mainLogo_new_W.png");
 
@@ -302,12 +305,10 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
     let rs = rotateSpeed*2;
     angleMode(RADIANS);
 
-
     gl = this._renderer.GL;
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
     gl.disable(gl.DEPTH_TEST);
-    
     
     fill(0,0,0,0);
     if(bgcolor==bgcolorArray[0])
@@ -324,12 +325,19 @@ function drawCuboid(boxSize, rotateSpeed, x, y, z)
     // ambientMaterial(255,0,0,100);
 
     push();
-        translate(x, y, z);
+        translate(x,y,z);
+        // translate(x, y, z);
+        // fill(255,0,0,50);
+        // ellipse(0,-400, 50,50);
+        // console.log("("+x+", "+y+", "+z+")");
+        rotateX(theta/200 * rs);
         rotateZ(theta * rs);
-        rotateX(theta * rs);
-        rotateY(theta * rs);
-        box(boxSize, boxSize/2, boxSize/4);
-        // model(prism);
+        rotateY(theta/200 * rs);
+
+        model(prism);
+
+        // box(boxSize, boxSize/2, boxSize/4);
+        
     pop(); 
 }
 
