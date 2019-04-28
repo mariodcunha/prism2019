@@ -136,9 +136,9 @@ function checkCss()
         $('#bottom-content2 a').css('color','#FFF');
 
         $('#nav_button_bottom_top a').css('color','#FFF');
-        $('#nav_button_bottom_top_rsvp a').css('background','rgba(0,0,0,0.6)');
-        $('#nav_button_bottom_top_rsvp a').css('color','#FFF');
-        $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
+        $('#nav_button_bottom_top_rsvp a').css('background','#fff');
+        $('#nav_button_bottom_top_rsvp a').css('color','#000');
+        // $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
 
         $('#mobile_rsvp a').css('color','#FFF');
         $('#mobile_rsvp').css('border','solid #FFF 2px');
@@ -191,11 +191,10 @@ function checkCss()
         // $('.foot-item:hover').css('text-shadow','4px 4px 3px #000');
 
         $('#nav_button_bottom_top a').css('color','#000');
-        $('#nav_button_bottom_top_rsvp a').css('background','rgba(255,255,255,0.6)');
-        $('#nav_button_bottom_top_rsvp a').css('color','#000');
-        $('#nav_button_bottom_top_rsvp a').css('border','solid #000 2px');
-        $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('background','#000');
-        $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('color','#fff');
+        $('#nav_button_bottom_top_rsvp a').css('background','#000');
+        $('#nav_button_bottom_top_rsvp a').css('color','#fff');
+        // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('background','#000');
+        // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('color','#fff');
 
         $('#mobile_rsvp a').css('color','#000');
         $('#mobile_rsvp').css('border','solid #000 2px');        
