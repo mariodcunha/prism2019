@@ -2223,11 +2223,11 @@ div.row h3
 {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: 'SharpGrotesk15-Medium';
+  font-family: 'SharpGrotesk15-Book';
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 45px;
   font-weight: bold;
-  letter-spacing: 0.14em;
+  /*letter-spacing: 0.14em;*/
 }
 
 .aboutStatement
@@ -2694,6 +2694,7 @@ div.row h3
   .aboutTitle
   {
     margin-bottom: 7%;
+    font-size: 35px;
   }
 
   .aboutStatement 
