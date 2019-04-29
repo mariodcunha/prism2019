@@ -81,7 +81,7 @@ function setup()
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
         
-        boxPositionsX[i] = randomInt(-w/6,w);
+        boxPositionsX[i] = randomInt(-w/4,w);
         
         boxPositionsY[i] = randomInt(-h,h);
         
