@@ -81,7 +81,7 @@ function setup()
         boxSizes[i] = randomInt(w/8, w/4);
         boxSpeeds[i] = noise(randomInt(50))/10 * random(-1,1);
         
-        boxPositionsX[i] = randomInt(-w/4,w);
+        boxPositionsX[i] = randomInt(-w/3,w);
         
         boxPositionsY[i] = randomInt(-h,h);
         
@@ -138,10 +138,12 @@ function checkCss()
         $('#nav_button_bottom_top a').css('color','#FFF');
         $('#nav_button_bottom_top_rsvp a').css('background','#fff');
         $('#nav_button_bottom_top_rsvp a').css('color','#000');
+        // $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,50)');
         // $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
 
-        $('#mobile_rsvp a').css('color','#FFF');
-        $('#mobile_rsvp').css('border','solid #FFF 2px');
+        $('#mobile_rsvp a').css('color','#000');
+        $('#mobile_rsvp').css('background','#fff');
+        // $('#mobile_rsvp').css('border','solid #FFF 2px');
         
         $("#parsonsLogo").attr("src","assets/parsonslogoW.png");
         $('.socialButtons').css('filter', 'invert(100%)');
@@ -166,6 +168,11 @@ function checkCss()
 
         $('label').css('color','#ccc');
         $('h6.nameTags a').css('color','#eee');
+
+        $('.aboutTitle').css('color','#fff');
+        $('.aboutStatement').css('color','#ddd');
+        $('.aboutPara').css('color','#aaa');
+
     }
 
     else
@@ -196,8 +203,9 @@ function checkCss()
         // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('background','#000');
         // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('color','#fff');
 
-        $('#mobile_rsvp a').css('color','#000');
-        $('#mobile_rsvp').css('border','solid #000 2px');        
+        $('#mobile_rsvp a').css('color','#fff');
+        $('#mobile_rsvp').css('background','#000');
+        // $('#mobile_rsvp').css('border','solid #FFF 2px');
 
         $('#bottom-content2 a').css('color','#000');
         // $('.social_footer').css('filter', 'invert(100%)');
@@ -223,6 +231,10 @@ function checkCss()
 
         $('label').css('color','#444');
         $('h6.nameTags a').css('color','#222');             
+
+        $('.aboutTitle').css('color','#000');
+        $('.aboutStatement').css('color','#333');
+        $('.aboutPara').css('color','#444');
 
     }
 }
