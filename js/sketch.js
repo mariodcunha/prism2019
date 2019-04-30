@@ -185,6 +185,8 @@ function checkCss()
         $('.aboutPara_eventDetails').css('color','#aaa');
 
         $('.generalLinks').css('color','#ddd');
+        $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,255)');
+        
 
     }
 
@@ -257,6 +259,7 @@ function checkCss()
         $('.aboutPara_eventDetails').css('color','#333');
 
         $('.generalLinks').css('color','#333');
+        $('#main-menu2 .nav-bar-index').css('background','#fff');
         
 
     }

@@ -2219,30 +2219,10 @@ div.row h3
 }
 
 
-#wholeContainer
-{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  /*justify-content: center;*/
-  border: 2px solid var(--gs0);
-  border-radius: 8px;
-  height: 100vh;
-
-  /*Windows overflow hidden*/
-  overflow-x: hidden;
-}
-
-
-#snapScroll_1, #snapScroll_2
-{
-  scroll-snap-align: start;
-  height: 100vh;
-}
-
 
 #aboutText
 {
-  margin-top: 10%;
+  /*margin-top: 10%;*/
   margin-left: 10%;
   margin-right: 40%;
   margin-bottom: 11%;
@@ -2327,7 +2307,10 @@ div.row h3
 }
 
 
-
+.ack
+{
+  padding-left: 40px;
+}
 
 
 
@@ -2638,8 +2621,8 @@ div.row h3
   {
       width: 30px;
       height: 30px;
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 20px;
+      margin-left: 0px;
       position: relative;
   }
 
@@ -2724,7 +2707,7 @@ div.row h3
 
   #main-menu2 .nav-bar-index
   {
-    position: relative;
+    /*position: relative;*/
     /*background: black;*/
   }
 
@@ -2780,6 +2763,14 @@ div.row h3
   }
 
 
+.ack
+{
+  padding-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*
   #wholeContainer
   {
     scroll-snap-type: none;
@@ -2789,7 +2780,35 @@ div.row h3
   #snapScroll_1, #snapScroll_2
   {
     scroll-snap-align: none;
+
   }
+
+
+#wholeContainer
+{
+  /*scroll-snap-type: y mandatory;*/
+  /*overflow-y: scroll;*/
+  /*justify-content: center;*/
+/*  border: 2px solid var(--gs0);
+  border-radius: 8px;
+  height: 100vh;
+*/
+  /*Windows overflow hidden*/
+  /*overflow-x: hidden;*/
+/*}*/
+
+/*
+#snapScroll_1, #snapScroll_2
+{
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+
+
+*/
+
+
 
 
 }
