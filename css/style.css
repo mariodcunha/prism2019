@@ -1183,7 +1183,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   -----------------*/
   .events
   {
-    margin: auto;
+    /*margin: auto;*/
     max-width: 100%;
     top: 65%;
     /*margin-left: 10%;*/
@@ -1226,7 +1226,7 @@ EVENT PAGE
 .event-heading-inner
 {
   width: 100%;
-  padding-top: 5vh;
+  padding-top: 5%;
   padding-bottom: 0.5vh;
   color: #fff;
   margin-bottom: 10px;
