@@ -121,6 +121,12 @@ body
   max-width: 100%;
 }
 
+a
+{
+  text-decoration: none;
+}
+
+
   /*windows overflow hidden*/
 #home-main {
   overflow: hidden;
@@ -2286,10 +2292,39 @@ div.row h3
 }
 
 
+.generalLinks
+{
+  font-family: 'SharpGrotesk20-Medium';
+  font-weight: bold;  
+  font-size: 15px;
+}
 
 
+.aboutStatement a
+{
+  text-decoration: none;
+}
 
+.aboutStatement:after
+{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: -webkit-linear-gradient(-45deg, #9900ff 0%, #0000ff 17%, #00ccff 34%, #66ff00 51%, #ffff00 68%, #ffff00 85%, #ff0000 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    /*filter: blur(1px);*/
+    width: 0;
+    cursor: pointer;
+}
 
+.aboutStatement:hover:after
+{
+    width: 70%;
+    left: 0;
+    cursor: pointer;
+}
 
 
 

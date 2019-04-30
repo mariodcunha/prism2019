@@ -184,6 +184,8 @@ function checkCss()
         $('.aboutPara').css('color','#aaa');
         $('.aboutPara_eventDetails').css('color','#aaa');
 
+        $('.generalLinks').css('color','#ddd');
+
     }
 
     else
@@ -253,6 +255,8 @@ function checkCss()
         $('.aboutStatement').css('color','#333');
         $('.aboutPara').css('color','#444');
         $('.aboutPara_eventDetails').css('color','#333');
+
+        $('.generalLinks').css('color','#333');
         
 
     }
