@@ -90,6 +90,7 @@ function setup()
         boxPositionsZ[i] = randomInt(-w/2,-w/4);
     }
 
+    draw();
 
 // console.log(boxPositionsX);      
 // console.log(boxPositionsY);      
@@ -111,8 +112,7 @@ function setup()
 
 function checkCss()
 {
-    // setup();
-    
+
     if(bgcolor<=bgcolorArray[0]) // if BLACK
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
@@ -241,6 +241,7 @@ function checkCss()
         $('.aboutPara').css('color','#444');
 
     }
+    // setup();
 }
 
 
