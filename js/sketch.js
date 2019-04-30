@@ -30,6 +30,8 @@ var factor=1;
 var eventChanges;
 var padding=100;
 
+var posFactor;
+
 
 
 function preload() 
@@ -109,6 +111,8 @@ function setup()
 
 function checkCss()
 {
+    // setup();
+    
     if(bgcolor<=bgcolorArray[0]) // if BLACK
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
@@ -293,6 +297,10 @@ if(w>480 && page==0)
 
     for(i=0; i<=boxCount; i++)
     {
+           boxPositionsX[i] = boxPositionsX[i] + posFactor;
+           boxPositionsY[i] = boxPositionsY[i] + posFactor;
+           boxPositionsZ[i] = boxPositionsZ[i] + posFactor;
+
         drawCuboid(boxSizes[i], boxSpeeds[i], boxPositionsX[i], boxPositionsY[i], boxPositionsZ[i]);
     }
 
@@ -307,6 +315,8 @@ if(w>480 && page==0)
     theta = theta + (0.1);
 
     }
+
+    posFactor = noise(randomInt(-100,100))/2 * randomInt(-1,1);
 }
 
 
