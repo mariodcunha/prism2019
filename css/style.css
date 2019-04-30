@@ -1026,7 +1026,7 @@ hr {
 #nav_button_bottom_top
 {
   color: #fff;
-  transition: 0.5s;
+  /*transition: 0.5s;*/
 }
 
 #nav_button_bottom_top:hover
@@ -1232,7 +1232,16 @@ EVENT PAGE
   margin-bottom: 10px;
 }
 
-.event-heading-inner h1
+.event-heading-inner_eventDetails
+{
+  width: 100%;
+  /*padding-top: 5%;*/
+  padding-bottom: 0.5vh;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.event-heading-inner h1, .event-heading-inner_eventDetails h1
 {
   font-family: 'SharpGrotesk15-Medium';
   text-transform: uppercase;
@@ -1359,7 +1368,7 @@ td .schedLoc a:hover
     padding-right: 15px;
 }
 
-.event-titles
+.event-titles, .event-titles_first
 {
     text-transform: uppercase;
     font-size: 14px;
@@ -1369,7 +1378,7 @@ td .schedLoc a:hover
 }
 
 
-.event-titles a
+.event-titles a, .event-titles_first a
 {
     text-decoration: none;
     text-transform: uppercase;
@@ -1377,10 +1386,11 @@ td .schedLoc a:hover
     letter-spacing: 2px;
     padding-right: 15px;
     text-align: left;
-
 }
 
-.event-titles a:hover
+
+
+.event-titles a:hover, .event-titles_first a:hover
 {
     text-shadow: 4px 4px 3px;
 }
@@ -2232,6 +2242,14 @@ div.row h3
   margin-bottom: 11%;
 }
 
+#eventDetails
+{
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-bottom: 11%;
+}
+
 .aboutTitle
 {
   margin-top: 5%;
@@ -2255,6 +2273,16 @@ div.row h3
   font-size: 15px;
   line-height: 22px;
 
+}
+
+.aboutPara_eventDetails
+{
+  font-size: 13px;
+  font-family: 'SharpGrotesk20-Book';
+  text-align: left;
+  margin-top: -15px;
+  line-height: 22px;
+  margin-left: 40%;
 }
 
 
