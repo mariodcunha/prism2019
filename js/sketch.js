@@ -30,6 +30,8 @@ var factor=1;
 var eventChanges;
 var padding=100;
 
+var posFactor;
+
 
 
 function preload() 
@@ -88,6 +90,7 @@ function setup()
         boxPositionsZ[i] = randomInt(-w/2,-w/4);
     }
 
+    draw();
 
 // console.log(boxPositionsX);      
 // console.log(boxPositionsY);      
@@ -109,6 +112,7 @@ function setup()
 
 function checkCss()
 {
+
     if(bgcolor<=bgcolorArray[0]) // if BLACK
     {
         $('body').css('background-color','rgba(22,22,22,255)'); 
@@ -152,6 +156,11 @@ function checkCss()
         $('.socialButtons:hover').css('background-color', 'rgba(22,22,22,255)');
 
         $('.event-heading-inner').css('color','#fff');
+        $('.event-heading-inner_eventDetails').css('color','#fff');
+        
+        $('.event-titles').css('color','#fff');
+        $('.event-titles_first').css('color','#fff');
+        
         $('#schedule').css('color','#fff');
         $('.schedTime').css('color','#fff');
         $('.schedTime a').css('color','#fff');
@@ -164,7 +173,8 @@ function checkCss()
 
         $('.mobile_events').css('color','#fff');
         $('.eventDate_events').css('border-bottom','solid 1px #fff');
-        $('.event-titles a').css('color','#fff');        
+        $('.event-titles a').css('color','#fff');
+        $('.event-titles_first a').css('color','#fff');
 
         $('label').css('color','#ccc');
         $('h6.nameTags a').css('color','#eee');
@@ -172,6 +182,9 @@ function checkCss()
         $('.aboutTitle').css('color','#fff');
         $('.aboutStatement').css('color','#ddd');
         $('.aboutPara').css('color','#aaa');
+        $('.aboutPara_eventDetails').css('color','#aaa');
+
+        $('.generalLinks').css('color','#ddd');
 
     }
 
@@ -216,7 +229,12 @@ function checkCss()
         $('.socialButtons:hover').css('background-color', '#fff');
 
         $('.event-heading-inner').css('color','#000');
+        $('.event-heading-inner_eventDetails').css('color','#000');
+
+        $('.event-titles').css('color','#000');
+        $('.event-titles_first').css('color','#000');
         $('#schedule').css('color','#000');
+        
         $('.schedTime').css('color','#000');
         $('.schedTime a').css('color','#000');
         $('.schedLoc').css('color','#000');
@@ -228,6 +246,7 @@ function checkCss()
         $('.mobile_events').css('color','#000');
         $('.eventDate_events').css('border-bottom','solid 1px #000');
         $('.event-titles a').css('color','#000');
+        $('.event-titles_first a').css('color','#000');
 
         $('label').css('color','#444');
         $('h6.nameTags a').css('color','#222');             
@@ -235,8 +254,13 @@ function checkCss()
         $('.aboutTitle').css('color','#000');
         $('.aboutStatement').css('color','#333');
         $('.aboutPara').css('color','#444');
+        $('.aboutPara_eventDetails').css('color','#333');
+
+        $('.generalLinks').css('color','#333');
+        
 
     }
+    // setup();
 }
 
 
@@ -293,6 +317,10 @@ if(w>480 && page==0)
 
     for(i=0; i<=boxCount; i++)
     {
+           boxPositionsX[i] = boxPositionsX[i] + posFactor;
+           boxPositionsY[i] = boxPositionsY[i] + posFactor;
+           boxPositionsZ[i] = boxPositionsZ[i] + posFactor;
+
         drawCuboid(boxSizes[i], boxSpeeds[i], boxPositionsX[i], boxPositionsY[i], boxPositionsZ[i]);
     }
 
@@ -307,6 +335,8 @@ if(w>480 && page==0)
     theta = theta + (0.1);
 
     }
+
+    posFactor = noise(randomInt(-100,100))/2 * randomInt(-1,1);
 }
 
 
