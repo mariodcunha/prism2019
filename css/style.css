@@ -461,11 +461,11 @@ hr {
 
   #location
   {
-    position: absolute;
+    position: relative;
     font-family: 'SharpGrotesk20-Book';
     text-align: left;
     margin-left: 10%;
-    top:52vh;
+    top:-13vh;
     left:1.5vw;
     /*width:25%;*/
     z-index: 10;
@@ -1141,7 +1141,7 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   /* ---- grid-item ---- */
   .grid-item {
     width: 160px;
-    margin: 10px;
+    padding: 10px;
     height: auto;
     display:inline-block;
     vertical-align: top;
@@ -1162,7 +1162,12 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   .grid-item--height5 { min-height: 500px; }
   .grid-item--height6 { min-height: 200px; }
   .grid-item--height7 { min-height: 75px; }
-  #grid-item--height-events {top: 70% ;}
+  
+  #grid-item--height-events 
+  {
+    top: 70% ;
+    margin-left: 8%;
+  }
 
   @media (max-width: 600px){
     .grid-item--width2, .grid-item--width3, .grid-item--width4, .grid-item--width5  { width: 300px; }
