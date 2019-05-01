@@ -182,6 +182,7 @@ function checkCss()
 
         $('.aboutTitle').css('color','#fff');
         $('.aboutStatement').css('color','#ddd');
+        $('.aboutStatement a').css('color','#ddd');
         $('.aboutPara').css('color','#aaa');
         $('.aboutPara_eventDetails').css('color','#aaa');
 
@@ -260,6 +261,7 @@ function checkCss()
 
         $('.aboutTitle').css('color','#000');
         $('.aboutStatement').css('color','#333');
+        $('.aboutStatement a').css('color','#333');
         $('.aboutPara').css('color','#444');
         $('.aboutPara_eventDetails').css('color','#333');
 

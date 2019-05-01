@@ -1839,6 +1839,7 @@ STUDENTS GRID
   width: 35px;
   height: 35px;
   /*filter: invert(100%);*/
+  transition: 0.3s;
 }
 
 
@@ -2260,6 +2261,12 @@ div.row h3
 {
   margin-bottom: 5%;
 }
+
+.aboutStatement a
+{
+  text-decoration: none;
+}
+
 
 .aboutPara
 {
