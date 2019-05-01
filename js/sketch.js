@@ -140,14 +140,15 @@ function checkCss()
         $('#bottom-content2 a').css('color','#FFF');
 
         $('#nav_button_bottom_top a').css('color','#FFF');
-        $('#nav_button_bottom_top_rsvp a').css('background','#fff');
-        $('#nav_button_bottom_top_rsvp a').css('color','#000');
+        $('#nav_button_bottom_top_rsvp a').css('border','2px solid #fff');
+        $('#nav_button_bottom_top_rsvp a').css('background','rgba(0,0,0,0.8)');
+        $('#nav_button_bottom_top_rsvp a').css('color','#fff');
         // $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,50)');
         // $('#nav_button_bottom_top_rsvp a').css('border','solid #FFF 2px');
 
-        $('#mobile_rsvp a').css('color','#000');
-        $('#mobile_rsvp').css('background','#fff');
-        // $('#mobile_rsvp').css('border','solid #FFF 2px');
+        $('#mobile_rsvp a').css('color','#fff');
+        // $('#mobile_rsvp').css('background','#fff');
+        $('#mobile_rsvp').css('border','solid #fff 2px');
         
         $("#parsonsLogo").attr("src","assets/parsonslogoW.png");
         $('.socialButtons').css('filter', 'invert(100%)');
@@ -185,8 +186,11 @@ function checkCss()
         $('.aboutPara_eventDetails').css('color','#aaa');
 
         $('.generalLinks').css('color','#ddd');
-        $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,255)');
         
+        if(w<480 && page==0)
+            $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,255)');
+        
+        // $('.strikeThru:hover::after').css('border','2px solid white');
 
     }
 
@@ -213,14 +217,15 @@ function checkCss()
         // $('.foot-item:hover').css('text-shadow','4px 4px 3px #000');
 
         $('#nav_button_bottom_top a').css('color','#000');
-        $('#nav_button_bottom_top_rsvp a').css('background','#000');
-        $('#nav_button_bottom_top_rsvp a').css('color','#fff');
+        $('#nav_button_bottom_top_rsvp a').css('border','2px solid #000');
+        $('#nav_button_bottom_top_rsvp a').css('background','rgba(255,255,255,0.8)');
+        $('#nav_button_bottom_top_rsvp a').css('color','#000');
         // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('background','#000');
         // $('#nav_button_bottom_top_rsvp a.buttonHighlight:hover').css('color','#fff');
 
-        $('#mobile_rsvp a').css('color','#fff');
-        $('#mobile_rsvp').css('background','#000');
-        // $('#mobile_rsvp').css('border','solid #FFF 2px');
+        $('#mobile_rsvp a').css('color','#000');
+        // $('#mobile_rsvp').css('background','#000');
+        $('#mobile_rsvp').css('border','solid #000 2px');
 
         $('#bottom-content2 a').css('color','#000');
         // $('.social_footer').css('filter', 'invert(100%)');
@@ -259,7 +264,11 @@ function checkCss()
         $('.aboutPara_eventDetails').css('color','#333');
 
         $('.generalLinks').css('color','#333');
-        $('#main-menu2 .nav-bar-index').css('background','#fff');
+        
+        if(w<480 && page==0)
+            $('#main-menu2 .nav-bar-index').css('background','#fff');
+
+        // $('.strikeThru:hover::after').css('border','2px solid black');
         
 
     }
@@ -289,7 +298,7 @@ function indexPage()
 function draw() 
 {
 
-if(w>480 && page==0)    
+if(w>480 && page==0)
 {
     background(bgcolor);
 

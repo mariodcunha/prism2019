@@ -310,7 +310,7 @@ hr {
     z-index: 10;
     position: absolute;
     margin: 3vw;
-    width: 30px;
+    width: 60px;
     display: inline;
     margin-left: 10%;
   }
@@ -379,7 +379,7 @@ hr {
 
   .mainEventTitle:hover, .mainEventDate:hover
   {
-      text-shadow: 5px 5px 3px;
+      text-decoration: underline;
       cursor: pointer;
 
   }
@@ -918,6 +918,7 @@ hr {
 .strikeThru
 {
   position: relative;
+  /*padding-bottom: 30px;*/
 }
 
 
@@ -925,13 +926,13 @@ hr {
 {
   content: ' ';
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 0;
-  width: 100%;
-  height: 1px;
-  background: ;
+  width: 50%;
+  height: 35%;
+  border-bottom: 1px solid white;
   animation-name: strike;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1025,7 +1026,10 @@ hr {
 {
   cursor: pointer;
   /*transition: 0.5s;*/
-  text-shadow: 5px 5px 3px;
+  /*border: 2px solid;*/
+  /*text-shadow: 5px 5px 3px;*/
+  filter: invert(100%);
+  /*opacity: 1;*/
 }
 
 
@@ -1037,8 +1041,11 @@ hr {
 
 #nav_button_bottom_top:hover
 {
-  text-shadow: 5px 5px 3px;
-  cursor: pointer;
+  /*text-shadow: 0px 12px 12px;          */
+  /*text-shadow: 0px 12px 10px;*/
+/*  border-bottom: 2px solid #fff;
+  border-spacing: 200px;
+*/  cursor: pointer;
 }
 
 
@@ -1330,7 +1337,9 @@ td .schedTime a
 td .schedTime a:hover
 {
   cursor: pointer;
-  text-shadow: 2px 2px 3px;
+  /*text-shadow: 2px 2px 3px;*/
+  /*text-shadow: 0px 12px 10px;*/
+  text-decoration: underline;
 }
 
 
@@ -1352,7 +1361,7 @@ td .schedLoc a:hover
 {
   cursor: pointer;
   /*text-decoration: underline;*/
-  text-shadow: 2px 2px 7px;
+  text-decoration: underline;
 
 }
 
@@ -1398,7 +1407,7 @@ td .schedLoc a:hover
 
 .event-titles a:hover, .event-titles_first a:hover
 {
-    text-shadow: 4px 4px 3px;
+    text-decoration: underline;
 }
 
 
