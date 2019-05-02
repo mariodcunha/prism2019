@@ -8,7 +8,7 @@ $(function() {
 });
 
 function loadData() {
-  $.getJSON( "students.json", function( data ) {
+  $.getJSON( "students-new.json", function( data ) {
     // Write the data into our global variable.
     students = data;
     var index = window.location.hash.split('#')[1].trim();

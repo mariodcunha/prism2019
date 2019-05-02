@@ -1,6 +1,7 @@
 [
    {
       "id":0,
+      "first-last-name":"Mario Dcunha",
       "email":"dcunm399@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://mariodcunha.com/",
@@ -18,6 +19,7 @@
    },
    {
       "id":1,
+      "first-last-name":"Nicholas Paganelli",
       "email":"pagan813@newschool.edu",
       "event":"Symposium",
       "url":"http://nicholas-paganelli.myportfolio.com",
@@ -35,6 +37,7 @@
    },
    {
       "id":2,
+      "first-last-name":"Julie Byers",
       "email":"byerj839@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.byersjul.com/",
@@ -52,6 +55,7 @@
    },
    {
       "id":3,
+      "first-last-name":"Nathan Koch",
       "email":"kochn100@newschool.edu",
       "event":"Symposium",
       "url":"http://nathankoch.com",
@@ -69,6 +73,7 @@
    },
    {
       "id":4,
+      "first-last-name":"Luqi Nie",
       "email":"niel641@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://luqinie.com/",
@@ -86,6 +91,7 @@
    },
    {
       "id":5,
+      "first-last-name":"Li Chen",
       "email":"chenl053@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.liiidesign.com",
@@ -103,6 +109,7 @@
    },
    {
       "id":6,
+      "first-last-name":"Darío Narváez",
       "email":"narvd444@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.darionarvaez.com",
@@ -120,6 +127,7 @@
    },
    {
       "id":7,
+      "first-last-name":"Joyce Zheng",
       "email":"zhenq438@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.joycezheng.com/",
@@ -137,6 +145,7 @@
    },
    {
       "id":8,
+      "first-last-name":"Philipp Schmitt",
       "email":"schmp077@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://philippschmitt.com",
@@ -154,6 +163,7 @@
    },
    {
       "id":9,
+      "first-last-name":"Longze Xia",
       "email":"xial948@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://longzex.design",
@@ -171,6 +181,7 @@
    },
    {
       "id":10,
+      "first-last-name":"Yujie Jiang",
       "email":"jiany457@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://yujie.work",
@@ -188,6 +199,7 @@
    },
    {
       "id":11,
+      "first-last-name":"Neil V. Techapanichgul",
       "email":"techv499@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://vrtech.me",
@@ -205,6 +217,7 @@
    },
    {
       "id":12,
+      "first-last-name":"Hannah Jiang",
       "email":"jianh155@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://haiyuanj.com/",
@@ -222,6 +235,7 @@
    },
    {
       "id":13,
+      "first-last-name":"Yuemei Zhang",
       "email":"zhany679@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yuemeiz.com/",
@@ -239,6 +253,7 @@
    },
    {
       "id":14,
+      "first-last-name":"Yixun Wang",
       "email":"wangy969@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yixunwang.design",
@@ -256,6 +271,7 @@
    },
    {
       "id":15,
+      "first-last-name":"Jason Chen",
       "email":"chenw414@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://chenweichung.com",
@@ -273,6 +289,7 @@
    },
    {
       "id":16,
+      "first-last-name":"Yanbin Song",
       "email":"songy941@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.yanbinsong.com",
@@ -290,6 +307,7 @@
    },
    {
       "id":17,
+      "first-last-name":"Barsha Maharjan",
       "email":"mahab384@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.baarshaa.com",
@@ -307,6 +325,7 @@
    },
    {
       "id":18,
+      "first-last-name":"Kelsey Yu",
       "email":"yuy296@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://kelseyyu.com",
@@ -324,6 +343,7 @@
    },
    {
       "id":19,
+      "first-last-name":"Jenni Wu",
       "email":"wuj791@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://jenniferwu.ca",
@@ -341,6 +361,7 @@
    },
    {
       "id":20,
+      "first-last-name":"Yishi Deng",
       "email":"dengy849@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.yishideng.space",
@@ -358,6 +379,7 @@
    },
    {
       "id":21,
+      "first-last-name":"Yiyun Guo",
       "email":"guoy084@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://yiyun-guo.com",
@@ -375,6 +397,7 @@
    },
    {
       "id":22,
+      "first-last-name":"Ting Fang Cheng",
       "email":"chent789@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.tingfangcheng.com/",
@@ -392,6 +415,7 @@
    },
    {
       "id":23,
+      "first-last-name":"Ta-Kai Shueh",
       "email":"shuet334@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://danieltk.com",
@@ -409,6 +433,7 @@
    },
    {
       "id":24,
+      "first-last-name":"Miguel Hidalgo",
       "email":"hidam996@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://miguelahidalgo.com",
@@ -426,6 +451,7 @@
    },
    {
       "id":25,
+      "first-last-name":"Nicolas Hernandez Trujillo",
       "email":"hernn793@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://nicolashernandez.co",
@@ -443,6 +469,7 @@
    },
    {
       "id":26,
+      "first-last-name":"Iris Tian",
       "email":"tiany580@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.iristian.net/",
@@ -460,6 +487,7 @@
    },
    {
       "id":27,
+      "first-last-name":"Yin Hu",
       "email":"huy680@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.linkedin.com/in/hu-yin-61654992/",
@@ -477,6 +505,7 @@
    },
    {
       "id":28,
+      "first-last-name":"Jin Liu",
       "email":"liuj205@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
@@ -494,6 +523,7 @@
    },
    {
       "id":29,
+      "first-last-name":"Nana Chen",
       "email":"cheny071@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.nanadesign.co",
@@ -511,6 +541,7 @@
    },
    {
       "id":30,
+      "first-last-name":"Yasong(Chouchou) Li",
       "email":"liy331@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yasongli.com",
@@ -528,6 +559,7 @@
    },
    {
       "id":31,
+      "first-last-name":"Lauren Malkani",
       "email":"malkl048@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://laurenmalkani.com/blog/",
@@ -545,6 +577,7 @@
    },
    {
       "id":32,
+      "first-last-name":"Bella Wu",
       "email":"wuy573@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.wuyandesign.com/",
@@ -562,6 +595,7 @@
    },
    {
       "id":33,
+      "first-last-name":"Jason Agyekum",
       "email":"agyej484@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://jwa.codes",
@@ -579,6 +613,7 @@
    },
    {
       "id":34,
+      "first-last-name":"Qizhao Chen",
       "email":"chenq665@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.chenqizhao.com",
@@ -596,6 +631,7 @@
    },
    {
       "id":35,
+      "first-last-name":"Aarati Akkapeddi",
       "email":"akkaa949@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://aarati.me",
@@ -613,6 +649,7 @@
    },
    {
       "id":36,
+      "first-last-name":"pratheek irvathur",
       "email":"irvap397@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://pratheekirvathur.com",
@@ -630,6 +667,7 @@
    },
    {
       "id":37,
+      "first-last-name":"Xu Han",
       "email":"hanx633@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://xuhanart.com",
@@ -647,6 +685,7 @@
    },
    {
       "id":38,
+      "first-last-name":"Alyssa Shea",
       "email":"sheaa263@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.alyssashea.com",
@@ -664,6 +703,7 @@
    },
    {
       "id":39,
+      "first-last-name":"Min Kwak",
       "email":"kwakm135@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://minkwak.com",
@@ -681,6 +721,7 @@
    },
    {
       "id":40,
+      "first-last-name":"Youchun Zhang",
       "email":"zhany493@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://youchunzhang.com",
@@ -698,6 +739,7 @@
    },
    {
       "id":41,
+      "first-last-name":"Jacqueline Wu",
       "email":"wuj643@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://jacqswu.com/",
@@ -715,6 +757,7 @@
    },
    {
       "id":42,
+      "first-last-name":"George S. N. Neequaye",
       "email":"neeqg934@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.gsnneequaye.com/",
@@ -732,6 +775,7 @@
    },
    {
       "id":43,
+      "first-last-name":"Stella Zhong",
       "email":"zhony815@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yuxinzhong.com",
@@ -749,6 +793,7 @@
    },
    {
       "id":44,
+      "first-last-name":"Danielle 'Dani' Beecham",
       "email":"beecd776@newschool.edu",
       "event":"Symposium",
       "url":"http://www.daniellebeecham.co/#hello",
@@ -766,6 +811,7 @@
    },
    {
       "id":45,
+      "first-last-name":"Rita Zhang",
       "email":"zhanr526@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.ruixizhang.net",
@@ -783,6 +829,7 @@
    },
    {
       "id":46,
+      "first-last-name":"Anny Chang",
       "email":"chany036@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://yihsinchang.com/",
@@ -800,6 +847,7 @@
    },
    {
       "id":47,
+      "first-last-name":"Elizabeth (Lisa) Ho",
       "email":"hoe328@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.linkedin.com/in/elizabeth-lisa-ho-684a4025/",
@@ -817,6 +865,7 @@
    },
    {
       "id":48,
+      "first-last-name":"Minzhe Jiang",
       "email":"jianm571@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://echojiang.net/",
@@ -834,6 +883,7 @@
    },
    {
       "id":49,
+      "first-last-name":"Juan Daniel Herrera",
       "email":"herrj636@newschool.edu",
       "event":"Live Performance/Time Based Works",
       "url":"https://juandherrera.com/",
@@ -851,6 +901,7 @@
    },
    {
       "id":50,
+      "first-last-name":"Sara Birchard",
       "email":"bircs807@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.sarabirchard.com/",
@@ -868,6 +919,7 @@
    },
    {
       "id":51,
+      "first-last-name":"Xiaoyu Liu",
       "email":"liux335@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://xyuliu.com/",
@@ -885,6 +937,7 @@
    },
    {
       "id":52,
+      "first-last-name":"Carla Molins Pitarch",
       "email":"molic786@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.carlamolins.com",
@@ -902,6 +955,7 @@
    },
    {
       "id":53,
+      "first-last-name":"Archit Kaushik",
       "email":"kausa913@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://architkaushik.com/",
@@ -919,6 +973,7 @@
    },
    {
       "id":54,
+      "first-last-name":"Marcus Banks",
       "email":"banksm@newschool.edu",
       "event":"Symposium",
       "url":"https://www.linkedin.com/in/marcus-banks-5bba00126/",
@@ -936,6 +991,7 @@
    },
    {
       "id":55,
+      "first-last-name":"Milan Gary",
       "email":"garym140@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://milangary.com/",
@@ -953,6 +1009,7 @@
    },
    {
       "id":56,
+      "first-last-name":"Ivy Cheng",
       "email":"cheny533@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://ivyc.myportfolio.com",
@@ -970,6 +1027,7 @@
    },
    {
       "id":57,
+      "first-last-name":"Ke Ding",
       "email":"dingk774@newschool.edu",
       "event":"Symposium",
       "url":"http://kedingdesign.com/",
@@ -987,6 +1045,7 @@
    },
    {
       "id":58,
+      "first-last-name":"Summer Pan",
       "email":"panx610@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://summerpan.com",
@@ -1004,6 +1063,7 @@
    },
    {
       "id":59,
+      "first-last-name":"Wen Chi Huang",
       "email":"huanw135@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://wenchihuangdesigner.com/",
@@ -1021,6 +1081,7 @@
    },
    {
       "id":60,
+      "first-last-name":"Fran Chacon",
       "email":"chacm371@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.francha.co",
@@ -1038,6 +1099,7 @@
    },
    {
       "id":61,
+      "first-last-name":"Aakanksha Aggarwal",
       "email":"aggaa503@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.aakankshaaggarwal.com/",
@@ -1055,6 +1117,7 @@
    },
    {
       "id":62,
+      "first-last-name":"Liu (Lio) Chang",
       "email":"chanl694@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.liuorleo.com/",
@@ -1072,6 +1135,7 @@
    },
    {
       "id":63,
+      "first-last-name":"Lucy M. Wu",
       "email":"wul806@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.lucydesigns.org",
@@ -1089,6 +1153,7 @@
    },
    {
       "id":64,
+      "first-last-name":"Franky Wang",
       "email":"wangy812@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.frankywang.com",
@@ -1106,6 +1171,7 @@
    },
    {
       "id":65,
+      "first-last-name":"Maddy Siriouthay",
       "email":"sirim392@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://madsiri.com",
@@ -1123,6 +1189,7 @@
    },
    {
       "id":66,
+      "first-last-name":"Leah Willemin",
       "email":"willl973@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://leahwillemin.com/",
@@ -1140,6 +1207,7 @@
    },
    {
       "id":67,
+      "first-last-name":"Alya AlQarni",
       "email":"alqaa789@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.alya.works",
@@ -1157,6 +1225,7 @@
    },
    {
       "id":68,
+      "first-last-name":"Young Tae Yoon",
       "email":"yoony857@newschool.edu",
       "event":"Symposium",
       "url":"https://www.youngtaeyoon.com",
@@ -1174,6 +1243,7 @@
    },
    {
       "id":69,
+      "first-last-name":"Tresson Canley",
       "email":"canlt012@newschool.edu",
       "event":"Symposium",
       "url":"http://tressoncanley.com",
@@ -1191,6 +1261,7 @@
    },
    {
       "id":70,
+      "first-last-name":"Menghe Li",
       "email":"lim330@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.mengheli.work/",
@@ -1208,6 +1279,7 @@
    },
    {
       "id":71,
+      "first-last-name":"Jungu Guo",
       "email":"guoj038@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.junguguo.com",
@@ -1225,6 +1297,7 @@
    },
    {
       "id":72,
+      "first-last-name":"Radu Dutzan",
       "email":"dutzr607@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://radu.cl/work/",
@@ -1242,6 +1315,7 @@
    },
    {
       "id":73,
+      "first-last-name":"Zack Bruce",
       "email":"brucz581@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.zackthebruce.com",
@@ -1259,6 +1333,7 @@
    },
    {
       "id":74,
+      "first-last-name":"Haley Mittelstaedt",
       "email":"mitth142@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://haleymittdesign.cargocollective.com",
@@ -1276,6 +1351,7 @@
    },
    {
       "id":75,
+      "first-last-name":"Rudiampai Kuonsongtham",
       "email":"kuonr608@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
@@ -1293,6 +1369,7 @@
    },
    {
       "id":76,
+      "first-last-name":"Srishti",
       "email":"johas890@newschool.edu",
       "event":"Symposium",
       "url":"https://www.srishtict.com/",
@@ -1310,6 +1387,7 @@
    },
    {
       "id":77,
+      "first-last-name":"Chris T Stuart",
       "email":"stuac191@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
@@ -1327,6 +1405,7 @@
    },
    {
       "id":78,
+      "first-last-name":"Nicole Lloyd",
       "email":"lloyn691@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.nicoleflloyd.com",
@@ -1344,6 +1423,7 @@
    },
    {
       "id":79,
+      "first-last-name":"Neeraja Mathur",
       "email":"mathn958@newschool.edu",
       "event":"Symposium",
       "url":"https://neerajamathur.com",
@@ -1361,6 +1441,7 @@
    },
    {
       "id":80,
+      "first-last-name":"Haus of Jason",
       "email":"barrj998@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.hausofjason.com",
@@ -1378,6 +1459,7 @@
    },
    {
       "id":81,
+      "first-last-name":"Lavonne Sun",
       "email":"sunc667@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://lavonnesun.com",
@@ -1395,6 +1477,7 @@
    },
    {
       "id":82,
+      "first-last-name":"Yifan Wang",
       "email":"wangy501@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
@@ -1412,6 +1495,7 @@
    },
    {
       "id":83,
+      "first-last-name":"Yiming Liao",
       "email":"liaoy344@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.designisamonster.com/",
@@ -1429,6 +1513,7 @@
    },
    {
       "id":84,
+      "first-last-name":"Yao",
       "email":"huany667@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
@@ -1446,6 +1531,7 @@
    },
    {
       "id":85,
+      "first-last-name":"Weilin",
       "email":"liw543@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
@@ -1463,6 +1549,7 @@
    },
    {
       "id":86,
+      "first-last-name":"Yes",
       "email":"zhuy806@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.yimeiworld.com",
@@ -1480,6 +1567,7 @@
    },
    {
       "id":87,
+      "first-last-name":"Chavisa Rojratanadumrong",
       "email":"rojrc782@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://chavisar.ooo",
@@ -1497,6 +1585,7 @@
    },
    {
       "id":88,
+      "first-last-name":"Chanel (Duyen) Luu Hai",
       "email":"luuhd504@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://chanel-luuhai.com/",
@@ -1514,6 +1603,7 @@
    },
    {
       "id":89,
+      "first-last-name":"Zhaohong Xia",
       "email":"xiaz971@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
@@ -1531,6 +1621,7 @@
    },
    {
       "id":90,
+      "first-last-name":"FiFi Wu",
       "email":"wuf029@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://fifiwu.com",
@@ -1548,6 +1639,7 @@
    },
    {
       "id":91,
+      "first-last-name":"Jade Yang",
       "email":"yangx868@newschool.edu",
       "event":"Live Performance/Time Based Works",
       "url":"https://jadeyang.design",

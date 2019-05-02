@@ -9,7 +9,7 @@ $(function() {
 });
 
 function loadData() {
-  $.getJSON( "students.json", function( data ) {
+  $.getJSON( "students-new.json", function( data ) {
     // Write the data into our global variable.
     students = data;
 
@@ -47,7 +47,8 @@ function generateAllStudentsHTML(data) {
   list.find('li').on('click', function (e) {
     console.log("something happened") ;
     e.preventDefault();
-    var studentIndex = $(this).data('index');
+    var studentIndex = $(this).data('id');
+    console.log(studentIndex);
     var hash = "#"+studentIndex;
 
     window.location.href  = "page.html" + hash;
