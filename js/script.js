@@ -35,21 +35,31 @@ function generateAllStudentsHTML(data) {
   // On click change the url hash to open up a preview for this project only.
   // Remember: every hashchange triggers the render function.
   list.find('li').on("mouseover mouseout", function(){
-    console.log("running this myPhoto") ;
+    console.log("GenerateAllStudents") ;
         $(this).find('.myPhoto').toggleClass("imageHover");
     // list.find('h6').on("mouseover mouseout", function() {
-        $(this).find('.theprojecttitle').toggleClass("textHover") ;
+        $(this).find('.projecttitle').toggleClass("textHover") ;
     // });
   });
 
   
 
-  list.find('li').on('click', function (e) {
-    console.log("something happened") ;
-    e.preventDefault();
-    var studentIndex = $(this).data('id');
-    console.log(studentIndex);
-    var hash = "#"+studentIndex;
+  list.find('li').on('click', function (data) {
+    console.log("something happened");
+    var idx = $(this)[0]
+    // console.log(idx);
+    // const i = document.querySelector('#projData');
+    var final_idx = idx.accessKey;
+    // var idx = .index
+
+
+    // e.preventDefault();
+    // var studentIndex = $(this).data('id');
+
+
+    console.log(parseInt(final_idx));
+    var hash = "#" + final_idx;
+
 
     window.location.href  = "page.html" + hash;
     // window.location.hash = 'project/' + studentIndex;
