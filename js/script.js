@@ -35,7 +35,7 @@ function generateAllStudentsHTML(data) {
   // On click change the url hash to open up a preview for this project only.
   // Remember: every hashchange triggers the render function.
   list.find('li').on("mouseover mouseout", function(){
-    console.log("GenerateAllStudents") ;
+    // console.log("GenerateAllStudents") ;
         $(this).find('.myPhoto').toggleClass("imageHover");
     // list.find('h6').on("mouseover mouseout", function() {
         $(this).find('.projecttitle').toggleClass("textHover") ;
@@ -45,7 +45,7 @@ function generateAllStudentsHTML(data) {
   
 
   list.find('li').on('click', function (data) {
-    console.log("something happened");
+    // console.log("something happened");
     var idx = $(this)[0]
     // console.log(idx);
     // const i = document.querySelector('#projData');
@@ -57,7 +57,7 @@ function generateAllStudentsHTML(data) {
     // var studentIndex = $(this).data('id');
 
 
-    console.log(parseInt(final_idx));
+    // console.log(parseInt(final_idx));
     var hash = "#" + final_idx;
 
 

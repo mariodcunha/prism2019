@@ -1,11 +1,11 @@
 [
    {
       "id":61,
-      "first-last-name":"Aakanksha Aggarwal",
+      "flname":"Aakanksha Aggarwal",
       "email":"aggaa503@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.aakankshaaggarwal.com/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Aakanksha Aggarwal (b. 1994, India) creates work in response to the politics and poetry that co-exist in the everyday. Her work questions the social, cultural, and political narratives she inherited, and seeks to reconstruct it through the act of imagining alternatives.",
       "project":{
          "title":"Recording absences",
@@ -19,11 +19,11 @@
    },
    {
       "id":33,
-      "first-last-name":"Jason Agyekum",
+      "flname":"Jason Agyekum",
       "email":"agyej484@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://jwa.codes",
-      "prof-title":"Creative Technologist",
+      "profTitles":"Creative Technologist",
       "bio":"Jason Agyekum is a creative technologist who specializes in the web and is currently focusing on how minorities could face the consequences of machine learning and biased data.",
       "project":{
          "title":"DAIQUAN",
@@ -37,11 +37,11 @@
    },
    {
       "id":35,
-      "first-last-name":"Aarati Akkapeddi",
+      "flname":"Aarati Akkapeddi",
       "email":"akkaa949@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://aarati.me",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Aarati Akkapeddi is an Indian-American, cross-disciplinary artist interested in the poetics and politics of datasets. She works with both personal and institutional archives to explore the ways in which identities and histories are shaped by different ways of collecting, preserving and presenting data.",
       "project":{
          "title":"After Image: A computational poem between the subject, the camera, technology and representation",
@@ -55,11 +55,11 @@
    },
    {
       "id":67,
-      "first-last-name":"Alya AlQarni",
+      "flname":"Alya AlQarni",
       "email":"alqaa789@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.alya.works",
-      "prof-title":"Designer",
+      "profTitles":"Designer",
       "bio":"A designer.",
       "project":{
          "title":"That land and how the other lives",
@@ -73,11 +73,11 @@
    },
    {
       "id":54,
-      "first-last-name":"Marcus Banks",
+      "flname":"Marcus Banks",
       "email":"banksm@newschool.edu",
       "event":"Symposium",
       "url":"https://www.linkedin.com/in/marcus-banks-5bba00126/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Working scientist with a passion for sustainability and public education.",
       "project":{
          "title":"Exploration of Biomaterials and Laboratory Sustainability",
@@ -91,11 +91,11 @@
    },
    {
       "id":80,
-      "first-last-name":"Haus of Jason",
+      "flname":"Haus of Jason",
       "email":"barrj998@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.hausofjason.com",
-      "prof-title":"Installation Artist",
+      "profTitles":"Installation Artist",
       "bio":"Haus of Jason is a fine artist working in the realms of graphic, set, fashion, motion, and installation design.",
       "project":{
          "title":"Centrality",
@@ -109,11 +109,11 @@
    },
    {
       "id":44,
-      "first-last-name":"Danielle 'Dani' Beecham",
+      "flname":"Danielle 'Dani' Beecham",
       "email":"beecd776@newschool.edu",
       "event":"Symposium",
       "url":"http://www.daniellebeecham.co/#hello",
-      "prof-title":"UX/Service Design Consultant",
+      "profTitles":"UX/Service Design Consultant",
       "bio":"Dani is a digital and service designer working with clients to turn their concepts into actionable design. Her work focuses on leveraging tech solutions to address the world’s large-scale problems.",
       "project":{
          "title":"SixMed Health",
@@ -127,11 +127,11 @@
    },
    {
       "id":50,
-      "first-last-name":"Sara Birchard",
+      "flname":"Sara Birchard",
       "email":"bircs807@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.sarabirchard.com/",
-      "prof-title":"Digital Product & UX Designer",
+      "profTitles":"Digital Product & UX Designer",
       "bio":"Sara Birchard is a digital product & UX designer from the East Village with a background in social psychology.",
       "project":{
          "title":"HiThrive",
@@ -145,11 +145,11 @@
    },
    {
       "id":73,
-      "first-last-name":"Zack Bruce",
+      "flname":"Zack Bruce",
       "email":"brucz581@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.zackthebruce.com",
-      "prof-title":"Artist",
+      "profTitles":"Artist",
       "bio":"A champion of the discarded object, Zack Bruce gives life and voice to the world beneath our feet and above our heads.",
       "project":{
          "title":"Instruments Made From Spaceship Parts",
@@ -163,11 +163,11 @@
    },
    {
       "id":2,
-      "first-last-name":"Julie Byers",
+      "flname":"Julie Byers",
       "email":"byerj839@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.byersjul.com/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Former background in computer science and interaction design. Through the program I explored combining my hobbies in craft and my background computing.",
       "project":{
          "title":"Interwoven",
@@ -181,11 +181,11 @@
    },
    {
       "id":69,
-      "first-last-name":"Tresson Canley",
+      "flname":"Tresson Canley",
       "email":"canlt012@newschool.edu",
       "event":"Symposium",
       "url":"http://tressoncanley.com",
-      "prof-title":"Data Artist / Creative Technologist",
+      "profTitles":"Data Artist / Creative Technologist",
       "bio":"Data artist and creative technologist focused on the intersection of art, data, and computational craft.",
       "project":{
          "title":"Probable Women",
@@ -199,11 +199,11 @@
    },
    {
       "id":60,
-      "first-last-name":"Fran Chacon",
+      "flname":"Fran Chacon",
       "email":"chacm371@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.francha.co",
-      "prof-title":"UX Designer and Strategist",
+      "profTitles":"UX Designer and Strategist",
       "bio":"Fran is an innovation-driven and empathy-centered creative leader in design for social impact. She was awarded Chile's 100 Young Leaders in 2014 and Young Leaders of Latin America in 2016.",
       "project":{
          "title":"Memorious",
@@ -217,11 +217,11 @@
    },
    {
       "id":62,
-      "first-last-name":"Liu (Lio) Chang",
+      "flname":"Liu (Lio) Chang",
       "email":"chanl694@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.liuorleo.com/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"I am the one who always on the way of developing the creative approach to products, installations, and graphics to shift perspectives.",
       "project":{
          "title":"Pet or Labor",
@@ -235,11 +235,11 @@
    },
    {
       "id":46,
-      "first-last-name":"Anny Chang",
+      "flname":"Anny Chang",
       "email":"chany036@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://yihsinchang.com/",
-      "prof-title":"Designer & Creative Technologist",
+      "profTitles":"Designer & Creative Technologist",
       "bio":"Anny Chang is a designer, artist, and creative technologist. Through her works, she is trying to take people further into serious social issues.",
       "project":{
          "title":"RE:FEEL",
@@ -253,11 +253,11 @@
    },
    {
       "id":5,
-      "first-last-name":"Li Chen",
+      "flname":"Li Chen",
       "email":"chenl053@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.liiidesign.com",
-      "prof-title":"Visual Designer",
+      "profTitles":"Visual Designer",
       "bio":"Li Chen is a visual designer based in New York, with strong interest in visual story telling, user-centered design and system design.",
       "project":{
          "title":"Programming Babel",
@@ -271,11 +271,11 @@
    },
    {
       "id":34,
-      "first-last-name":"Qizhao Chen",
+      "flname":"Qizhao Chen",
       "email":"chenq665@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.chenqizhao.com",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Qizhao Chen is an interactive designer, a UX designer. To him, design means experience.",
       "project":{
          "title":"Frozen Memory",
@@ -289,11 +289,11 @@
    },
    {
       "id":22,
-      "first-last-name":"Ting Fang Cheng",
+      "flname":"Ting Fang Cheng",
       "email":"chent789@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.tingfangcheng.com/",
-      "prof-title":"Creative Technologist",
+      "profTitles":"Creative Technologist",
       "bio":"Ting is a designer who combines fabrication, materials, curatorial thinking, and a poetic approach to transform concepts into thoughtful interactions and installations.",
       "project":{
          "title":"Space Noir",
@@ -307,11 +307,11 @@
    },
    {
       "id":15,
-      "first-last-name":"Jason Chen",
+      "flname":"Jason Chen",
       "email":"chenw414@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://chenweichung.com",
-      "prof-title":"Artist",
+      "profTitles":"Artist",
       "bio":"Jason is a UX designer/ Creative Technologist/ Artist based in NYC who has a strong passion for experience design and interactive installation.",
       "project":{
          "title":"Sensory Extension",
@@ -325,11 +325,11 @@
    },
    {
       "id":29,
-      "first-last-name":"Nana Chen",
+      "flname":"Nana Chen",
       "email":"cheny071@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.nanadesign.co",
-      "prof-title":"Animator",
+      "profTitles":"Animator",
       "bio":"My name is Yu Jen Chen, from Taiwan. I go by Nana.",
       "project":{
          "title":"Hero",
@@ -343,11 +343,11 @@
    },
    {
       "id":56,
-      "first-last-name":"Ivy Cheng",
+      "flname":"Ivy Cheng",
       "email":"cheny533@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://ivyc.myportfolio.com",
-      "prof-title":"Multi-Media Artist",
+      "profTitles":"Multi-Media Artist",
       "bio":"I'm an artist trying to discuss things I care about through my research and works.",
       "project":{
          "title":"The useful machine that breathes like me, and the useless human which is me.",
@@ -361,11 +361,11 @@
    },
    {
       "id":0,
-      "first-last-name":"Mario Dcunha",
+      "flname":"Mario Dcunha",
       "email":"dcunm399@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://mariodcunha.com/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Mario Dcunha is a User Experience Designer who designs products of character and zeal, to inspire change.",
       "project":{
          "title":"Bits of Life",
@@ -379,11 +379,11 @@
    },
    {
       "id":20,
-      "first-last-name":"Yishi Deng",
+      "flname":"Yishi Deng",
       "email":"dengy849@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.yishideng.space",
-      "prof-title":"Creative Technologist",
+      "profTitles":"Creative Technologist",
       "bio":"passionate & creative technologist with a 5-year history in design, concept development, & customer service",
       "project":{
          "title":"Auditing",
@@ -397,11 +397,11 @@
    },
    {
       "id":57,
-      "first-last-name":"Ke Ding",
+      "flname":"Ke Ding",
       "email":"dingk774@newschool.edu",
       "event":"Symposium",
       "url":"http://kedingdesign.com/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Ke Ding is an interaction designer focusing on UX and XR that conceptualizing and planning for artificials. Previously UX design intern at Google Daydream.",
       "project":{
          "title":"Project Crane",
@@ -415,11 +415,11 @@
    },
    {
       "id":72,
-      "first-last-name":"Radu Dutzan",
+      "flname":"Radu Dutzan",
       "email":"dutzr607@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://radu.cl/work/",
-      "prof-title":"Digital Product Designer",
+      "profTitles":"Digital Product Designer",
       "bio":"Digital product designer and iOS developer from Santiago, Chile. 12 years of experience across the market, from freelancing, to startups, to Google. Incoming full-time Product Designer at Facebook in New York.",
       "project":{
          "title":"Cracia",
@@ -433,11 +433,11 @@
    },
    {
       "id":55,
-      "first-last-name":"Milan Gary",
+      "flname":"Milan Gary",
       "email":"garym140@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://milangary.com/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Milan Gary is an interaction designer that specializes in ethnographic research and designing products/experiences that evoke social change or conversation on race and inequality. She is an adventurous, creative mind and soul who puts an emphasis on designing with communities rather than designing for communities.",
       "project":{
          "title":"ROAM",
@@ -451,11 +451,11 @@
    },
    {
       "id":71,
-      "first-last-name":"Jungu Guo",
+      "flname":"Jungu Guo",
       "email":"guoj038@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.junguguo.com",
-      "prof-title":"Creative Technologist",
+      "profTitles":"Creative Technologist",
       "bio":"Jungu Guo is an interactive media designer & developer based in New York, whose practice ranges from physical computing to algorithmic art, UI/UX and interactive installation.",
       "project":{
          "title":"Algorithmic Curation",
@@ -469,11 +469,11 @@
    },
    {
       "id":21,
-      "first-last-name":"Yiyun Guo",
+      "flname":"Yiyun Guo",
       "email":"guoy084@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://yiyun-guo.com",
-      "prof-title":"No",
+      "profTitles":"No",
       "bio":"Yiyun is a fashion designer, illustrator, and crafts-person with a passion for creating experimental clothing by merging garments and technology.",
       "project":{
          "title":"The In Between",
@@ -487,11 +487,11 @@
    },
    {
       "id":37,
-      "first-last-name":"Xu Han",
+      "flname":"Xu Han",
       "email":"hanx633@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://xuhanart.com",
-      "prof-title":"Multidisciplinary Artist",
+      "profTitles":"Multidisciplinary Artist",
       "bio":"Xu is a multidisciplinary visual/conceptual artist who graduated from Tsinghua University with a bachelor degree in Graphic Design, and from the School of the Art Institute of Chicago with a major in Visual Communication. Now she is a second-year MFA student studying Design and Technology at Parsons School of Design.",
       "project":{
          "title":"Cocooned",
@@ -505,11 +505,11 @@
    },
    {
       "id":25,
-      "first-last-name":"Nicolas Hernandez Trujillo",
+      "flname":"Nicolas Hernandez Trujillo",
       "email":"hernn793@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://nicolashernandez.co",
-      "prof-title":"Creative Director",
+      "profTitles":"Creative Director",
       "bio":"I'm a Creative Director. During my 10-year journey as a designer, strategist, technologist, marketer, and leader, I worked with amazing people and companies. I learned that there is no boundaries to our imagination. This led me to think about myself as a unstoppable dreamer.",
       "project":{
          "title":"Adverse",
@@ -523,11 +523,11 @@
    },
    {
       "id":49,
-      "first-last-name":"Juan Daniel Herrera",
+      "flname":"Juan Daniel Herrera",
       "email":"herrj636@newschool.edu",
       "event":"Live Performance/Time Based Works",
       "url":"https://juandherrera.com/",
-      "prof-title":"Design Technologist",
+      "profTitles":"Design Technologist",
       "bio":"Juan Herrera is a creative technologist and designer from Bogota, Colombia. He works in web development, data visualizations, projection mapping, interface design and interactive user experience.",
       "project":{
          "title":"| SANGRE | TIERRA | ORO | AGUA |",
@@ -541,11 +541,11 @@
    },
    {
       "id":24,
-      "first-last-name":"Miguel Hidalgo",
+      "flname":"Miguel Hidalgo",
       "email":"hidam996@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://miguelahidalgo.com",
-      "prof-title":"TDB",
+      "profTitles":"TDB",
       "bio":"TBD",
       "project":{
          "title":"TBD (Urban Modular Interventions)",
@@ -559,11 +559,11 @@
    },
    {
       "id":47,
-      "first-last-name":"Elizabeth (Lisa) Ho",
+      "flname":"Elizabeth (Lisa) Ho",
       "email":"hoe328@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.linkedin.com/in/elizabeth-lisa-ho-684a4025/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Elizabeth is a multidisciplinary designer who is passionate about finding solutions to create meaningful and enjoyable experiences.",
       "project":{
          "title":"Your Story",
@@ -577,11 +577,11 @@
    },
    {
       "id":59,
-      "first-last-name":"Wen Chi Huang",
+      "flname":"Wen Chi Huang",
       "email":"huanw135@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://wenchihuangdesigner.com/",
-      "prof-title":"Creative Technologist",
+      "profTitles":"Creative Technologist",
       "bio":"A designer focusing on motion graphics and interactive installations. Enjoy exploring multimedia and",
       "project":{
          "title":"DE HUMAN",
@@ -595,11 +595,11 @@
    },
    {
       "id":84,
-      "first-last-name":"Yao",
+      "flname":"Yao",
       "email":"huany667@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Interactive designer & artists based in New York",
       "project":{
          "title":"Loop",
@@ -613,11 +613,11 @@
    },
    {
       "id":27,
-      "first-last-name":"Yin Hu",
+      "flname":"Yin Hu",
       "email":"huy680@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.linkedin.com/in/hu-yin-61654992/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Yin Hu is an interaction designer who focuses more on user experience design to provide value to humanity.",
       "project":{
          "title":"Speak With Me",
@@ -631,11 +631,11 @@
    },
    {
       "id":36,
-      "first-last-name":"pratheek irvathur",
+      "flname":"pratheek irvathur",
       "email":"irvap397@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://pratheekirvathur.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"communications designer who works with information systems",
       "project":{
          "title":"Chronicle Of Communal violence",
@@ -649,11 +649,11 @@
    },
    {
       "id":12,
-      "first-last-name":"Hannah Jiang",
+      "flname":"Hannah Jiang",
       "email":"jianh155@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://haiyuanj.com/",
-      "prof-title":"User Experience Designer",
+      "profTitles":"User Experience Designer",
       "bio":"Hannah is a UX designer with 7 years of experience. Her work focuses on creating inclusive and engaging experiences that empower people.",
       "project":{
          "title":"CulHubs",
@@ -667,11 +667,11 @@
    },
    {
       "id":48,
-      "first-last-name":"Minzhe Jiang",
+      "flname":"Minzhe Jiang",
       "email":"jianm571@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://echojiang.net/",
-      "prof-title":"Creative Director",
+      "profTitles":"Creative Director",
       "bio":"Design lead currently collaborating with researchers, developers and product managers. Versatile background includes research, design and prototype of meaningful, efficient and commercially viable products. Previous experience in project management for TV series and films.",
       "project":{
          "title":"augGI",
@@ -685,11 +685,11 @@
    },
    {
       "id":10,
-      "first-last-name":"Yujie Jiang",
+      "flname":"Yujie Jiang",
       "email":"jiany457@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://yujie.work",
-      "prof-title":"Interaction and Visual Designer",
+      "profTitles":"Interaction and Visual Designer",
       "bio":"An MFA Design and Technology Candidate focusing on visual design and interaction prototyping. Interested in multimedia storytelling.",
       "project":{
          "title":"A \"Smart\" Discussion",
@@ -703,11 +703,11 @@
    },
    {
       "id":76,
-      "first-last-name":"Srishti",
+      "flname":"Srishti",
       "email":"johas890@newschool.edu",
       "event":"Symposium",
       "url":"https://www.srishtict.com/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"I don't design products, I create systems.",
       "project":{
          "title":"Pi",
@@ -721,11 +721,11 @@
    },
    {
       "id":53,
-      "first-last-name":"Archit Kaushik",
+      "flname":"Archit Kaushik",
       "email":"kausa913@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://architkaushik.com/",
-      "prof-title":"Creative technologist , Media artist",
+      "profTitles":"Creative technologist , Media artist",
       "bio":"TBD",
       "project":{
          "title":"Randomness",
@@ -739,11 +739,11 @@
    },
    {
       "id":3,
-      "first-last-name":"Nathan Koch",
+      "flname":"Nathan Koch",
       "email":"kochn100@newschool.edu",
       "event":"Symposium",
       "url":"http://nathankoch.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Nathan Koch is a creative technologist, composer, synthesist and hacker. He likes to make things that make other things.",
       "project":{
          "title":"Worldlets",
@@ -757,11 +757,11 @@
    },
    {
       "id":75,
-      "first-last-name":"Rudiampai Kuonsongtham",
+      "flname":"Rudiampai Kuonsongtham",
       "email":"kuonr608@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"I am a UI/UX designer from Bangkok. I love to create things based on everyday problems, because I believe that design is a tool to respond to human needs and also makes our life easier.",
       "project":{
          "title":"Smoove",
@@ -775,11 +775,11 @@
    },
    {
       "id":39,
-      "first-last-name":"Min Kwak",
+      "flname":"Min Kwak",
       "email":"kwakm135@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://minkwak.com",
-      "prof-title":"Creative Technologist, Immersive Storyteller",
+      "profTitles":"Creative Technologist, Immersive Storyteller",
       "bio":"Min is a technical artist encompassing virtual / mixed reality, filmmaking, multimedia art, and user centric design. Her immersive storytelling projects powered by emerging technology embrace the themes involving social changes, feminism, journalism, and political science with strong sympathy to vulnerable social groups.",
       "project":{
          "title":"(Later)",
@@ -793,11 +793,11 @@
    },
    {
       "id":83,
-      "first-last-name":"Yiming Liao",
+      "flname":"Yiming Liao",
       "email":"liaoy344@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.designisamonster.com/",
-      "prof-title":"UX Designer | Visual Designer",
+      "profTitles":"UX Designer | Visual Designer",
       "bio":"A designer who is passionate about innovative human-centered experience design and visual aesthetics.",
       "project":{
          "title":"Spencer",
@@ -811,11 +811,11 @@
    },
    {
       "id":70,
-      "first-last-name":"Menghe Li",
+      "flname":"Menghe Li",
       "email":"lim330@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.mengheli.work/",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"New York based designer and storyteller. Mainly focus on UX/ Game Design/ 3D Arts.",
       "project":{
          "title":"Baby Lab",
@@ -829,11 +829,11 @@
    },
    {
       "id":28,
-      "first-last-name":"Jin Liu",
+      "flname":"Jin Liu",
       "email":"liuj205@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
-      "prof-title":"Object-centered design",
+      "profTitles":"Object-centered design",
       "bio":"I’m making a web-based algorithm that procedurally generates text and pictures based on an input process in which human would try to design an ideal human being for a designed daily object(i.e mug, knife, etc).",
       "project":{
          "title":"Object-centered design",
@@ -847,11 +847,11 @@
    },
    {
       "id":51,
-      "first-last-name":"Xiaoyu Liu",
+      "flname":"Xiaoyu Liu",
       "email":"liux335@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://xyuliu.com/",
-      "prof-title":"Experimental Artist, Interaction Designer, Creative Technologist",
+      "profTitles":"Experimental Artist, Interaction Designer, Creative Technologist",
       "bio":"I'm Xiaoyu Liu, a NYC based Chinese artist whose works are not constrained by a single form. I explore the nexus of art, design and technology.",
       "project":{
          "title":"hEAR",
@@ -865,11 +865,11 @@
    },
    {
       "id":85,
-      "first-last-name":"Weilin",
+      "flname":"Weilin",
       "email":"liw543@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Weilin is an interactive designer and artist based in New York.",
       "project":{
          "title":"Untitled",
@@ -883,11 +883,11 @@
    },
    {
       "id":30,
-      "first-last-name":"Yasong(Chouchou) Li",
+      "flname":"Yasong(Chouchou) Li",
       "email":"liy331@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yasongli.com",
-      "prof-title":"Interaction Designer/ Creative Technologist/ New Media Artist",
+      "profTitles":"Interaction Designer/ Creative Technologist/ New Media Artist",
       "bio":"Yasong Li, a live human-sensor equipped with real artificial intelligence, self-designing/self-programming system, as well as a default setting of 90% curiosity, 80% humorous and Automatic Updates.",
       "project":{
          "title":"Conduit",
@@ -901,11 +901,11 @@
    },
    {
       "id":78,
-      "first-last-name":"Nicole Lloyd",
+      "flname":"Nicole Lloyd",
       "email":"lloyn691@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.nicoleflloyd.com",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"TBD",
       "project":{
          "title":"DIGITAL DOPPELGANGER",
@@ -919,11 +919,11 @@
    },
    {
       "id":88,
-      "first-last-name":"Chanel (Duyen) Luu Hai",
+      "flname":"Chanel (Duyen) Luu Hai",
       "email":"luuhd504@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://chanel-luuhai.com/",
-      "prof-title":"Product Designer",
+      "profTitles":"Product Designer",
       "bio":"A passionate interface designer with a focus on visual & interaction design, mixed reality and people.",
       "project":{
          "title":"Seamless: A Design System for Handheld Augmented Reality",
@@ -937,11 +937,11 @@
    },
    {
       "id":17,
-      "first-last-name":"Barsha Maharjan",
+      "flname":"Barsha Maharjan",
       "email":"mahab384@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.baarshaa.com",
-      "prof-title":"MultiDisciplinary Designer",
+      "profTitles":"MultiDisciplinary Designer",
       "bio":"TBA",
       "project":{
          "title":"Chagu Bakhâ (One Story)",
@@ -955,11 +955,11 @@
    },
    {
       "id":31,
-      "first-last-name":"Lauren Malkani",
+      "flname":"Lauren Malkani",
       "email":"malkl048@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://laurenmalkani.com/blog/",
-      "prof-title":"Co-founder",
+      "profTitles":"Co-founder",
       "bio":"I am co-founder of Seven Mile Media, a digital studio produces interactives, data visualization and video around today's most pressing issues. I am currently focusing on physical data visualization, machine learning and augmented reality to create new storytelling narratives and interactive experiences.",
       "project":{
          "title":"Untenable: The displacement of NYC",
@@ -973,11 +973,11 @@
    },
    {
       "id":79,
-      "first-last-name":"Neeraja Mathur",
+      "flname":"Neeraja Mathur",
       "email":"mathn958@newschool.edu",
       "event":"Symposium",
       "url":"https://neerajamathur.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"TBD",
       "project":{
          "title":"TBD",
@@ -991,11 +991,11 @@
    },
    {
       "id":74,
-      "first-last-name":"Haley Mittelstaedt",
+      "flname":"Haley Mittelstaedt",
       "email":"mitth142@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://haleymittdesign.cargocollective.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"A UX designer and digital literacy advocate whose work explores the ubiquity of cameras and connected devices—and how these trends have fundamentally changed photography.",
       "project":{
          "title":"Smartphone Vernacular",
@@ -1009,11 +1009,11 @@
    },
    {
       "id":52,
-      "first-last-name":"Carla Molins Pitarch",
+      "flname":"Carla Molins Pitarch",
       "email":"molic786@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.carlamolins.com",
-      "prof-title":"Experience designer, researcher, educator, and creative technologist.",
+      "profTitles":"Experience designer, researcher, educator, and creative technologist.",
       "bio":"Restless mind, idea creator, maker, visual designer & motion-grapher. Passionate about the merge of science, art, and technology. My current area of research explores the understanding of complex phenomena.",
       "project":{
          "title":"Omnipresence",
@@ -1027,11 +1027,11 @@
    },
    {
       "id":6,
-      "first-last-name":"Darío Narváez",
+      "flname":"Darío Narváez",
       "email":"narvd444@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.darionarvaez.com",
-      "prof-title":"Designer",
+      "profTitles":"Designer",
       "bio":"Designer with 8+ years of design consultancy experience specializing in transportation and lifestyle consumer product design, as well as a strong passion in advanced concept design and concept art.",
       "project":{
          "title":"Enlighted Musicality",
@@ -1045,11 +1045,11 @@
    },
    {
       "id":42,
-      "first-last-name":"George S. N. Neequaye",
+      "flname":"George S. N. Neequaye",
       "email":"neeqg934@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.gsnneequaye.com/",
-      "prof-title":"Designer",
+      "profTitles":"Designer",
       "bio":"With an eye for detail and aesthetics. I am determined to create a fulfilling career in line with my passions: technology, design, international development and fashion.",
       "project":{
          "title":"Texturity",
@@ -1063,11 +1063,11 @@
    },
    {
       "id":4,
-      "first-last-name":"Luqi Nie",
+      "flname":"Luqi Nie",
       "email":"niel641@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://luqinie.com/",
-      "prof-title":"UX Designer, Interaction Designer",
+      "profTitles":"UX Designer, Interaction Designer",
       "bio":"Luqi Nie (Earl) is an interaction designer who combines empathy, logical thinking, and gamification to spark the world.",
       "project":{
          "title":"Preference Harvest",
@@ -1081,11 +1081,11 @@
    },
    {
       "id":1,
-      "first-last-name":"Nicholas Paganelli",
+      "flname":"Nicholas Paganelli",
       "email":"pagan813@newschool.edu",
       "event":"Symposium",
       "url":"http://nicholas-paganelli.myportfolio.com",
-      "prof-title":"Fashion Industry Analyst",
+      "profTitles":"Fashion Industry Analyst",
       "bio":"I am creative technologist focused on how we can transform the centuries-old process of clothing production. I am actively seeking employment at fashion companies that are looking to innovate around their technological and industrial systems",
       "project":{
          "title":"Fashioning Accessibility: Industrial Production of Bespoke Attire",
@@ -1099,11 +1099,11 @@
    },
    {
       "id":58,
-      "first-last-name":"Summer Pan",
+      "flname":"Summer Pan",
       "email":"panx610@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://summerpan.com",
-      "prof-title":"Creative Designer",
+      "profTitles":"Creative Designer",
       "bio":"I'm a multidisciplinary designer focusing on carrying forward visual communication with any possible utilizations of newly developed media.",
       "project":{
          "title":"I'D RATHER BE MYSELVES",
@@ -1117,11 +1117,11 @@
    },
    {
       "id":87,
-      "first-last-name":"Chavisa Rojratanadumrong",
+      "flname":"Chavisa Rojratanadumrong",
       "email":"rojrc782@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://chavisar.ooo",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"A designer who is drawn into the interaction and behaviors of humans in relation to their surrounding. Area of expertise lands between communication design and creative computation as well as practices related to interactive and experience design.",
       "project":{
          "title":"Sensorial Artifacts",
@@ -1135,11 +1135,11 @@
    },
    {
       "id":8,
-      "first-last-name":"Philipp Schmitt",
+      "flname":"Philipp Schmitt",
       "email":"schmp077@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://philippschmitt.com",
-      "prof-title":"Artist, Designer, Researcher",
+      "profTitles":"Artist, Designer, Researcher",
       "bio":"Philipp Schmitt (b. 1993, Germany) works at the intersection of art, design, and research. His work engages with the philosophical, poetic, and political dimensions of computation by examining the ever-shifting discrepancy between what is computable in theory and in reality.",
       "project":{
          "title":"Why Would You Want To Picture It",
@@ -1153,11 +1153,11 @@
    },
    {
       "id":38,
-      "first-last-name":"Alyssa Shea",
+      "flname":"Alyssa Shea",
       "email":"sheaa263@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.alyssashea.com",
-      "prof-title":"Time-Based Media Artist",
+      "profTitles":"Time-Based Media Artist",
       "bio":"Alyssa Shea is a time-based media artist specializing in video and sound collage. Compelled by rhythm, she wields camera as patternmaker, percussion as punctuation, and editor’s blade as a baton.",
       "project":{
          "title":"Moody",
@@ -1171,11 +1171,11 @@
    },
    {
       "id":23,
-      "first-last-name":"Ta-Kai Shueh",
+      "flname":"Ta-Kai Shueh",
       "email":"shuet334@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://danieltk.com",
-      "prof-title":"Design Technologist",
+      "profTitles":"Design Technologist",
       "bio":"A design technologist with business background in New York, skilled in storytelling, UI/UX design, and VR/AR design.",
       "project":{
          "title":"A Way Home",
@@ -1189,11 +1189,11 @@
    },
    {
       "id":65,
-      "first-last-name":"Maddy Siriouthay",
+      "flname":"Maddy Siriouthay",
       "email":"sirim392@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://madsiri.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"A creative to the core with a passion for people; writer, designer and technologist committed to social good and community",
       "project":{
          "title":"My Mother's Daughter",
@@ -1207,11 +1207,11 @@
    },
    {
       "id":16,
-      "first-last-name":"Yanbin Song",
+      "flname":"Yanbin Song",
       "email":"songy941@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://www.yanbinsong.com",
-      "prof-title":"Artist",
+      "profTitles":"Artist",
       "bio":"Yanbin Song is an artist and a designer who is interested in exploring topics inspired from details in daily life. She often uses absurd and humorous forms to provoke interesting and critical thoughts.",
       "project":{
          "title":"Selfie - from analog to digital",
@@ -1225,11 +1225,11 @@
    },
    {
       "id":77,
-      "first-last-name":"Chris T Stuart",
+      "flname":"Chris T Stuart",
       "email":"stuac191@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Chris T Stuart enjoys creating memorable experiences by building and designing innovative digital products. Passionate about product development, Lajara enjoys experimenting with various levels of tech that integrate seamlessly and improve peoples daily lives. His previous works consists of collaborations and developing digital products focused on art, culture, social connections, and motivational well-being. (BUT WIP)",
       "project":{
          "title":"playground",
@@ -1243,11 +1243,11 @@
    },
    {
       "id":81,
-      "first-last-name":"Lavonne Sun",
+      "flname":"Lavonne Sun",
       "email":"sunc667@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://lavonnesun.com",
-      "prof-title":"Artist, Nomad, Poet",
+      "profTitles":"Artist, Nomad, Poet",
       "bio":"Serendipity *. (Need to be modified later)",
       "project":{
          "title":"Poetic of Serendipity (Need to be modified later)",
@@ -1261,11 +1261,11 @@
    },
    {
       "id":11,
-      "first-last-name":"Neil V. Techapanichgul",
+      "flname":"Neil V. Techapanichgul",
       "email":"techv499@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://vrtech.me",
-      "prof-title":"Indie Game Developer",
+      "profTitles":"Indie Game Developer",
       "bio":"I began as a motion and graphic designer. Then I work as a UI/UX Developer and Designer for 3 Years. After designing interfaces for interactive projects, I have been inspired by how design can integrate with coding which leads me into the programming area. After that, I worked as a Unity Developer for 6 Years.",
       "project":{
          "title":"Attune",
@@ -1279,11 +1279,11 @@
    },
    {
       "id":26,
-      "first-last-name":"Iris Tian",
+      "flname":"Iris Tian",
       "email":"tiany580@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.iristian.net/",
-      "prof-title":"User Experience Designer",
+      "profTitles":"User Experience Designer",
       "bio":"Iris is an interaction designer, as well as a creative technologist. She enjoys delighting people with innovative and delicate ideas.",
       "project":{
          "title":"Read",
@@ -1297,11 +1297,11 @@
    },
    {
       "id":82,
-      "first-last-name":"Yifan Wang",
+      "flname":"Yifan Wang",
       "email":"wangy501@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
-      "prof-title":"Game Designer",
+      "profTitles":"Game Designer",
       "bio":"This is Yifan. An architect, a UI/UX designer, and a game designer.",
       "project":{
          "title":"Baby Lab",
@@ -1315,11 +1315,11 @@
    },
    {
       "id":64,
-      "first-last-name":"Franky Wang",
+      "flname":"Franky Wang",
       "email":"wangy812@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.frankywang.com",
-      "prof-title":"New media designer, UX designer",
+      "profTitles":"New media designer, UX designer",
       "bio":"To me, social responsibility is what we designers should be highly seen, especially when we are playing a key role in aesthetic contributions for people. Inspired by this belief, I managed to devote myself to works which could be both educational and creative.",
       "project":{
          "title":"Dial-heart",
@@ -1333,11 +1333,11 @@
    },
    {
       "id":14,
-      "first-last-name":"Yixun Wang",
+      "flname":"Yixun Wang",
       "email":"wangy969@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yixunwang.design",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Yixun is an interaction designer, a photographer, and a craftsman as well.",
       "project":{
          "title":"STITCHES IN TIME",
@@ -1351,11 +1351,11 @@
    },
    {
       "id":66,
-      "first-last-name":"Leah Willemin",
+      "flname":"Leah Willemin",
       "email":"willl973@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://leahwillemin.com/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"Leah is an artist and designer who works at the intersection of craft and technology. Her work focuses on the way quantification affects the body.",
       "project":{
          "title":"TBD",
@@ -1369,11 +1369,11 @@
    },
    {
       "id":90,
-      "first-last-name":"FiFi Wu",
+      "flname":"FiFi Wu",
       "email":"wuf029@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://fifiwu.com",
-      "prof-title":"ninteraction designer and new media artist",
+      "profTitles":"ninteraction designer and new media artist",
       "bio":"She is an interaction designer and new media artist based in NYC.Her passion is to merge technology, storytelling and art to create interactive and emotionally engaging experiences.",
       "project":{
          "title":"Parents are waiting for us to say thank you, while we are waiting for them to apologize",
@@ -1387,11 +1387,11 @@
    },
    {
       "id":41,
-      "first-last-name":"Jacqueline Wu",
+      "flname":"Jacqueline Wu",
       "email":"wuj643@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://jacqswu.com/",
-      "prof-title":"Designer & Creative Technologist",
+      "profTitles":"Designer & Creative Technologist",
       "bio":"Jacqueline Wu explores how technology is shaping how we see, understand, and move within our physical world. Her practice is rooted in curiosity and speculation, and supplemented by research. She often uses tactics of interrogating, revealing, and unknowing data to create alternative narratives.",
       "project":{
          "title":"Shards",
@@ -1405,11 +1405,11 @@
    },
    {
       "id":19,
-      "first-last-name":"Jenni Wu",
+      "flname":"Jenni Wu",
       "email":"wuj791@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://jenniferwu.ca",
-      "prof-title":"User Experience Designer",
+      "profTitles":"User Experience Designer",
       "bio":"Jenni is a user experience designer who enjoys designing for positive social impact, while using inclusive and accessible design practices to create meaningful and empowering solutions.",
       "project":{
          "title":"Pocketspace -- Making code accessible to girls",
@@ -1423,11 +1423,11 @@
    },
    {
       "id":63,
-      "first-last-name":"Lucy M. Wu",
+      "flname":"Lucy M. Wu",
       "email":"wul806@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://www.lucydesigns.org",
-      "prof-title":"User Experience Designer",
+      "profTitles":"User Experience Designer",
       "bio":"I'm a designer, visionary and public health advocate (I care about people!). I’ve always been interested in well-made products, human behavior, and helping people in today’s fast-paced and constantly changing environment!",
       "project":{
          "title":"Monster Panic *(subjected to change).",
@@ -1441,11 +1441,11 @@
    },
    {
       "id":32,
-      "first-last-name":"Bella Wu",
+      "flname":"Bella Wu",
       "email":"wuy573@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.wuyandesign.com/",
-      "prof-title":"User Experience Designer, Artist",
+      "profTitles":"User Experience Designer, Artist",
       "bio":"Bella is a user experience designer and artist based in New York. She understands and empowers people through empathy and communication.",
       "project":{
          "title":"How to see a cloud(s) [note: there should be a strikethrough on \"a\"]",
@@ -1459,11 +1459,11 @@
    },
    {
       "id":9,
-      "first-last-name":"Longze Xia",
+      "flname":"Longze Xia",
       "email":"xial948@newschool.edu",
       "event":"Interactive Showcase",
       "url":"http://longzex.design",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Design for positive change.",
       "project":{
          "title":"Present",
@@ -1477,11 +1477,11 @@
    },
    {
       "id":89,
-      "first-last-name":"Zhaohong Xia",
+      "flname":"Zhaohong Xia",
       "email":"xiaz971@newschool.edu",
       "event":"Interactive Showcase",
       "url":"",
-      "prof-title":"Creative Game Designer",
+      "profTitles":"Creative Game Designer",
       "bio":"My interest is exploring new knowledge and apply my new ideas.",
       "project":{
          "title":"Cleopatra - Your Choices For Her",
@@ -1495,11 +1495,11 @@
    },
    {
       "id":91,
-      "first-last-name":"Jade Yang",
+      "flname":"Jade Yang",
       "email":"yangx868@newschool.edu",
       "event":"Live Performance/Time Based Works",
       "url":"https://jadeyang.design",
-      "prof-title":"UX Designer, Creative Technologist",
+      "profTitles":"UX Designer, Creative Technologist",
       "bio":"Comparing with obeying the rules, I prefer to create the rules\r\n Honed my logical thinking in Law school, keep my sense of aesthetic of keep dancing.",
       "project":{
          "title":"Third Encounter Dance",
@@ -1513,11 +1513,11 @@
    },
    {
       "id":68,
-      "first-last-name":"Young Tae Yoon",
+      "flname":"Young Tae Yoon",
       "email":"yoony857@newschool.edu",
       "event":"Symposium",
       "url":"https://www.youngtaeyoon.com",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"I am a passionate, positive, and driven person. The advantage is to do something passionately and to carry out it with a positive mind in any situation.",
       "project":{
          "title":"Anxitox",
@@ -1531,11 +1531,11 @@
    },
    {
       "id":18,
-      "first-last-name":"Kelsey Yu",
+      "flname":"Kelsey Yu",
       "email":"yuy296@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://kelseyyu.com",
-      "prof-title":"Data-driven Product Designer",
+      "profTitles":"Data-driven Product Designer",
       "bio":"Kelsey is a data-driven product designer who innovatively designs solutions and drives positive business results. She always immersed herself in cutting-edge design and technology. Looking forward to the future where she could apply knowledge in design and contribute to the tech world, with the passion for learning to help others around the world.",
       "project":{
          "title":"Ladder",
@@ -1549,11 +1549,11 @@
    },
    {
       "id":45,
-      "first-last-name":"Rita Zhang",
+      "flname":"Rita Zhang",
       "email":"zhanr526@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.ruixizhang.net",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"Rita Zhang is a UI/UX designer, Interaction Designer based in New York.",
       "project":{
          "title":"Behind",
@@ -1567,11 +1567,11 @@
    },
    {
       "id":40,
-      "first-last-name":"Youchun Zhang",
+      "flname":"Youchun Zhang",
       "email":"zhany493@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"http://youchunzhang.com",
-      "prof-title":"Interaction Designer, Creative Technologist",
+      "profTitles":"Interaction Designer, Creative Technologist",
       "bio":"An engineer, designer, and creative technologist who works at the intersection of research, design and code to build the thoughtful solution and modern interface for both digital and physical products.",
       "project":{
          "title":"Hidden Space",
@@ -1585,11 +1585,11 @@
    },
    {
       "id":13,
-      "first-last-name":"Yuemei Zhang",
+      "flname":"Yuemei Zhang",
       "email":"zhany679@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yuemeiz.com/",
-      "prof-title":"",
+      "profTitles":"",
       "bio":"She is a UI designer living in New York City. Passionate about storytelling and building innovative user experience. Highly interested in visual design and motion graphics.",
       "project":{
          "title":"Real",
@@ -1603,11 +1603,11 @@
    },
    {
       "id":7,
-      "first-last-name":"Joyce Zheng",
+      "flname":"Joyce Zheng",
       "email":"zhenq438@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.joycezheng.com/",
-      "prof-title":"User Experience Designer, Artist, Creative Technologist, illustrator",
+      "profTitles":"User Experience Designer, Artist, Creative Technologist, illustrator",
       "bio":"I am a user experience designer and artist focusing on creating physical and digital experience for commercial and gallery space. My works focus on gamification, artificial nature and brand design.",
       "project":{
          "title":"Speculative Weeds",
@@ -1621,11 +1621,11 @@
    },
    {
       "id":43,
-      "first-last-name":"Stella Zhong",
+      "flname":"Stella Zhong",
       "email":"zhony815@newschool.edu",
       "event":"Gallery Exhibition",
       "url":"https://www.yuxinzhong.com",
-      "prof-title":"Designer, Bio Artist",
+      "profTitles":"Designer, Bio Artist",
       "bio":"Stella is a designer as well as a bio artist in New York City. Passionate about crafting seamless and empowering experience for billions, she designs digital products, interactive installations and services.",
       "project":{
          "title":"Unseen Footprints",
@@ -1639,11 +1639,11 @@
    },
    {
       "id":86,
-      "first-last-name":"Yes",
+      "flname":"Yes",
       "email":"zhuy806@newschool.edu",
       "event":"Interactive Showcase",
       "url":"https://www.yimeiworld.com",
-      "prof-title":"Interaction Designer",
+      "profTitles":"Interaction Designer",
       "bio":"I am a UI/UX and game designer who loves dance and games.",
       "project":{
          "title":"Baby lab",

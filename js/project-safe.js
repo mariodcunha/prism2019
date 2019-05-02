@@ -1,11 +1,14 @@
 
+
+console.log( "Indivpage ready!" );
+
 function loadData() {
   $.getJSON( "students-new.json", function( data ) {
     // Write the data into our global variable.
     students = data;
     var index = window.location.hash.split('#')[1].trim();
-    // console.log(index);
-    // console.log(students);
+    console.log(index)
+    console.log(students)
 
 
     // Call a function to create HTML for all the students.
@@ -31,135 +34,101 @@ function renderSingleProjectPage(index, data){
   var githubTrue = false ;
   var tumblrTrue = false ;
 
-  var project = $('.project-intro'),
-  bio = $('.individual-intro');
-
-    // console.log(page);
-    // console.log(container);
-
+  var page = $('.single-project'),
+    container = $('.popup-detail');
 
   // Find the wanted project by iterating the data object and searching for the chosen index.
   if(data.length){
     data.forEach(function (item) {
+      // console.log(index) ;
+      if(item.id == 1 && item.id == index) {
+        page.find('.page-name').text(item.name);
+        page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
+        if(item.social['portfolio'] != "") {
+          page.find('.portfolio').text("Portfolio") ;
+          page.find('.portfolio').attr('href', item.social['portfolio']) ;
+          page.find('#port1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          portTrue = true ;
+        }
+        if(item.social['facebook'] != "") {
+          page.find('.fb').text("Facebook") ;
+          page.find('.fb').attr('href', item.social['facebook']) ;
+          page.find('#fb1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          fbTrue = true ;
+        }
+        if(item.social['instagram'] != "") {
+          page.find('.insta').text("Instagram") ;
+          page.find('.insta').attr('href', item.social['instagram']) ;
+          page.find('#insta1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          instaTrue = true ;
+        }
+        if(item.social['linkedin'] != "") {
+          page.find('.linkedin').text("Linkedin") ;
+          page.find('.linkedin').attr('href', item.social['linkedin']) ;
+          page.find('#linkedin1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          linkTrue = true ;
+        }
+        if(item.social['twitter'] != "") {
+          page.find('.twitter').text("Twitter") ;
+          page.find('.twitter').attr('href', item.social['twitter']) ;
+          page.find('#twitter1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          twitterTrue = true ;
+        }
+        if(item.social.hasOwnProperty('github') && item.social['github'] != "") {
+          page.find('.github').text("Github") ;
+          page.find('.github').attr('href', item.social['github']) ;
+          page.find('#github1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          githubTrue = true ;
+        }
+        if(item.social.hasOwnProperty('tumblr') && item.social['tumblr'] != "") {
+          page.find('.tumblr').text("Tumblr") ;
+          page.find('.tumblr').attr('href', item.social['tumblr']) ;
+          page.find('#tumblr1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          tumblrTrue = true ;
+        }
+        if(item.social['other'] != "") {
+          page.find('.other').text(item.social['other']) ;
+          if(item.social['other'][0] == "h") {
+            page.find('.other').attr('href', item.social['other']) ;
+          }
+        } else {
+            if(tumblrTrue === true) {
+              page.find('.tumblr').text("Tumblr") ;
+              page.find('#tumblr1').text("");
+            } else if (githubTrue === true) {
+              page.find('.github').text("Github") ;
+              page.find('#github1').text("");
+            } else if(twitterTrue === true) {
+              page.find('.twitter').text("Twitter") ;
+              page.find('#twitter1').text("") ;
+            } else if (linkTrue === true) {
+              page.find('.linkedin').text("Linkedin") ;
+              page.find('#linkedin1').text("") ;
+            } else if (instaTrue === true) {
+              page.find('.insta').text("Instagram") ;
+              page.find('#insta1').text("") ;
+            } else if(fbTrue === true) {
+              page.find('.fb').text("Facebook") ;
+              page.find('#fb1').text("") ;
+            } else if (portTrue === true) {
+              page.find('.portfolio').text("Portfolio") ;
+              page.find('#port1').text("") ;
+            }
+        }
+        for(var i = 0 ; i < item.aboutme.length ; i++) {
+          page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
+        }
 
-      if(item.id == index) {
-
-      // console.log(index);
-      // console.log(item.id);
-      console.log(item.flname);
-
-      bio.find('.student-name').text(item.flname);
-      bio.find('.student-title').text(item.profTitles);
-      bio.find('.student-intro').text(item.bio);
-      bio.find('.student-url').text();
-
-      project.find('.project-name').text();
-      project.find('.project-description').text(
-        function () {
-          var str = (item.project.abstract);
-          for(var i=0; i<str.length; i++) {
-            if (str[i] === "\r\n") 
-
-            indices.push(i);
-            nstr = str.replace("\r\n", "\n");
-            return nstr
-          };}
-        );
-
-
-
-    // console.log(indices)
-    
-
-
-
-    // page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
-
-    if(item.social['portfolio'] != "") {
-      page.find('.portfolio').text("Portfolio") ;
-      // page.find('.portfolio').attr('href', item.social['portfolio']) ;
-      page.find('#port1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      portTrue = true ;
-    }
-    if(item.social['facebook'] != "") {
-      page.find('.fb').text("Facebook") ;
-      page.find('.fb').attr('href', item.social['facebook']) ;
-      page.find('#fb1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      fbTrue = true ;
-    }
-    if(item.social['instagram'] != "") {
-      page.find('.insta').text("Instagram") ;
-      page.find('.insta').attr('href', item.social['instagram']) ;
-      page.find('#insta1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      instaTrue = true ;
-    }
-    if(item.social['linkedin'] != "") {
-      page.find('.linkedin').text("Linkedin") ;
-      page.find('.linkedin').attr('href', item.social['linkedin']) ;
-      page.find('#linkedin1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      linkTrue = true ;
-    }
-    if(item.social['twitter'] != "") {
-      page.find('.twitter').text("Twitter") ;
-      page.find('.twitter').attr('href', item.social['twitter']) ;
-      page.find('#twitter1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      twitterTrue = true ;
-    }
-    if(item.social.hasOwnProperty('github') && item.social['github'] != "") {
-      page.find('.github').text("Github") ;
-      page.find('.github').attr('href', item.social['github']) ;
-      page.find('#github1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      githubTrue = true ;
-    }
-    if(item.social.hasOwnProperty('tumblr') && item.social['tumblr'] != "") {
-      page.find('.tumblr').text("Tumblr") ;
-      page.find('.tumblr').attr('href', item.social['tumblr']) ;
-      page.find('#tumblr1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-      tumblrTrue = true ;
-    }
-    if(item.social['other'] != "") {
-      page.find('.other').text(item.social['other']) ;
-      if(item.social['other'][0] == "h") {
-        page.find('.other').attr('href', item.social['other']) ;
-      }
-    } else {
-      if(tumblrTrue === true) {
-        page.find('.tumblr').text("Tumblr") ;
-        page.find('#tumblr1').text("");
-      } else if (githubTrue === true) {
-        page.find('.github').text("Github") ;
-        page.find('#github1').text("");
-      } else if(twitterTrue === true) {
-        page.find('.twitter').text("Twitter") ;
-        page.find('#twitter1').text("") ;
-      } else if (linkTrue === true) {
-        page.find('.linkedin').text("Linkedin") ;
-        page.find('#linkedin1').text("") ;
-      } else if (instaTrue === true) {
-        page.find('.insta').text("Instagram") ;
-        page.find('#insta1').text("") ;
-      } else if(fbTrue === true) {
-        page.find('.fb').text("Facebook") ;
-        page.find('#fb1').text("") ;
-      } else if (portTrue === true) {
-        page.find('.portfolio').text("Portfolio") ;
-        page.find('#port1').text("") ;
-      }
-    }
-    for(var i = 0 ; i < item.aboutme.length ; i++) {
-      page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
-    }
-
-    if(item.project['website'] != "") {
-      page.find('.websiteLink').text("Project Website") ;
-      page.find('.websiteLink').attr('href', item.project['website']) ;
-      instaTrue = true ;
-    }
+        if(item.project['website'] != "") {
+          page.find('.websiteLink').text("Project Website") ;
+          page.find('.websiteLink').attr('href', item.project['website']) ;
+          instaTrue = true ;
+        }
 
 
-    page.find('.project-name').text(item.project.title);
-    page.find('.project-desc').append(item.project.description[0] + "<br>" + "<br>");
-    page.find('.project-desc').append(item.project.description[1] + "<br>" + "<br>");
+        page.find('.project-name').text(item.project.title);
+        page.find('.project-desc').append(item.project.description[0] + "<br>" + "<br>");
+        page.find('.project-desc').append(item.project.description[1] + "<br>" + "<br>");
         // page.find('.project-desc').append('More details: ') ;
         // var newLink = document.createElement('a') ;
         // newLink.setAttribute('class', 'aimeeLink') ;
@@ -232,27 +201,27 @@ function renderSingleProjectPage(index, data){
 
 
         for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
-         page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
-       }
+           page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
+        }
 
-       for(var i = 0 ; i < item.project['tags'].length ; i++) {
-        page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
-      }
-      page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
-      page.find('.studio1').append(item.project['writing-professor-1']) ;
-      if(item.project.hasOwnProperty('other-professor-1')) {
-        console.log("ran") ;
-        page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
-      }
-      page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
-      page.find('.studio2').append(item.project['writing-professor-2']) ;
-      if(item.project.hasOwnProperty('other-professor-2')) {
-        page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
-      }
+        for(var i = 0 ; i < item.project['tags'].length ; i++) {
+          page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
+        }
+        page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
+        page.find('.studio1').append(item.project['writing-professor-1']) ;
+        if(item.project.hasOwnProperty('other-professor-1')) {
+          console.log("ran") ;
+          page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
+        }
+        page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
+        page.find('.studio2').append(item.project['writing-professor-2']) ;
+        if(item.project.hasOwnProperty('other-professor-2')) {
+          page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
+        }
 
-      container.find('h4').text(item.project.blurb);
-      container.find('p').text(item.project.description);
-    } else if(item.id == 26 && item.id == index) {
+        container.find('h4').text(item.project.blurb);
+        container.find('p').text(item.project.description);
+      } else if(item.id == 26 && item.id == index) {
         //erica kermani
         page.find('.page-name').text(item.name);
         page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
@@ -304,28 +273,28 @@ function renderSingleProjectPage(index, data){
             page.find('.other').attr('href', item.social['other']) ;
           }
         } else {
-          if(tumblrTrue === true) {
-            page.find('.tumblr').text("Tumblr") ;
-            page.find('#tumblr1').text("");
-          } else if (githubTrue === true) {
-            page.find('.github').text("Github") ;
-            page.find('#github1').text("");
-          } else if(twitterTrue === true) {
-            page.find('.twitter').text("Twitter") ;
-            page.find('#twitter1').text("") ;
-          } else if (linkTrue === true) {
-            page.find('.linkedin').text("Linkedin") ;
-            page.find('#linkedin1').text("") ;
-          } else if (instaTrue === true) {
-            page.find('.insta').text("Instagram") ;
-            page.find('#insta1').text("") ;
-          } else if(fbTrue === true) {
-            page.find('.fb').text("Facebook") ;
-            page.find('#fb1').text("") ;
-          } else if (portTrue === true) {
-            page.find('.portfolio').text("Portfolio") ;
-            page.find('#port1').text("") ;
-          }
+            if(tumblrTrue === true) {
+              page.find('.tumblr').text("Tumblr") ;
+              page.find('#tumblr1').text("");
+            } else if (githubTrue === true) {
+              page.find('.github').text("Github") ;
+              page.find('#github1').text("");
+            } else if(twitterTrue === true) {
+              page.find('.twitter').text("Twitter") ;
+              page.find('#twitter1').text("") ;
+            } else if (linkTrue === true) {
+              page.find('.linkedin').text("Linkedin") ;
+              page.find('#linkedin1').text("") ;
+            } else if (instaTrue === true) {
+              page.find('.insta').text("Instagram") ;
+              page.find('#insta1').text("") ;
+            } else if(fbTrue === true) {
+              page.find('.fb').text("Facebook") ;
+              page.find('#fb1').text("") ;
+            } else if (portTrue === true) {
+              page.find('.portfolio').text("Portfolio") ;
+              page.find('#port1').text("") ;
+            }
         }
         for(var i = 0 ; i < item.aboutme.length ; i++) {
           page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
@@ -394,27 +363,27 @@ function renderSingleProjectPage(index, data){
 
 
         for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
-         page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
-       }
+           page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
+        }
 
-       for(var i = 0 ; i < item.project['tags'].length ; i++) {
-        page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
-      }
-      page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
-      page.find('.studio1').append(item.project['writing-professor-1']) ;
-      if(item.project.hasOwnProperty('other-professor-1')) {
-        console.log("ran") ;
-        page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
-      }
-      page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
-      page.find('.studio2').append(item.project['writing-professor-2']) ;
-      if(item.project.hasOwnProperty('other-professor-2')) {
-        page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
-      }
+        for(var i = 0 ; i < item.project['tags'].length ; i++) {
+          page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
+        }
+        page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
+        page.find('.studio1').append(item.project['writing-professor-1']) ;
+        if(item.project.hasOwnProperty('other-professor-1')) {
+          console.log("ran") ;
+          page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
+        }
+        page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
+        page.find('.studio2').append(item.project['writing-professor-2']) ;
+        if(item.project.hasOwnProperty('other-professor-2')) {
+          page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
+        }
 
-      container.find('h4').text(item.project.blurb);
-      container.find('p').text(item.project.description);
-    } else if(item.id == 65 && item.id == index) {
+        container.find('h4').text(item.project.blurb);
+        container.find('p').text(item.project.description);
+      } else if(item.id == 65 && item.id == index) {
         //paolo's page
         page.find('.page-name').text(item.name);
         page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
@@ -466,28 +435,28 @@ function renderSingleProjectPage(index, data){
             page.find('.other').attr('href', item.social['other']) ;
           }
         } else {
-          if(tumblrTrue === true) {
-            page.find('.tumblr').text("Tumblr") ;
-            page.find('#tumblr1').text("");
-          } else if (githubTrue === true) {
-            page.find('.github').text("Github") ;
-            page.find('#github1').text("");
-          } else if(twitterTrue === true) {
-            page.find('.twitter').text("Twitter") ;
-            page.find('#twitter1').text("") ;
-          } else if (linkTrue === true) {
-            page.find('.linkedin').text("Linkedin") ;
-            page.find('#linkedin1').text("") ;
-          } else if (instaTrue === true) {
-            page.find('.insta').text("Instagram") ;
-            page.find('#insta1').text("") ;
-          } else if(fbTrue === true) {
-            page.find('.fb').text("Facebook") ;
-            page.find('#fb1').text("") ;
-          } else if (portTrue === true) {
-            page.find('.portfolio').text("Portfolio") ;
-            page.find('#port1').text("") ;
-          }
+            if(tumblrTrue === true) {
+              page.find('.tumblr').text("Tumblr") ;
+              page.find('#tumblr1').text("");
+            } else if (githubTrue === true) {
+              page.find('.github').text("Github") ;
+              page.find('#github1').text("");
+            } else if(twitterTrue === true) {
+              page.find('.twitter').text("Twitter") ;
+              page.find('#twitter1').text("") ;
+            } else if (linkTrue === true) {
+              page.find('.linkedin').text("Linkedin") ;
+              page.find('#linkedin1').text("") ;
+            } else if (instaTrue === true) {
+              page.find('.insta').text("Instagram") ;
+              page.find('#insta1').text("") ;
+            } else if(fbTrue === true) {
+              page.find('.fb').text("Facebook") ;
+              page.find('#fb1').text("") ;
+            } else if (portTrue === true) {
+              page.find('.portfolio').text("Portfolio") ;
+              page.find('#port1').text("") ;
+            }
         }
         for(var i = 0 ; i < item.aboutme.length ; i++) {
           page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
@@ -658,155 +627,155 @@ function renderSingleProjectPage(index, data){
         $( "#theProject" ).append(newImage8) ;
         
         for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
-         page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
-       }
-
-       for(var i = 0 ; i < item.project['tags'].length ; i++) {
-        page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
-      }
-      page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
-      page.find('.studio1').append(item.project['writing-professor-1']) ;
-      if(item.project.hasOwnProperty('other-professor-1')) {
-        console.log("ran") ;
-        page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
-      }
-      page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
-      page.find('.studio2').append(item.project['writing-professor-2']) ;
-      if(item.project.hasOwnProperty('other-professor-2')) {
-        page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
-      }
-
-      container.find('h4').text(item.project.blurb);
-      container.find('p').text(item.project.description);
-
-    } else if(item.id == 81 && item.id == index) {
-      page.find('.page-name').text(item.name);
-      page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
-      if(item.social['portfolio'] != "") {
-        page.find('.portfolio').text("Portfolio") ;
-        page.find('.portfolio').attr('href', item.social['portfolio']) ;
-        page.find('#port1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        portTrue = true ;
-      }
-      if(item.social['facebook'] != "") {
-        page.find('.fb').text("Facebook") ;
-        page.find('.fb').attr('href', item.social['facebook']) ;
-        page.find('#fb1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        fbTrue = true ;
-      }
-      if(item.social['instagram'] != "") {
-        page.find('.insta').text("Instagram") ;
-        page.find('.insta').attr('href', item.social['instagram']) ;
-        page.find('#insta1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        instaTrue = true ;
-      }
-      if(item.social['linkedin'] != "") {
-        page.find('.linkedin').text("Linkedin") ;
-        page.find('.linkedin').attr('href', item.social['linkedin']) ;
-        page.find('#linkedin1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        linkTrue = true ;
-      }
-      if(item.social['twitter'] != "") {
-        page.find('.twitter').text("Twitter") ;
-        page.find('.twitter').attr('href', item.social['twitter']) ;
-        page.find('#twitter1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        twitterTrue = true ;
-      }
-      if(item.social.hasOwnProperty('github') && item.social['github'] != "") {
-        page.find('.github').text("Github") ;
-        page.find('.github').attr('href', item.social['github']) ;
-        page.find('#github1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        githubTrue = true ;
-      }
-      if(item.social.hasOwnProperty('tumblr') && item.social['tumblr'] != "") {
-        page.find('.tumblr').text("Tumblr") ;
-        page.find('.tumblr').attr('href', item.social['tumblr']) ;
-        page.find('#tumblr1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
-        tumblrTrue = true ;
-      }
-      if(item.social['other'] != "") {
-        page.find('.other').text(item.social['other']) ;
-        if(item.social['other'][0] == "h") {
-          page.find('.other').attr('href', item.social['other']) ;
+           page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
         }
-      } else {
-        if(tumblrTrue === true) {
-          page.find('.tumblr').text("Tumblr") ;
-          page.find('#tumblr1').text("");
-        } else if (githubTrue === true) {
-          page.find('.github').text("Github") ;
-          page.find('#github1').text("");
-        } else if(twitterTrue === true) {
-          page.find('.twitter').text("Twitter") ;
-          page.find('#twitter1').text("") ;
-        } else if (linkTrue === true) {
-          page.find('.linkedin').text("Linkedin") ;
-          page.find('#linkedin1').text("") ;
-        } else if (instaTrue === true) {
-          page.find('.insta').text("Instagram") ;
-          page.find('#insta1').text("") ;
-        } else if(fbTrue === true) {
-          page.find('.fb').text("Facebook") ;
-          page.find('#fb1').text("") ;
-        } else if (portTrue === true) {
+
+        for(var i = 0 ; i < item.project['tags'].length ; i++) {
+          page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
+        }
+        page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
+        page.find('.studio1').append(item.project['writing-professor-1']) ;
+        if(item.project.hasOwnProperty('other-professor-1')) {
+          console.log("ran") ;
+          page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
+        }
+        page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
+        page.find('.studio2').append(item.project['writing-professor-2']) ;
+        if(item.project.hasOwnProperty('other-professor-2')) {
+          page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
+        }
+
+        container.find('h4').text(item.project.blurb);
+        container.find('p').text(item.project.description);
+
+      } else if(item.id == 81 && item.id == index) {
+        page.find('.page-name').text(item.name);
+        page.find('.page-image').find('img').attr('src',"portraits/"+item['profile-pic']);
+        if(item.social['portfolio'] != "") {
           page.find('.portfolio').text("Portfolio") ;
-          page.find('#port1').text("") ;
+          page.find('.portfolio').attr('href', item.social['portfolio']) ;
+          page.find('#port1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          portTrue = true ;
         }
-      }
-      for(var i = 0 ; i < item.aboutme.length ; i++) {
-        page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
-      }
-
-      if(item.project['website'] != "") {
-        page.find('.websiteLink').text("Project Website") ;
-        page.find('.websiteLink').attr('href', item.project['website']) ;
-        instaTrue = true ;
-      }
-
-
-      page.find('.project-name').text(item.project.title);
-      page.find('.project-desc').append(item.project.description[0] + "<br>" + "<br>");
-
-      var newVideo = document.createElement('iframe') ;
-      newVideo.setAttribute('src', item.project.video[0]) ;
-      newVideo.setAttribute('allowFullScreen', 'true')
-      $('#theProject').append(newVideo) ;
-
-      if(item.project.image[0] != "") {
-        for(var i = 0 ; i < item.project.image.length ;i++) {
-          var newImage = document.createElement('img');
-          newImage.id = "projectImages" ;
-          console.log(newImage.id) ;
-          newImage.setAttribute('src',"project/"+ item.id + "/" + item.project.image[i] );
-          newImage.setAttribute('style', "width:50vw; margin-bottom:30px;")
-          $( "#theProject" ).append(newImage) ;
+        if(item.social['facebook'] != "") {
+          page.find('.fb').text("Facebook") ;
+          page.find('.fb').attr('href', item.social['facebook']) ;
+          page.find('#fb1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          fbTrue = true ;
         }
-      }
+        if(item.social['instagram'] != "") {
+          page.find('.insta').text("Instagram") ;
+          page.find('.insta').attr('href', item.social['instagram']) ;
+          page.find('#insta1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          instaTrue = true ;
+        }
+        if(item.social['linkedin'] != "") {
+          page.find('.linkedin').text("Linkedin") ;
+          page.find('.linkedin').attr('href', item.social['linkedin']) ;
+          page.find('#linkedin1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          linkTrue = true ;
+        }
+        if(item.social['twitter'] != "") {
+          page.find('.twitter').text("Twitter") ;
+          page.find('.twitter').attr('href', item.social['twitter']) ;
+          page.find('#twitter1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          twitterTrue = true ;
+        }
+        if(item.social.hasOwnProperty('github') && item.social['github'] != "") {
+          page.find('.github').text("Github") ;
+          page.find('.github').attr('href', item.social['github']) ;
+          page.find('#github1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          githubTrue = true ;
+        }
+        if(item.social.hasOwnProperty('tumblr') && item.social['tumblr'] != "") {
+          page.find('.tumblr').text("Tumblr") ;
+          page.find('.tumblr').attr('href', item.social['tumblr']) ;
+          page.find('#tumblr1').append("&nbsp;&nbsp;|&nbsp;&nbsp;") ;
+          tumblrTrue = true ;
+        }
+        if(item.social['other'] != "") {
+          page.find('.other').text(item.social['other']) ;
+          if(item.social['other'][0] == "h") {
+            page.find('.other').attr('href', item.social['other']) ;
+          }
+        } else {
+            if(tumblrTrue === true) {
+              page.find('.tumblr').text("Tumblr") ;
+              page.find('#tumblr1').text("");
+            } else if (githubTrue === true) {
+              page.find('.github').text("Github") ;
+              page.find('#github1').text("");
+            } else if(twitterTrue === true) {
+              page.find('.twitter').text("Twitter") ;
+              page.find('#twitter1').text("") ;
+            } else if (linkTrue === true) {
+              page.find('.linkedin').text("Linkedin") ;
+              page.find('#linkedin1').text("") ;
+            } else if (instaTrue === true) {
+              page.find('.insta').text("Instagram") ;
+              page.find('#insta1').text("") ;
+            } else if(fbTrue === true) {
+              page.find('.fb').text("Facebook") ;
+              page.find('#fb1').text("") ;
+            } else if (portTrue === true) {
+              page.find('.portfolio').text("Portfolio") ;
+              page.find('#port1').text("") ;
+            }
+        }
+        for(var i = 0 ; i < item.aboutme.length ; i++) {
+          page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
+        }
+
+        if(item.project['website'] != "") {
+          page.find('.websiteLink').text("Project Website") ;
+          page.find('.websiteLink').attr('href', item.project['website']) ;
+          instaTrue = true ;
+        }
 
 
-      for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
-       page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
-     }
+        page.find('.project-name').text(item.project.title);
+        page.find('.project-desc').append(item.project.description[0] + "<br>" + "<br>");
 
-     for(var i = 0 ; i < item.project['tags'].length ; i++) {
-      page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
-    }
-    page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
-    page.find('.studio1').append(item.project['writing-professor-1']) ;
-    if(item.project.hasOwnProperty('other-professor-1')) {
-      console.log("ran") ;
-      page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
-    }
-    page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
-    page.find('.studio2').append(item.project['writing-professor-2']) ;
-    if(item.project.hasOwnProperty('other-professor-2')) {
-      page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
-    }
+        var newVideo = document.createElement('iframe') ;
+        newVideo.setAttribute('src', item.project.video[0]) ;
+        newVideo.setAttribute('allowFullScreen', 'true')
+        $('#theProject').append(newVideo) ;
 
-    container.find('h4').text(item.project.blurb);
-    container.find('p').text(item.project.description);
-  } else if(item.id == index){
-    console.log("this also ran") ;
+        if(item.project.image[0] != "") {
+          for(var i = 0 ; i < item.project.image.length ;i++) {
+            var newImage = document.createElement('img');
+            newImage.id = "projectImages" ;
+            console.log(newImage.id) ;
+            newImage.setAttribute('src',"project/"+ item.id + "/" + item.project.image[i] );
+            newImage.setAttribute('style', "width:50vw; margin-bottom:30px;")
+            $( "#theProject" ).append(newImage) ;
+          }
+        }
+
+
+        for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
+           page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
+        }
+
+        for(var i = 0 ; i < item.project['tags'].length ; i++) {
+          page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
+        }
+        page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
+        page.find('.studio1').append(item.project['writing-professor-1']) ;
+        if(item.project.hasOwnProperty('other-professor-1')) {
+          console.log("ran") ;
+          page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
+        }
+        page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
+        page.find('.studio2').append(item.project['writing-professor-2']) ;
+        if(item.project.hasOwnProperty('other-professor-2')) {
+          page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
+        }
+
+        container.find('h4').text(item.project.blurb);
+        container.find('p').text(item.project.description);
+      } else if(item.id == index){
+        console.log("this also ran") ;
         // console.log(item.profile-pic);
         // Populate '.popup-detail' with the chosen project's data.
         page.find('.page-name').text(item.name);
@@ -859,28 +828,28 @@ function renderSingleProjectPage(index, data){
             page.find('.other').attr('href', item.social['other']) ;
           }
         } else {
-          if(tumblrTrue === true) {
-            page.find('.tumblr').text("Tumblr") ;
-            page.find('#tumblr1').text("");
-          } else if (githubTrue === true) {
-            page.find('.github').text("Github") ;
-            page.find('#github1').text("");
-          } else if(twitterTrue === true) {
-            page.find('.twitter').text("Twitter") ;
-            page.find('#twitter1').text("") ;
-          } else if (linkTrue === true) {
-            page.find('.linkedin').text("Linkedin") ;
-            page.find('#linkedin1').text("") ;
-          } else if (instaTrue === true) {
-            page.find('.insta').text("Instagram") ;
-            page.find('#insta1').text("") ;
-          } else if(fbTrue === true) {
-            page.find('.fb').text("Facebook") ;
-            page.find('#fb1').text("") ;
-          } else if (portTrue === true) {
-            page.find('.portfolio').text("Portfolio") ;
-            page.find('#port1').text("") ;
-          }
+            if(tumblrTrue === true) {
+              page.find('.tumblr').text("Tumblr") ;
+              page.find('#tumblr1').text("");
+            } else if (githubTrue === true) {
+              page.find('.github').text("Github") ;
+              page.find('#github1').text("");
+            } else if(twitterTrue === true) {
+              page.find('.twitter').text("Twitter") ;
+              page.find('#twitter1').text("") ;
+            } else if (linkTrue === true) {
+              page.find('.linkedin').text("Linkedin") ;
+              page.find('#linkedin1').text("") ;
+            } else if (instaTrue === true) {
+              page.find('.insta').text("Instagram") ;
+              page.find('#insta1').text("") ;
+            } else if(fbTrue === true) {
+              page.find('.fb').text("Facebook") ;
+              page.find('#fb1').text("") ;
+            } else if (portTrue === true) {
+              page.find('.portfolio').text("Portfolio") ;
+              page.find('#port1').text("") ;
+            }
         }
         for(var i = 0 ; i < item.aboutme.length ; i++) {
           page.find('.page-desc').append(item.aboutme[i]+ "<br>" + "<br>") ;
@@ -914,30 +883,30 @@ function renderSingleProjectPage(index, data){
           }
         }
         for(var i = 0 ; i < item.project['thesis-category'].length ; i++) {
-         page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
-       }
+           page.find('.thesis-category').append(item.project['thesis-category'][i] + "<br>") ;
+        }
        
 
-       for(var i = 0 ; i < item.project['tags'].length ; i++) {
-        page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
-      }
-      page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
-      page.find('.studio1').append(item.project['writing-professor-1']) ;
-      if(item.project.hasOwnProperty('other-professor-1')) {
-        console.log("ran") ;
-        page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
-      }
-      page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
-      page.find('.studio2').append(item.project['writing-professor-2']) ;
-      if(item.project.hasOwnProperty('other-professor-2')) {
-        page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
-      }
+        for(var i = 0 ; i < item.project['tags'].length ; i++) {
+          page.find('.myTags').append(item.project['tags'][i] + "<br>") ;
+        }
+        page.find('.studio1').append(item.project['studio-professor-1']+"<br>") ;
+        page.find('.studio1').append(item.project['writing-professor-1']) ;
+        if(item.project.hasOwnProperty('other-professor-1')) {
+          console.log("ran") ;
+          page.find('.studio1').append("<br>" + item.project['other-professor-1']) ;
+        }
+        page.find('.studio2').append(item.project['studio-professor-2']+"<br>") ;
+        page.find('.studio2').append(item.project['writing-professor-2']) ;
+        if(item.project.hasOwnProperty('other-professor-2')) {
+          page.find('.studio2').append("<br>" + item.project['other-professor-2']) ;
+        }
 
-      container.find('h4').text(item.project.blurb);
-      container.find('p').text(item.project.description);
-    }
-  });
-}
+        container.find('h4').text(item.project.blurb);
+        container.find('p').text(item.project.description);
+      }
+    });
+  }
 
   // Show the page.
   page.addClass('visible');
