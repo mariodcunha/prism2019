@@ -9,7 +9,7 @@ $(function() {
 });
 
 function loadData() {
-  $.getJSON( "students-new.json", function( data ) {
+  $.getJSON( "students.json", function( data ) {
     // Write the data into our global variable.
     students = data;
 

@@ -49,6 +49,8 @@
 
 
 
+
+
 <body onload="pageSet();">
   <div id="container"></div>
   <div id="menuBar">
@@ -62,10 +64,11 @@
         <!-- Events Button -->
 
        <span data-tilt>
-          <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Schedule</a></li>
-          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">Projects</a></li> -->
-          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="page.html">People</a></li> -->
           <li id="nav_button_bottom_top" ><a class="strikeThru" href="index.html">Home</a></li>
+          <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Events</a></li>
+<li id="nav_button_bottom_top" ><a class="strikeThru" href="projects.html">Projects</a></li>
+          <li id="nav_button_bottom_top" ><a class="strikeThru" href="people.html">People</a></li>
+<li id="nav_button_bottom_top_rsvp"><a class="buttonHighlight hideOnMobile showOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727" target="_blank">RSVP</a></li>
        </span>
 
       </ul>
@@ -81,7 +84,6 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 
-    <script src="js/script.js"></script>
     <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
 
     <script>
@@ -140,23 +142,23 @@
 
 
         <div class="fixedrighttitle">
-          <ul class="students-list grid">
+          <ul id="projData" class="students-list grid">
 
             <script id="students-template" type="x-handlebars-template">​
 
             {{#each this}}
-            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" data-index="{{id}}">
+            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" accessKey="{{id}}">
             
             {{#if project.coverImage}} 
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/{{id}}/{{project.coverImage}}" height="130" alt="{{name}}"/></a>
+            <a href="#" class="student-photo"><img class="myPhoto" src="projects/{{id}}/{{project.coverImage}}" height="130" alt="{{name}}"/></a>
 
             {{else}}            
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto1.png" height="130" alt="{{name}}"/></a>
+            <a href="#" class="student-photo"><img class="myPhoto" src="projects/noPhoto.png" height="130" alt="{{name}}"/></a>
             {{/if}}
             
             <h6 class="nameTags" style="color:#FFFFFF; margin-top:10px; margin-bottom:15px;">
               <a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">
-                <span class="list_project_name">{{project.title}}</span><br><span class="list_student_name">{{name}}</span></a></h6>
+                <span class="projecttitle">{{project.title}}</span><br><span class="list_student_name">{{flname}}</span></a></h6>
             </li>
             {{/each}}
 
