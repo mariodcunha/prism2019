@@ -66,7 +66,10 @@ function renderSingleProjectPage(index, data) {
                             project.find('.project-description').append('<iframe class="embedded-video" src="' + video.replace("watch?v=", "embed/") + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
                             project.find('.project-description').append(pullAbstract());
                         } else if (video.includes("vimeo")) {
-                            project.find('.project-description').append('<iframe src="https://player.vimeo.com/video/333615147" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+                        var forVimeo = video.replace('vimeo.com', 'player.vimeo.com/video');
+            
+                            project.find('.project-description').append('<iframe class="embedded-video" src="' + forVimeo + '" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+                            
                             project.find('.project-description').append(pullAbstract());
                         } else {
 
