@@ -51,17 +51,19 @@ function renderSingleProjectPage(index, data){
       bio.find('.student-name').text(item.flname);
       bio.find('.student-title').text(item.profTitles);
       bio.find('.student-intro').text(item.bio);
-      bio.find('.student-url').text();
+      bio.find('.student-url').append('<a href="' + item.url + '" target=blank_>Website<p>');
 
-      project.find('.project-name').text();
-      project.find('.project-description').text(
+      project.find('.project-name').text(item.project.title);
+      project.find('.project-description').append("<p>" + item.project.description + "<p>");
+      project.find('.project-description').append('<img src="projects-new/' + index + '/coverimage.png" alt="">');
+      project.find('.project-description').append(
         function () {
           var str = (item.project.abstract);
           for(var i=0; i<str.length; i++) {
             if (str[i] === "\r\n") 
 
             indices.push(i);
-            nstr = str.replace("\r\n", "\n");
+            nstr = ("<p>" + str.replace("\r\n", "</br>" + "</p>"));
             return nstr
           };}
         );
