@@ -55,7 +55,7 @@ function renderSingleProjectPage(index, data){
 
       project.find('.project-name').text(item.project.title);
       project.find('.project-description').append("<p>" + item.project.description + "<p>");
-      project.find('.project-description').append('<img src="projects-new/' + index + '/coverimage.png" alt="">');
+      project.find('.project-description').append('<img src="projects/' + index + '/coverimage.png" alt="">');
       project.find('.project-description').append(
         function () {
           var str = (item.project.abstract);
