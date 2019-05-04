@@ -172,6 +172,18 @@ hr {
   width: auto;
 }
 
+.student-url a {
+    font: inherit;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgb(170, 170, 170);
+}
+
+.student-url a:hover {
+  text-decoration: underline;
+}
+
 /*-----------------
   Basics
   ------------------*/
@@ -711,7 +723,7 @@ hr {
   }
 
   .individual-project {
-    color: #fff;
+    color: rgb(231,231,231);
     font-family: 'SharpGrotesk20-Book';
     padding: 20px 10%;
     width: 83%;
@@ -730,13 +742,20 @@ hr {
   }
 
   .individual-intro .student-name {
-    font-size: 1.7em;
-    padding-top: 15px;
+    color: #fff;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    line-height: 1.1em;
+    padding-top: 15px;
   }
 
   .individual-intro .student-title {
-    padding: 10px 0;
+    padding: 10px 0 12px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
   }
 
   .individual-intro .student-info {
@@ -763,6 +782,10 @@ hr {
 
   ul .list-title {
     padding: 30px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(170, 170, 170);
   }
 
   ul .list-down {
@@ -772,6 +795,7 @@ hr {
   }
 
   .project-name {
+    color: #fff;;
     text-transform: uppercase;
     font-size: 2em;
     font-family: 'SharpGrotesk20-Medium'
@@ -780,6 +804,7 @@ hr {
 
   .project-category {
     display: inline-flex;
+    color: rgb(170, 170, 170);
     margin-bottom: 10px;
     width: 100%;
     padding-bottom: 25px;
@@ -1175,8 +1200,8 @@ input[type="radio"][id="PlayfulExperiences"]:checked ~ .DataArt, input[type="rad
   .grid-item--height5 { min-height: 500px; }
   .grid-item--height6 { min-height: 200px; }
   .grid-item--height7 { min-height: 75px; }
-  
-  #grid-item--height-events 
+
+  #grid-item--height-events
   {
     top: 70% ;
     margin-left: 8%;
@@ -2291,7 +2316,7 @@ div.row h3
 .generalLinks
 {
   font-family: 'SharpGrotesk20-Medium';
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 15px;
 }
 
