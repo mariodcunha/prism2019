@@ -1854,6 +1854,16 @@ STUDENTS GRID
     text-align: center;
   }
 
+  .individual-intro .student-name {
+    font-size: 1.2em;
+  }
+
+}
+
+@media (max-width: 1000px){
+  .individual-intro .student-name {
+    font-size: 1.36em;
+  }
 }
 
 .social
