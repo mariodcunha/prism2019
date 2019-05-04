@@ -90,7 +90,7 @@ font-style: semibold;*/
 
 #container
 {
-  position: absolute;
+  position: fixed;
   z-index: -999;
 }
 
@@ -2834,7 +2834,7 @@ div.row h3
   padding-bottom: 15px;
 }
 
-/*
+
   #wholeContainer
   {
     scroll-snap-type: none;
@@ -2847,35 +2847,31 @@ div.row h3
 
   }
 
+/*
 
 #wholeContainer
 {
-  /*scroll-snap-type: y mandatory;*/
-  /*overflow-y: scroll;*/
-  /*justify-content: center;*/
-/*  border: 2px solid var(--gs0);
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  justify-content: center;
+  border: 2px solid var(--gs0);
   border-radius: 8px;
   height: 100vh;
-*/
-  /*Windows overflow hidden*/
-  /*overflow-x: hidden;*/
-/*}*/
 
-/*
+  windows overflow hidden
+  overflow-x: hidden;
+}
+
+
 #snapScroll_1, #snapScroll_2
 {
   scroll-snap-align: start;
   height: 100vh;
 }
 
-
-
 */
 
 
-
-
-}
 
 
 
