@@ -34,6 +34,33 @@ var posFactor;
 
 
 
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() 
+{
+  if (document.body.scrollTop > windowHeight || document.documentElement.scrollTop > windowHeight) 
+  {
+    document.getElementById("myBtn").style.display = "block";
+  } 
+
+  else 
+  {
+    document.getElementById("myBtn").style.display = "none";
+  }
+
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() 
+{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
 function preload() 
 {
 //  myFont = loadFont('fonts/NeueDisplay-Random.otf');
@@ -191,7 +218,11 @@ function checkCss()
         if(w<480 && page==0)
             $('#main-menu2 .nav-bar-index').css('background','rgba(22,22,22,255)');
         
-        // $('.strikeThru:hover::after').css('border','2px solid white');
+        $('.strikeThru:hover:after').css('border','2px solid red');
+        // $('#myBtn img').css('border','2px solid white');
+        $('#myBtn img').css('filter','invert(0%)');
+        $('#myBtn img').attr("src","assets/top_triangle.png");
+        
 
     }
 
@@ -270,7 +301,7 @@ function checkCss()
         if(w<480 && page==0)
             $('#main-menu2 .nav-bar-index').css('background','#fff');
 
-        // $('.strikeThru:hover::after').css('border','2px solid black');
+        $('#myBtn img').css('filter','invert(100%)');
         
 
     }

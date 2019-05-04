@@ -58,6 +58,9 @@ font-style: semibold;*/
 
 
 
+
+
+
   .showOnMobile
   {
     display: none;
@@ -977,6 +980,28 @@ hr {
 }
 
 
+.strikeThruTopButton
+{
+  position: relative;
+  padding-top: 30px;
+}
+
+
+.strikeThruTopButton:hover::after
+{
+  content: ' ';
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 50%;
+  height: 55%;
+  border-bottom: 1px solid white;
+  animation-name: strike;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 
 #main-menu .nav-bar li a:hover, #main-menu .nav-bar-index li a:hover { color:#FFFFFF; }
@@ -2377,12 +2402,38 @@ div.row h3
 }
 
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 999;
+    /* font-size: 15px; */
+    /* border: 2px solid grey; */
+    /* outline: none; */
+    background: none;
+    /* color: red; */
+    cursor: pointer;
+    /* padding: 15px; */
+    /* border-radius: 4px; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+    /* font-family: Top; */
+}
 
 
+#myBtn img
+{
+  width: 50px;
+  height: 50px;
+}
 
-
-
-
+#myBtn:hover 
+{
+  /*filter: invert(100%);*/
+  /*filter: saturate(100%);*/
+  /*border: 3px solid grey;*/
+}
 
 
 
