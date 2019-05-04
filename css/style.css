@@ -2405,7 +2405,7 @@ div.row h3
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 10%;
+    bottom: 14%;
     right: 5%;
     z-index: 999;
     /* font-size: 15px; */
