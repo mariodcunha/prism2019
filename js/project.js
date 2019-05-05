@@ -21,7 +21,7 @@ function renderSingleProjectPage(index, data) {
     var newComma = 0;
     var position = 0;
     // var setPageOnce = true ;
-    
+
     var embeddedvid = false;
     var portTrue = false;
     var fbTrue = false;
@@ -45,48 +45,113 @@ function renderSingleProjectPage(index, data) {
             if (item.id == index) {
 
 
-                //       Insert student info
+                // Insert student info
                 bio.find('.student-name').text(item.flname);
                 bio.find('.student-title').text(item.profTitles);
                 bio.find('.student-intro').text(item.bio);
                 bio.find('.student-url').append('<a href="' + item.url + '" target=blank_>Website<p>');
 
-                //       Insert Project info
+                // Insert Project info
                 project.find('.project-name').text(item.project.title);
                 project.find('.project-description').append("<p>" + item.project.description + "<p>");
 
                 project.find(checkForVid());
-                
+
+
+            }
+
+
+
+            // Run check if there's a video to embed
+            function checkForVid() {
+                var video = item.project.embedvideo
+
+                if (video.includes("youtube")) {
+                    project.find('.project-description').append('<iframe class="embedded-video" src="' + video.replace("watch?v=", "embed/") + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                    project.find('.project-description').append(pullAbstract());
+                } else if (video.includes("vimeo")) {
+                    var forVimeo = video.replace('vimeo.com', 'player.vimeo.com/video');
+                    project.find('.project-description').append('<iframe class="embedded-video" src="' + forVimeo + '" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+                    project.find('.project-description').append(pullAbstract());
+                } else {
+                    project.find('.project-description').append(mainAssetLoader());
                 }
+            };
 
-                function checkForVid() {
-                        var video = item.project.embedvideo
 
-                        if (video.includes("youtube")) {
-                            project.find('.project-description').append('<iframe class="embedded-video" src="' + video.replace("watch?v=", "embed/") + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-                            project.find('.project-description').append(pullAbstract());
-                        } else if (video.includes("vimeo")) {
-                        var forVimeo = video.replace('vimeo.com', 'player.vimeo.com/video');
+
+
+            function mainAssetLoader() {
             
-                            project.find('.project-description').append('<iframe class="embedded-video" src="' + forVimeo + '" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
-                            
-                            project.find('.project-description').append(pullAbstract());
-                        } else {
-
-                            project.find('.project-description').append('<img src="projects/' + index + '/coverimage.png" alt="">');
-                            project.find('.project-description').append(pullAbstract());
-                        }
-                    };
+                var imgURL = ('projects/' + index + '/' + index + '-image1');
+                var vidURL = ('projects/' + index + '/' + index + '-movie1');
+                videoArray = ['.mp4', '.mov'];
+                imageArray = ['.jpg', '.jpeg', '.png', '.gif'];
                 
-                function pullAbstract() {
-                    var str = (item.project.abstract);
-                    for (var i = 0; i < str.length; i++) {
-                        if (str[i] === "\r\n")
-                            indices.push(i);
-                        nstr = ("<p>" + str.replace("\r\n", "</br>" + "</p>"));
-                        return nstr
-                    };
-                }
-            });
-        }
-    };
+                
+//                 Check if there's a video
+                videoArray.forEach(function(element) {
+                var vidTestURL = (vidURL + element);
+                
+                $.get(vidTestURL)
+                    .done(function() {
+//                         console.log("Video exists")
+//                         console.log(vidTestURL)
+                        
+                        var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                               
+                        project.find('.project-description').append(mainVid);
+                        project.find('.project-description').append(pullAbstract());
+                    }).fail(function() {
+                        pullMainImage();
+                    })
+                });
+                
+                
+                // 
+                function pullMainImage() {
+                imageArray.forEach(function(element) {
+                var imgTestURL = (imgURL + element);      
+                
+                $.get(imgTestURL)
+                    .done(function() {
+//                         console.log("Image exists")
+//                         console.log(imgTestURL)
+                        var mainImg = ('<img src="' + imgTestURL + '"/>')
+                        project.find('.project-description').append(mainImg);
+                        project.find('.project-description').append(pullAbstract());
+                    }).fail(function() {
+                        null
+                    })
+                });}
+            }
+
+            // run pull and format the abstract.                
+            function pullAbstract() {
+                var str = (item.project.abstract);
+                for (var i = 0; i < str.length; i++) {
+                    if (str[i] === "\r\n")
+                        indices.push(i);
+                    nstr = ("<p>" + str.replace("\r\n", "</br>" + "</p>"));
+                    return nstr
+                };
+            }
+        });
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
