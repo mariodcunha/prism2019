@@ -89,39 +89,36 @@ function renderSingleProjectPage(index, data) {
                 imageArray = ['.jpg', '.jpeg', '.png', '.gif'];
                 //                 Check if there's a video
 
-                var videoPromise = new Promise(function(resolve, reject) {
-                    
-                    videoArray.forEach(function(element) {
-                        var vidTestURL = (vidURL + element);
-                        $.get(vidTestURL)
-                            .done(function() {
-                                
-                                var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
-                                project.find('.project-description').append(mainVid);
-                                project.find('.project-description').append(pullAbstract());
-                                resolve(queryVid)
-                                
-                            }).fail(counter.push(0));
-                            
-                    });
-                   resolve(); 
-                })
-                
-                
 
-                videoPromise.then(function(value) {
-                  console.log(counter);
-                  console.log(value);
-                  if (value == 4) {
+                videoArray.forEach(function(element) {
+                    var vidTestURL = (vidURL + element);
+                    $.get(vidTestURL, data, function() {
+                            console.log("second success");
+                            pullSecondContent()
+                            counter.push(1)
+                            redirect();
+                        })
+                        .done(function() {
+                            var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                            project.find('.project-description').append(mainVid);
+                            project.find('.project-description').append(pullAbstract());
+                        }).fail(function() {
+                            counter.push(0, 0);
+                            redirect();
+                        });
+
+                });
+                
+                function redirect() {
+                    console.log(counter);
+                    if (counter.length === 2 && counter.includes(1)) {
                         console.log("queryVid true")
                         pullSecondContent()
-                        
-                    } else if (counter == 2) {
-                    
+                    } else if (counter.length === 4) {
                         console.log("queryVid false")
                         pullMainImage()
-                    }
-                });
+                    }}
+                
 
                 function pullMainImage() {
                     imageArray.forEach(function(element) {
