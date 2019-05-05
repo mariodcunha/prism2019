@@ -72,7 +72,12 @@ function renderSingleProjectPage(index, data) {
                     project.find('.project-description').append('<iframe class="embedded-video" src="' + forVimeo + '" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
                     project.find('.project-description').append(pullAbstract());
                 } else {
+                    var categories = item.project.projMeta.split(',');
+//                     var categories = ('<li class="list-down">' + item.project.projMeta.replace(', ', '</li>')
+//                  node.appendChild(item.project.projMeta);  
                     project.find('.project-description').append(mainAssetLoader());
+                    categories.forEach(function (element){project.find('.project-category-list').append('<li class="list-down">' + element + '</li>')});
+//                     
                 }
             };
 
