@@ -1053,7 +1053,7 @@
       "profTitle":"",
       "bio":"A UX designer and digital literacy advocate whose work explores the ubiquity of cameras and connected devices—and how these trends have fundamentally changed photography. \r\n",
       "project":{
-         "title":"Smartphone Vernacular",
+         "title":"Personal Effects",
          "coverImage":"coverImage.png",
          "abstract":"",
          "description":"Smartphone Vernacular is a video featuring individuals talking about the photos on their phones. The contemporary vernacular that emerges invites viewers to reflect upon today’s cellphone camera as an extension of the memory and device that mediates our relationships.",
@@ -1473,8 +1473,8 @@
       "project":{
          "title":"Shards",
          "coverImage":"coverImage.png",
-         "abstract":"",
-         "description":"",
+         "abstract":"Shards is a series of digitally reconstructed objects and images that highlight anomalies in the 3D scanning process and reframe them as features, not errors. It is comprised of three iterations—not copies because copies imply exactness—on a porcelain heirloom, scanned and committed by three generations of women who are tied to its history.\r\nAs the women circle their heirloom, wielding an instrument that unravels its physical existence pixel by pixel into a digital one, they are performing an embodied act: authoring and breathing life into its transformation with their movements, their pauses, and their strokes.\r\nBy revealing the unseen technological process and using it as a form of expression, Shards presents an aesthetics of resistance to the perfect, the high resolution, and the seamless. Shards become artifacts that remember in a world that instructs them to forget.",
+         "description":"Shards is a series of digitally reconstructed objects and images that highlight anomalies in the 3D scanning process and reframe them as features, not errors. It is comprised of three iterations on a porcelain heirloom, scanned and committed by three generations of women who are tied to its history. By revealing the unseen technological process and using it as a form of expression, Shards presents an aesthetics of resistance to the perfect, the high resolution, and the seamless. ",
          "projKW":"computation, generative, craft, 3D scanning, 3D printing",
          "projMeta":"Installation / Sculpture, Critical, Computation / Computation Art / Algorithms",
          "projURL":"",
