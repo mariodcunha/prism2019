@@ -56,8 +56,6 @@ function renderSingleProjectPage(index, data) {
                 project.find('.project-description').append("<p>" + item.project.description + "<p>");
 
                 project.find(checkForVid());
-
-
             }
 
 
@@ -80,51 +78,94 @@ function renderSingleProjectPage(index, data) {
 
 
 
-
+            // START - MAIN ASSET LOADER
             function mainAssetLoader() {
-            
+                var queryVid = 3
+                var counter = []
+                var trueCounter = []
                 var imgURL = ('projects/' + index + '/' + index + '-image1');
                 var vidURL = ('projects/' + index + '/' + index + '-movie1');
                 videoArray = ['.mp4', '.mov'];
                 imageArray = ['.jpg', '.jpeg', '.png', '.gif'];
+                //                 Check if there's a video
+
+                var videoPromise = new Promise(function(resolve, reject) {
+                    
+                    videoArray.forEach(function(element) {
+                        var vidTestURL = (vidURL + element);
+                        $.get(vidTestURL)
+                            .done(function() {
+                                
+                                var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                                project.find('.project-description').append(mainVid);
+                                project.find('.project-description').append(pullAbstract());
+                                resolve(queryVid)
+                                
+                            }).fail(counter.push(0));
+                            
+                    });
+                   resolve(); 
+                })
                 
                 
-//                 Check if there's a video
-                videoArray.forEach(function(element) {
-                var vidTestURL = (vidURL + element);
-                
-                $.get(vidTestURL)
-                    .done(function() {
-//                         console.log("Video exists")
-//                         console.log(vidTestURL)
+
+                videoPromise.then(function(value) {
+                  console.log(counter);
+                  console.log(value);
+                  if (value == 4) {
+                        console.log("queryVid true")
+                        pullSecondContent()
                         
-                        var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
-                               
-                        project.find('.project-description').append(mainVid);
-                        project.find('.project-description').append(pullAbstract());
-                    }).fail(function() {
-                        pullMainImage();
-                    })
+                    } else if (counter == 2) {
+                    
+                        console.log("queryVid false")
+                        pullMainImage()
+                    }
                 });
-                
-                
-                // 
+
                 function pullMainImage() {
-                imageArray.forEach(function(element) {
-                var imgTestURL = (imgURL + element);      
-                
-                $.get(imgTestURL)
-                    .done(function() {
-//                         console.log("Image exists")
-//                         console.log(imgTestURL)
-                        var mainImg = ('<img src="' + imgTestURL + '"/>')
-                        project.find('.project-description').append(mainImg);
-                        project.find('.project-description').append(pullAbstract());
-                    }).fail(function() {
-                        null
-                    })
-                });}
+                    imageArray.forEach(function(element) {
+                        var imgTestURL = (imgURL + element);
+
+                        $.get(imgTestURL)
+                            .done(function() {
+                                //                         console.log("Image exists")
+                                //                         console.log(imgTestURL)
+                                var mainImg = ('<img src="' + imgTestURL + '"/>')
+                                project.find('.project-description').append(mainImg);
+                                project.find('.project-description').append(pullAbstract());
+                                value = true
+                                    //                                 console.log(value)
+                            }).fail(function() {
+                                null
+                            })
+                    });
+                }
             }
+            // END - MAIN ASSET LOADER
+
+
+
+            // START - SECOND ASSET LOADER
+            function pullSecondContent() {
+                console.log("second content ready");
+                //                                     imageArray.forEach(function(element) {
+                //                                         var imgTestURL = (imgURL + element);
+                //                 
+                //                                         $.get(imgTestURL)
+                //                                             .done(function() {
+                //                                                 //                         console.log("Image exists")
+                //                                                 //                         console.log(imgTestURL)
+                //                                                 var mainImg = ('<img src="' + imgTestURL + '"/>')
+                //                                                 project.find('.project-description').append(mainImg);
+                //                                                 project.find('.project-description').append(pullAbstract());
+                //                                             }).fail(function() {
+                //                                                 null
+                //                                             })
+                //                                     });
+            }
+            // END - SECOND ASSET LOADER
+
 
             // run pull and format the abstract.                
             function pullAbstract() {
@@ -139,19 +180,3 @@ function renderSingleProjectPage(index, data) {
         });
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
