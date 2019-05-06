@@ -41,24 +41,20 @@ function renderSingleProjectPage(index, data) {
     // Find the wanted project by iterating the data object and searching for the chosen index.
     if (data.length) {
         data.forEach(function(item) {
+            videoArray = ['.mp4', '.mov'];
+            imageArray = ['.jpg', '.jpeg', '.png', '.gif'];
 
             if (item.id == index) {
-
-
                 // Insert student info
                 bio.find('.student-name').text(item.flname);
                 bio.find('.student-title').text(item.profTitles);
                 bio.find('.student-intro').text(item.bio);
                 bio.find('.student-url').append('<a href="' + item.url + '" target=blank_>Website<p>');
-
                 // Insert Project info
                 project.find('.project-name').text(item.project.title);
                 project.find('.project-description').append("<p>" + item.project.description + "<p>");
-
                 project.find(checkForVid());
             }
-
-
 
             // Run check if there's a video to embed
             function checkForVid() {
@@ -73,34 +69,30 @@ function renderSingleProjectPage(index, data) {
                     project.find('.project-description').append(pullAbstract());
                 } else {
                     var categories = item.project.projMeta.split(',');
-//                     var categories = ('<li class="list-down">' + item.project.projMeta.replace(', ', '</li>')
-//                  node.appendChild(item.project.projMeta);  
+                    //                     var categories = ('<li class="list-down">' + item.project.projMeta.replace(', ', '</li>')
+                    //                  node.appendChild(item.project.projMeta);  
                     project.find('.project-description').append(mainAssetLoader());
-                    categories.forEach(function (element){project.find('.project-category-list').append('<li class="list-down">' + element + '</li>')});
-//                     
+                    categories.forEach(function(element) {
+                        project.find('.project-category-list').append('<li class="list-down">' + element + '</li>')
+                    });
+                    //                     
                 }
             };
-
-
 
             // START - MAIN ASSET LOADER
             function mainAssetLoader() {
                 var queryVid = 3
                 var counter = []
-                var trueCounter = []
+                var assetCounter = 1
                 var imgURL = ('projects/' + index + '/' + index + '-image1');
                 var vidURL = ('projects/' + index + '/' + index + '-movie1');
-                videoArray = ['.mp4', '.mov'];
-                imageArray = ['.jpg', '.jpeg', '.png', '.gif'];
+
                 //                 Check if there's a video
-
-
                 videoArray.forEach(function(element) {
                     var vidTestURL = (vidURL + element);
                     $.get(vidTestURL, data, function() {
                             console.log("second success");
-                            pullSecondContent()
-                            counter.push(1)
+                            counter.push(1);
                             redirect();
                         })
                         .done(function() {
@@ -113,26 +105,28 @@ function renderSingleProjectPage(index, data) {
                         });
 
                 });
-                
+
                 function redirect() {
                     console.log(counter);
-                    if (counter.length === 2 && counter.includes(1)) {
+                    if (counter.length === 3 && counter.includes(1)) {
                         console.log("queryVid true")
-                        pullSecondContent()
+                        const trueVideo = assetCounter
+                        pullSecondContent(trueVideo)
                     } else if (counter.length === 4) {
                         console.log("queryVid false")
                         pullMainImage()
-                    }}
-                
+                    }
+                }
+
 
                 function pullMainImage() {
                     imageArray.forEach(function(element) {
                         var imgTestURL = (imgURL + element);
-
+                        console.log(element)
                         $.get(imgTestURL)
                             .done(function() {
                                 //                         console.log("Image exists")
-                                //                         console.log(imgTestURL)
+                                console.log(imgTestURL)
                                 var mainImg = ('<img src="' + imgTestURL + '"/>')
                                 project.find('.project-description').append(mainImg);
                                 project.find('.project-description').append(pullAbstract());
@@ -141,6 +135,10 @@ function renderSingleProjectPage(index, data) {
                             }).fail(function() {
                                 null
                             })
+                        if (element == '.gif') {
+                            falseVideo = assetCounter - 1
+                            pullSecondContent(falseVideo)
+                        }
                     });
                 }
             }
@@ -149,22 +147,75 @@ function renderSingleProjectPage(index, data) {
 
 
             // START - SECOND ASSET LOADER
-            function pullSecondContent() {
+            function pullSecondContent(asset) {
                 console.log("second content ready");
-                //                                     imageArray.forEach(function(element) {
-                //                                         var imgTestURL = (imgURL + element);
-                //                 
-                //                                         $.get(imgTestURL)
-                //                                             .done(function() {
-                //                                                 //                         console.log("Image exists")
-                //                                                 //                         console.log(imgTestURL)
-                //                                                 var mainImg = ('<img src="' + imgTestURL + '"/>')
-                //                                                 project.find('.project-description').append(mainImg);
-                //                                                 project.find('.project-description').append(pullAbstract());
-                //                                             }).fail(function() {
-                //                                                 null
-                //                                             })
-                //                                     });
+                console.log("Page Main Image is video: " + asset)
+                var imgURL = ('testImage');
+                var vidURL = ('testVideo');
+                var imgURL = ('projects/' + index + '/' + index + '-image1');
+                var vidURL = ('projects/' + index + '/' + index + '-movie1');
+
+                //              Check if there's a video
+                for (i = 0; i < 5; i++) {
+                console.log(i)                        
+                videoArray.forEach(function(element) {
+                    setTimeout(
+                        function() {
+//                             var vidTestURL = (vidURL + element);
+//                             console.log("Check for second video success");
+                            //                     $.get(vidTestURL, data, function() {
+                            //                             
+                            //                             counter.push(1);
+                            //                             redirect();
+                            //                         })
+                            //                         .done(function() {
+                            //                             var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                            //                             project.find('.project-description').append(mainVid);
+                            //                             project.find('.project-description').append(pullAbstract());
+                            //                         }).fail(function() {
+                            //                             counter.push(0, 0);
+                            //                             redirect();
+                        })})};
+
+                function redirect() {
+                    console.log(counter);
+                    if (counter.length === 3 && counter.includes(1)) {
+                        console.log("queryVid true")
+                        const trueVideo = assetCounter
+                        pullSecondContent(trueVideo)
+                    } else if (counter.length === 4) {
+                        console.log("queryVid false")
+                        pullMainImage()
+                    }
+                }
+
+
+                function pullMainImage() {
+                    imageArray.forEach(function(element) {
+                        var imgTestURL = (imgURL + element);
+                        console.log(element)
+                        $.get(imgTestURL)
+                            .done(function() {
+                                //                         console.log("Image exists")
+                                console.log(imgTestURL)
+                                var mainImg = ('<img src="' + imgTestURL + '"/>')
+                                project.find('.project-description').append(mainImg);
+                                project.find('.project-description').append(pullAbstract());
+                                value = true
+                                    //                                 console.log(value)
+                            }).fail(function() {
+                                null
+                            })
+                        if (element == '.gif') {
+                            falseVideo = assetCounter - 1
+                            pullSecondContent(falseVideo)
+                        }
+                    });
+                }
+
+
+
+
             }
             // END - SECOND ASSET LOADER
 
