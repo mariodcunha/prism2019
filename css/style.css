@@ -2906,6 +2906,11 @@ div.row h3
 
   }
 
+  .project-description p, .individual-intro .student-intro
+  {
+    line-height: 20px;
+  }
+
 /*
 
 #wholeContainer
