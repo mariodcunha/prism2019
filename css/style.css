@@ -482,11 +482,11 @@ hr {
 
   #location
   {
-    position: relative;
+    position: absolute;
     font-family: 'SharpGrotesk20-Book';
     text-align: left;
     margin-left: 10%;
-    top:-13vh;
+    top: 26vw;
     left:1.5vw;
     /*width:25%;*/
     z-index: 10;
@@ -2597,7 +2597,7 @@ div.row h3
     font-family: 'SharpGrotesk20-Book';
     letter-spacing: 2vw;
     margin-left: 10%;
-    top:79vw;
+    top:72vw;
     left:4vw;
   }
 
@@ -2934,8 +2934,6 @@ div.row h3
 }
 
 */
-
-
 
 
 
