@@ -5,7 +5,7 @@
 
 
 
-* {box-sizing: border-box;}
+/** {box-sizing: border-box;}*/
 
 .img-magnifier-container {
   position:relative;
