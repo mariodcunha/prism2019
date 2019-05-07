@@ -5,6 +5,25 @@
 
 
 
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+
+  border-radius: 0%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 700px;
+  height: 100px;
+}
+
+
+
+
 @font-face
 {
     font-family: 'SharpGrotesk15-Book';
