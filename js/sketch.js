@@ -23,7 +23,7 @@ var boxSpeeds = [];
 var boxPositionsX = [];
 var boxPositionsY = [];
 var boxPositionsZ = [];
-var boxCount=5;
+var boxCount=7;
 
 var page=0, dir;
 var factor=1;
