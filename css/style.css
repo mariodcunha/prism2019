@@ -2463,6 +2463,11 @@ div.row h3
 }
 
 
+.main-page-video, .page-secondary-video
+{
+  width: 100%;
+}
+
 
 
 

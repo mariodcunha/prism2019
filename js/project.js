@@ -96,7 +96,7 @@ function renderSingleProjectPage(index, data) {
                             redirect();
                         })
                         .done(function() {
-                            var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                            var mainVid = ('<video class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
                             project.find('.project-description').append(mainVid);
                             project.find('.project-description').append(pullAbstract());
                         }).fail(function() {
@@ -179,7 +179,7 @@ function renderSingleProjectPage(index, data) {
                                     })
                                     .done(function() {
                                         console.log(assetIndex);
-                                        var vidTag = ('<video width="640" height="360" class="page-secondary-video" controls> <source src="' + vidTestURL + '"></video>')
+                                        var vidTag = ('<video class="page-secondary-video" controls> <source src="' + vidTestURL + '"></video>')
                                         project.find('.project-description').append(vidTag);
                                         // project.find('.project-description').append(pullAbstract());
                                     }).fail(function() {
