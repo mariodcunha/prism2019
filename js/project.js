@@ -32,9 +32,9 @@ function renderSingleProjectPage(index, data) {
     var tumblrTrue = false;
 
     var project = $('.project-intro'),
-        bio = $('.individual-intro');
+    bio = $('.individual-intro');
 
-    // console.log(page);
+    // console.log(page); 
     // console.log(container);
 
 
@@ -87,27 +87,27 @@ function renderSingleProjectPage(index, data) {
                 var imgURL = ('projects/' + index + '/' + index + '-image1');
                 var vidURL = ('projects/' + index + '/' + index + '-movie1');
 
-                //                 Check if there's a video
+                // Check if there's a video
                 videoArray.forEach(function(element) {
                     var vidTestURL = (vidURL + element);
                     $.get(vidTestURL, data, function() {
-                            console.log("second success");
-                            counter.push(1);
-                            redirect();
-                        })
-                        .done(function() {
-                            var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
-                            project.find('.project-description').append(mainVid);
-                            project.find('.project-description').append(pullAbstract());
-                        }).fail(function() {
-                            counter.push(0, 0);
-                            redirect();
-                        });
+                        console.log("second success");
+                        counter.push(1);
+                        redirect();
+                    })
+                    .done(function() {
+                        var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
+                        project.find('.project-description').append(mainVid);
+                        project.find('.project-description').append(pullAbstract());
+                    }).fail(function() {
+                        counter.push(0, 0);
+                        redirect();
+                    });
 
                 });
 
                 function redirect() {
-                    console.log(counter);
+                    // console.log(counter);
                     if (counter.length === 3 && counter.includes(1)) {
                         console.log("queryVid true")
                         const trueVideo = assetCounter
@@ -124,22 +124,22 @@ function renderSingleProjectPage(index, data) {
                         var imgTestURL = (imgURL + element);
                         console.log(element)
                         $.get(imgTestURL)
-                            .done(function() {
+                        .done(function() {
                                 //                         console.log("Image exists")
-                                console.log(imgTestURL)
+                                // console.log(imgTestURL)
                                 var mainImg = ('<img src="' + imgTestURL + '"/>')
                                 project.find('.project-description').append(mainImg);
                                 project.find('.project-description').append(pullAbstract());
                                 value = true
                                     //                                 console.log(value)
-                            }).fail(function() {
-                                null
-                            })
-                        if (element == '.gif') {
-                            falseVideo = assetCounter - 1
-                            pullSecondContent(falseVideo)
-                        }
-                    });
+                                }).fail(function() {
+                                    null
+                                })
+                                if (element == '.gif') {
+                                    falseVideo = assetCounter - 1
+                                    pullSecondContent(falseVideo)
+                                }
+                            });
                 }
             }
             // END - MAIN ASSET LOADER
@@ -150,73 +150,119 @@ function renderSingleProjectPage(index, data) {
             function pullSecondContent(asset) {
                 console.log("second content ready");
                 console.log("Page Main Image is video: " + asset)
-                var imgURL = ('testImage');
-                var vidURL = ('testVideo');
-                var imgURL = ('projects/' + index + '/' + index + '-image1');
-                var vidURL = ('projects/' + index + '/' + index + '-movie1');
 
-                //              Check if there's a video
-                for (i = 0; i < 5; i++) {
-                console.log(i)                        
-                videoArray.forEach(function(element) {
-                    setTimeout(
-                        function() {
-//                             var vidTestURL = (vidURL + element);
-//                             console.log("Check for second video success");
-                            //                     $.get(vidTestURL, data, function() {
-                            //                             
-                            //                             counter.push(1);
-                            //                             redirect();
-                            //                         })
-                            //                         .done(function() {
-                            //                             var mainVid = ('<video width="640" height="360" class="main-page-video" controls> <source src="' + vidTestURL + '"></video>')
-                            //                             project.find('.project-description').append(mainVid);
-                            //                             project.find('.project-description').append(pullAbstract());
-                            //                         }).fail(function() {
-                            //                             counter.push(0, 0);
-                            //                             redirect();
-                        })})};
-
-                function redirect() {
-                    console.log(counter);
-                    if (counter.length === 3 && counter.includes(1)) {
-                        console.log("queryVid true")
-                        const trueVideo = assetCounter
-                        pullSecondContent(trueVideo)
-                    } else if (counter.length === 4) {
-                        console.log("queryVid false")
-                        pullMainImage()
-                    }
+                if (asset === 1) {
+                    console.log("Get Second Video or First Image")
+                    secondVidFirstImage()
+                } else if (asset === 0) {
+                    console.log("Get Second Image")
                 }
 
+                function secondVidFirstImage() {
+                    var videoNumber = 2
+                    var imageNumber = 1
+                    var indexCounter = []
 
-                function pullMainImage() {
-                    imageArray.forEach(function(element) {
-                        var imgTestURL = (imgURL + element);
-                        console.log(element)
-                        $.get(imgTestURL)
-                            .done(function() {
-                                //                         console.log("Image exists")
-                                console.log(imgTestURL)
-                                var mainImg = ('<img src="' + imgTestURL + '"/>')
-                                project.find('.project-description').append(mainImg);
-                                project.find('.project-description').append(pullAbstract());
-                                value = true
-                                    //                                 console.log(value)
-                            }).fail(function() {
-                                null
-                            })
-                        if (element == '.gif') {
-                            falseVideo = assetCounter - 1
-                            pullSecondContent(falseVideo)
+                    for (videoNumber; videoNumber < 6; videoNumber++) {
+                        // console.log(videoNumber);
+                        var assetIndex = 6;
+                        var vidURL = ('projects/' + index + '/' + index + '-movie' + videoNumber)
+                        // console.log();
+
+                        // var a = "outside";
+
+                        // function loadMoreVids() {
+
+                            if (assetIndex > 1) {
+                                // Check if there's a video
+                                videoArray.forEach(function(element) {
+                                    var vidTestURL = (vidURL + element);
+                                    $.get(vidTestURL, data, function() {
+                                            // console.log("Puling second videos");
+                                            // counter.push(1);
+                                            // redirect();
+                                        })
+                                    .done(function() {
+                                        console.log(assetIndex);
+                                        var vidTag = ('<video width="640" height="360" class="page-secondary-video" controls> <source src="' + vidTestURL + '"></video>')
+                                        project.find('.project-description').append(vidTag);
+                                            // project.find('.project-description').append(pullAbstract());
+                                        }).fail(function() {
+                                            // console.log("fail");
+                                            // counter.push(0, 0);
+                                            // redirect();
+                                        });
+
+                                    });
+                                indexCounter.push(0);
+                                console.log();
+                            } if (indexCounter.length === 4) {
+                                loadMoreImgs()
+                                // console.log("Load secondary Images");
+                            }
                         }
-                    });
+
+
+                        // }
+
+                        function loadMoreImgs() {
+                            console.log("Load secondary Images");
+
+                            var vidURL = ('projects/' + index + '/' + index + '-image' + asset)
+
+                            imageArray.forEach(function(element) {
+                                var vidTestURL = (vidURL + element);
+                                $.get(vidTestURL, data, function() {
+                                            // console.log("Puling second videos");
+                                            // counter.push(1);
+                                            // redirect();
+                                        })
+                                .done(function() {
+                                    console.log(assetIndex);
+                                    var vidTag = ('<video width="640" height="360" class="page-secondary-video" controls> <source src="' + vidTestURL + '"></video>')
+                                    project.find('.project-description').append(vidTag);
+                                            // project.find('.project-description').append(pullAbstract());
+                                        }).fail(function() {
+                                            // console.log("fail");
+                                            // counter.push(0, 0);
+                                            // redirect();
+                                        });
+
+                                    });
+
+
+
+
+
+
+
+
+
+
+                        }
+                        // alert(b())
+                        // console.log(b());
+
+
+
+
+
+                    }
+
+
+
+
+                    function secondImage() {
+                        var imageNumber = 2
+                        console.log(imageNumber);
+
+
+                    }
+
+
+
+
                 }
-
-
-
-
-            }
             // END - SECOND ASSET LOADER
 
 
@@ -231,5 +277,5 @@ function renderSingleProjectPage(index, data) {
                 };
             }
         });
-    }
+}
 };
