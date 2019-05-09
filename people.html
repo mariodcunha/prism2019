@@ -34,7 +34,7 @@
   <link id="cssFile" href='css/style.css' media='all' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,900i" rel="stylesheet">
   <!-- <link rel="stylesheet" href="styles/css/main.css"> -->
-<!--   <script type="text/javascript" src="js/lucien.js"></script> -->
+  <script type="text/javascript" src="js/lucien.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" type="text/javascript"></script>
  -->
@@ -46,6 +46,8 @@
 
 
 </head>
+
+
 
 
 
@@ -64,8 +66,8 @@
        <span data-tilt>
           <li id="nav_button_bottom_top" ><a class="strikeThru" href="index.html">Home</a></li>
           <li id="nav_button_bottom_top" ><a class="strikeThru" href="events.html">Events</a></li>
-<li id="nav_button_bottom_top" ><a class="strikeThru" href="projects.html">Projects</a></li>
-          <!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="people.html">People</a></li> -->
+<!-- <li id="nav_button_bottom_top" ><a class="strikeThru" href="projects.html">Projects</a></li> -->
+          <li id="nav_button_bottom_top" ><a class="strikeThru" href="projects.html">Projects</a></li>
 <li id="nav_button_bottom_top_rsvp"><a class="buttonHighlight hideOnMobile showOnDesktop" href="https://www.eventbrite.com/e/prism-2019-parsons-mfa-design-technology-thesis-show-tickets-60172887727" target="_blank">RSVP</a></li>
        </span>
 
@@ -76,16 +78,15 @@
 
 
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
-<!--     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script> -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 
-<!--     <script src="js/script.js"></script> -->
     <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
 
-<!-- 
-    <script>
+<!--     <script>
       function MM_preloadImages() { //v3.0
         var d=document; 
         if(d.images){ 
@@ -99,37 +100,64 @@
            }
          }
        }
-     </script>
- -->
-
-
-      <div class="clear"> </div>
+     </script> -->
 
       <div class="event-heading-inner"><h1>People</h1></div>
 
-      <div class="main-content-students">
+      <div class="clear"> </div>
 
+      <div class="main-content-projects">
+        <a name="projectGrid"><div class="categories"></a>
+         <nav id="nav-filter-cat" style="margin-left:13%; margin-right:13%;">
+          <input type="radio" id="all" name="thesis-category" checked/>
+          <label for="all" onclick="loadCategory('all')">All</label>
+          <input type="radio" id="DataArt" name="thesis-category" />
+          <label for="DataArt" onclick="loadCategory('vr')">VR/MR/AR</label>
+          <input type="radio" id="Installation" name="thesis-category"/>
+          <label for="Installation" onclick="loadCategory('installation')">Installation</label>
+          <input type="radio" id="PlayfulExperiences" name="thesis-category"/>
+          <label for="PlayfulExperiences" onclick="loadCategory('game')">Playful Experiences</label>
+          <input type="radio" id="Storytelling/Film" name="thesis-category"/>
+          <label for="Storytelling/Film" onclick="loadCategory('story')" >Storytelling/Film</label>
+          <input type="radio" id="Culture/Issues" name="thesis-category"/>
+          <label for="Culture/Issues" onclick="loadCategory('culture')">Culture/Issues</label>
+          <input type="radio" id="SpeculativeDesign" name="thesis-category"/>
+          <label for="SpeculativeDesign" onclick="loadCategory('speculative')">Speculative/Critical</label>
+          <input type="radio" id="ProductDesign" name="thesis-category"/>
+          <label for="ProductDesign" onclick="loadCategory('product')">Product Design</label>
+          <input type="radio" id="Education" name="thesis-category"/>
+          <label for="Education" onclick="loadCategory('education')">Education</label>
+          <input type="radio" id="Wearable" name="thesis-category"/>
+          <label for="Wearable" onclick="loadCategory('wearable')">Wearable</label>
+          <div class="clear"></div>
+        </nav>
+      </div>
 
       <div class="clear"> </div>
+
 
       <button onclick="topFunction()" class="strikeThruTopButton" id="myBtn" title="Go to top"><img  src="assets/top_triangle.png" /></button>
 
 
+
         <div class="fixedrighttitle">
-          <ul class="students-list grid">
-          <script id="students-template" type="x-handlebars-template">​
+          <ul id="projData" class="students-list grid">
 
-          {{#each this}}
-            <li class="grid-item grid-item--width2 grid-item--height6" data-index="{{id}}">
-            {{#if profile-pic}} 
-            <a href="#" class="student-photo"><img class="myPhoto" src="portraits/{{profile-pic}}" height="130" alt="{{name}}"/></a>
-            {{else}}
-            <a href="#" class="student-photo"><img class="myPhoto" src="project/noPhoto.png" height="130" alt="{{name}}"/></a>
+            <script id="students-template" type="x-handlebars-template">​
+
+            {{#each this}}
+            <li class="grid-item grid-item--width2 grid-item--height6 {{project.thesis-category}}" accessKey="{{id}}">
+            
+            {{#if project.coverImage}} 
+            <a href="#" class="student-photo"><img class="myPhoto" src="portraits/{{id}}.jpg" height="130" alt="{{name}}"/></a>
+
+            {{else}}            
+            <a href="#" class="student-photo"><img class="myPhoto" src="projects/noPhoto.png" height="130" alt="{{name}}"/></a>
             {{/if}}
-
+            
             <h6 class="nameTags" style="color:#FFFFFF; margin-top:10px; margin-bottom:15px;">
               <a href="#" style="text-decoration:none; color:#000 ;font-size:12px; letter-spacing: 0.08em ;">
-                <span class="list_student_name">{{name}}</span><br><span class="list_project_name">{{project.title}}</span></a></h6>
+                <span class="list_student_name">{{flname}}</span></a></h6>
             </li>
             {{/each}}
 
@@ -162,6 +190,7 @@
         <div class="footer-child foot-item foot-item--width2">
           <h2><a href="acknowledgements.html">Acknowledgements</a></h2>
         </div>
+
   
         <div  class="hideOnMobile showOnDesktop footer-child foot-item foot-item--width2 social">
           <a href="https://www.instagram.com/mfadt" target="_blank"><img class="socialButtons" src="assets/instaLogo.png"></a>
@@ -197,10 +226,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
-<!--     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+
     <script src="js/script.js"></script>
     <!-- <script data-main="scripts/main" src="scripts/libs/require/require.js"></script> -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
    </body>

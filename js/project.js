@@ -46,10 +46,12 @@ function renderSingleProjectPage(index, data) {
 
             if (item.id == index) {
                 // Insert student info
+                bio.find('.student-image').append('<img class="student-image" src="portraits/' + item.id + '.jpg" alt="' + item.flname +'">');
                 bio.find('.student-name').text(item.flname);
                 bio.find('.student-title').text(item.profTitles);
                 bio.find('.student-intro').text(item.bio);
                 bio.find('.student-url').append('<a href="' + item.url + '" target=blank_>Website<p>');
+                // bio.find('.student-image').attr('src','portraits/' + item.id + '.jpg" alt="' + item.flname +'">');
                 // Insert Project info
                 project.find('.project-name').text(item.project.title);
                 project.find('.project-description').append("<p>" + item.project.description + "<p>");
