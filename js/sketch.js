@@ -84,7 +84,12 @@ function setup()
     noStroke(); 
     colorMode(RGB);
 
-    bgcolor = bgcolorArray[randomInt(0,2)];
+    if(page!=2)
+        bgcolor = bgcolorArray[randomInt(0,2)];
+    else if(page==2)
+    {
+        bgcolor = bgcolorArray[0];
+    }
     // bgcolor = 255; 
     // bgcolor = 22; 
     // 0 is black background, 2 is white.
@@ -310,10 +315,16 @@ function checkCss()
 
 
 
+
 function pageSet()
 {
     console.log(bgcolor);
     page=1;
+}
+
+function pageSetPeople()
+{
+    page=2;
 }
 
 
@@ -470,7 +481,8 @@ function mouseClicked()
     // mouseSaveX = mouseX;
     // mouseSaveY = mouseY;
 
-    setup();
+    if(page!=2)
+        setup();
 }
 
 
