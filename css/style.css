@@ -2465,8 +2465,16 @@ div.row h3
 
 .main-page-video, .page-secondary-video, .page-secondary-image
 {
-  width: 100%;
+  width: 100%;  
 }
+
+.page-secondary-video, .page-secondary-image
+{
+  padding-top: 10px;  
+}
+
+
+
 
 
 
