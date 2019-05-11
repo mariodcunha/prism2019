@@ -2291,6 +2291,9 @@ STUDENTS GRID
 
 .myPhoto{
   /*opacity:0.5;*/
+    width: 250px;
+  height: 150px;
+
 }
 
 .theprojecttitle{
