@@ -765,8 +765,8 @@ hr {
   }
 
 
-  
-  .individual-intro .student-name 
+
+  .individual-intro .student-name
   {
     color: #fff;
     text-transform: uppercase;
@@ -779,7 +779,7 @@ hr {
 
 .individual-intro .student-title {
     padding: 10px 0 12px 0;
-    /* text-transform: uppercase; */
+    text-transform: capitalize;
     font-size: 12px;
     letter-spacing: 1px;
     color: #aaa;
@@ -817,14 +817,14 @@ hr {
     color: rgb(170, 170, 170);
   }
 
-  ul .list-down 
+  ul .list-down
   {
    font-size: 11px;
    padding-bottom: 7px;
    letter-spacing: 0.08em;
   }
 
-  .project-name 
+  .project-name
   {
     color: #fff;
     text-transform: uppercase;
@@ -2460,7 +2460,7 @@ div.row h3
   height: 50px;
 }
 
-#myBtn:hover 
+#myBtn:hover
 {
   /*filter: invert(100%);*/
   /*filter: saturate(100%);*/
@@ -2470,12 +2470,12 @@ div.row h3
 
 .main-page-video, .page-secondary-video, .page-secondary-image
 {
-  width: 100%;  
+  width: 100%;
 }
 
 .page-secondary-video, .page-secondary-image
 {
-  padding-top: 10px;  
+  padding-top: 10px;
 }
 
 
