@@ -262,7 +262,8 @@ function renderSingleProjectPage(index, data) {
 
 
             // run pull and format the abstract.                
-            function pullAbstract() {
+            function pullAbstract() 
+            {
                 var str = (item.project.abstract);
                 for (var i = 0; i < str.length; i++) {
                     if (str[i] === "\r\n")
