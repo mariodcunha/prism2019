@@ -33,7 +33,7 @@ var padding=100;
 var posFactor;
 
 
-
+$('.list_student_name').css('color','white');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -580,4 +580,6 @@ function getCursorPos(e)
   }
 }
 
+
+$('.list_student_name').css('color','white');
 
