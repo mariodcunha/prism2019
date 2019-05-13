@@ -46,7 +46,7 @@ function renderSingleProjectPage(index, data) {
 
             if (item.id == index) {
                 // Insert student info
-                bio.find('.student-image').append('<img class="student-image" src="portraits/' + item.id + '.jpg" alt="' + item.flname +'">');
+                bio.find('.student-image').append('<img class="student-image" src="portraits/' + item.id + '.jpg" alt="' + item.flname + '">');
                 bio.find('.student-name').text(item.flname);
                 bio.find('.student-title').text(item.profTitle);
                 bio.find('.student-intro').text(item.bio);
@@ -54,6 +54,10 @@ function renderSingleProjectPage(index, data) {
                 // bio.find('.student-image').attr('src','portraits/' + item.id + '.jpg" alt="' + item.flname +'">');
                 // Insert Project info
                 project.find('.project-name').text(item.project.title);
+                var categories = item.project.projMeta.split(',');
+                categories.forEach(function(element) {
+                    project.find('.project-category-list').append('<li class="list-down">' + element + '</li>')
+                    });
                 project.find('.project-description').append("<p>" + item.project.description + "<p>");
                 project.find(checkForVid());
             }
@@ -73,13 +77,7 @@ function renderSingleProjectPage(index, data) {
                     project.find('.project-description').append(pullAbstract());
                     pullSecondContent(1);
                 } else {
-                    var categories = item.project.projMeta.split(',');
-                    //                     var categories = ('<li class="list-down">' + item.project.projMeta.replace(', ', '</li>')
-                    //                  node.appendChild(item.project.projMeta);  
                     project.find('.project-description').append(mainAssetLoader());
-                    categories.forEach(function(element) {
-                        project.find('.project-category-list').append('<li class="list-down">' + element + '</li>')
-                    });
                     //                     
                 }
             };
