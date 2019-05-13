@@ -130,7 +130,7 @@ function renderSingleProjectPage(index, data) {
                             .done(function() {
                                 //                         console.log("Image exists")
                                 // console.log(imgTestURL)
-                                var mainImg = ('<img src="' + imgTestURL + '"/>')
+                                var mainImg = ('<img class="page-primary-image" src="' + imgTestURL + '"/>')
                                 project.find('.project-description').append(mainImg);
                                 project.find('.project-description').append(pullAbstract());
                                 value = true
