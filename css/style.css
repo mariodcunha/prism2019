@@ -76,7 +76,10 @@ font-style: semibold;*/
 
 
 
-
+.aboutTitle img
+{
+  width: 250px;
+}
 
 
 
@@ -2355,10 +2358,10 @@ div.row h3
 {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: 'SharpGrotesk15-Book';
+  font-family: 'SharpGrotesk20-Book';
   text-transform: uppercase;
   font-size: 45px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   /*letter-spacing: 0.14em;*/
 }
 

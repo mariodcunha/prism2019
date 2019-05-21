@@ -227,6 +227,9 @@ function checkCss()
         // $('#myBtn img').css('border','2px solid white');
         $('#myBtn img').css('filter','invert(0%)');
         $('#myBtn img').attr("src","assets/top_triangle.png");
+
+        $('.aboutTitle img').css('filter','invert(100%)');
+        
         
 
     }
@@ -307,6 +310,7 @@ function checkCss()
             $('#main-menu2 .nav-bar-index').css('background','#fff');
 
         $('#myBtn img').css('filter','invert(100%)');
+        $('.aboutTitle img').css('filter','invert(0%)');
         
 
     }
