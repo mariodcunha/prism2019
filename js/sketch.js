@@ -33,7 +33,6 @@ var padding=100;
 var posFactor;
 
 
-$('.list_student_name').css('color','white');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -229,8 +228,9 @@ function checkCss()
         $('#myBtn img').attr("src","assets/top_triangle.png");
 
         $('.aboutTitle img').css('filter','invert(100%)');
-        
-        
+
+        $('.list_student_name').css('color','white');
+        $('.projecttitle').css('color','white');        
 
     }
 
@@ -311,7 +311,9 @@ function checkCss()
 
         $('#myBtn img').css('filter','invert(100%)');
         $('.aboutTitle img').css('filter','invert(0%)');
-        
+
+        $('.list_student_name').css('color','black');
+        $('.projecttitle').css('color','black');
 
     }
     // setup();
@@ -585,5 +587,5 @@ function getCursorPos(e)
 }
 
 
-$('.list_student_name').css('color','white');
+
 
