@@ -12,7 +12,7 @@
 - [x] **Nicolas Hernandez - 3D Designer**
 
 ## Special Thanks:
-- [x] **John Sharp - MFADT Director**
+- [x] **John Sharp - Director, MFA Design & Technology program**
 
 ## Notes:
 
